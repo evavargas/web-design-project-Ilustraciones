@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ilustraciones</title>
+    <link rel="stylesheet" href="style/general.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Josefin+Slab&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="principalTitle">
+          <img
+            src="assets/artistas/ArtistasLogos/braianruiz.png"
+            alt="Braian"
+          />
+          <img src="assets/artistas/ArtistasLogos/calu.png" alt="Calu" />
+          <img src="assets/artistas/ArtistasLogos/juan.png" alt="Juan" />
+          @Ilustraciones
+          <img src="assets/logo/logo.png" alt="logo" />
+          <img src="assets/artistas/ArtistasLogos/lavaca.jpg" alt="Vaca" />
+          <img src="assets/artistas/ArtistasLogos/nico.png" alt="Nico" />
+          <img src="assets/artistas/ArtistasLogos/will.png" alt="Will" />
+        </h1>
+      </div>
+      <nav>
+        <!--Productos disponibles segun su tipo, independiente del autor-->
+        <ul class="menu">
+          <li>
+            <a class="menu" href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a class="menu" href="ilustradores.html">Ilustradores</a>
+          </li>
+          <li>
+            Productos
+            <ul>
+              <li><a class="menu" href="ver-todo.html">Ilustraciones</a></li>
+              <li><a class="menu" href="ver-todo.html">Cuadros</a></li>
+              <li><a class="menu" href="ver-todo.html">Remeras</a></li>
+              <li><a class="menu" href="ver-todo.html">Tazas</a></li>
+              <li><a class="menu" href="ver-todo.html">Agendas</a></li>
+              <li><a class="menu" href="ver-todo.html">Planners</a></li>
+            </ul>
+          </li>
+          <li>
+            Puntos de venta
+            <ul>
+              <li><a class="menu" href="ver-todo.html">Argentina</a></li>
+              <li><a class="menu" href="ver-todo.html">Otros Paises</a></li>
+            </ul>
+          </li>
+          <li><a class="menu" href="eventos.html">Eventos</a></li>
+          <li><a class="menu" href="noticias.html">Noticias</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--Iniciar sesion-->
+    <form action="iniciarSesion" class="iniciarSesion">
+      <input type="email" placeholder="Usuario o Correo electronico" />
+      <input type="password" placeholder="Contraseña" />
+      <input type="submit" value="Iniciar Sesion" />
+    </form>
+    <main>
+      <h2 class="seccion">Los mejores artistas</h2>
+      <aside id="ilustradores">
+        <!--En este campo, se seleccionan lods productos segun el autor-->
+        <form class="artistasSeleccion">
+          <input
+            type="radio"
+            name="ilustrador"
+            value="lavaca"
+          />LaVacaStyle<br />
+          <input
+            type="radio"
+            name="ilustrador"
+            value="nico"
+            checked
+          />NicoIlustraciones<br />
+          <input
+            type="radio"
+            name="ilustrador"
+            value="braian"
+          />BraianRuizIlustraciones<br />
+          <input
+            type="radio"
+            name="ilustrador"
+            value="fede"
+          />FedeCalde-Ilustraciones<br />
+          <input
+            type="radio"
+            name="ilustrador"
+            value="juan"
+          />JuanSzelalustraciones<br />
+          <input type="radio" name="ilustrador" value="calu" />CaluByRox<br />
+          <input
+            type="radio"
+            name="ilustrador"
+            value="cielo"
+          />CieloJoaquinCastro<br />
+          <input type="radio" name="ilustrador" value="will" />Willabeta<br />
+        </form>
+      </aside>
+      <figure class="articulo">
+        <img
+          src="https://i.pinimg.com/originals/51/39/1a/51391a4c4a21b0a7c635a7f65270dde3.jpg"
+          alt="producto nro:X"
+        />
+        <div>
+          <!--Aca va un slide para ir mostrando los productos-->
+          <!--la idea es que al clickear una imagen, se selecciona el producto, y aparece su descripcion,
+         para despues enviarlo al carrito de compras-->
+          <form action="productoSeleccionado">
+            <input type="text" placeholder="codigo de producto clickeado" />
+          </form>
+        </div>
+      </figure>
+      <aside id="descripcion">
+        <!--Las especificaciones van cambiando segun cambia el producto mostrado-->
+        <p class="introduccion">
+          Tus Ilustradores favoritos, reunidos en un solo lugar. Accede a todos
+          sus trabajos y diseños, en articulos de gran calidad, personalizados
+          odio at consequat condimentum, lectus eros euismod nulla, id tempor
+          tellus elit congue elit. Donec erat metus, euismod efficitur nisl vel.
+        </p>
+      </aside>
+      <article class="autor">
+        <!--Segun el autor seleccionado, sino va pasando de a uno cada x tiempo-->
+        <h2 class="seccion">Sobre el autor</h2>
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/RHpDf-L7Ffw"
+        ></iframe>
+        <p class="biografia">
+          <span>Biografia <br /> </span>
+          Nicolás Vilela es el joven artista detrás de 'Nico Ilustraciones',
+          nombre con el que identificó sus perfiles en redes sociales. Allí
+          plasma sus obras que se encuentran atravesadas por diversos temas y
+          personajes, y que a su vez, son compartidas por cientos de usuarios y
+          seguidores.
+        </p>
+        <aside id="redesIlustrador">
+          <ul class="redes">
+            <li>
+              <a href="https://www.instagram.com/nicoilustraciones/?hl=es-la"
+                >Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/nicoilustracion?lang=es">Twitter</a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/romisap/nico-ilustraciones/"
+                >Pinterest</a
+              >
+            </li>
+            <li><a href="https://tlgrm.es/channels">Telegram</a></li>
+            <li><a href="">Correo</a></li>
+            <li>
+              <a
+                href="https://www.bypublications.com/producto/universos-nico-ilustraciones-campana/"
+                >Pagina web</a
+              >
+            </li>
+          </ul>
+        </aside>
+      </article>
+      <div id="producto-compra">
+        <section>
+          <h2 class="seccion">Producto Seleccionado</h2>
+          <figure class="articulo">
+            <img
+              src="http://www.revistasudestada.com.ar/media/cache/69/be/69beacfa7ca88b1c071726ee34c28c78.jpg"
+              alt="Producto Seleccionado"
+            />
+            <form action="productoSeleccionado">
+              <input type="text" placeholder="codigo de producto clickeado" />
+            </form>
+          </figure>
+        </section>
+        <div class="producto-descripcion">
+          <table>
+            <thead>
+              <tr>
+                <th>Disponibilidad</th>
+                <th>Caracteristicas</th>
+                <th>Descripcion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Si</td>
+                <td>Stock Disponible</td>
+                <td>500 u.</td>
+              </tr>
+              <tr>
+                <td>No</td>
+                <td>Envio a todo el pais</td>
+                <td>24 hs.</td>
+              </tr>
+              <tr>
+                <td>Si</td>
+                <td>Envio al exterior</td>
+                <td>America Latina</td>
+              </tr>
+              <tr>
+                <td>No</td>
+                <td>Autografo disponible</td>
+                <td>Solo Ilustraciones</td>
+              </tr>
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+          <ol>
+            <li>Tapa dura</li>
+            <li>Tamaño a5</li>
+            <li>Espiral metalico</li>
+            <li>Incluye stickers</li>
+          </ol>
+          <form action="-" id="compra">
+            <p class="detalle">Precio:</p>
+            <input type="text" name="precio" id="precio" placeholder="AR$" />
+            <input
+              type="number"
+              name="cantidad"
+              id="cantidad"
+              min="1"
+              max="24"
+              placeholder="0-24"
+            />
+            <input type="submit" value="Añadir" />
+            <input type="reset" value="Restablecer" />
+          </form>
+        </div>
+        <aside>
+          <form class="compras" action="-">
+            <h3>Carrito</h3>
+            <label
+              ><input type="checkbox" name="compra 1" id="1" /> Compra 1
+            </label>
+            <label
+              ><input type="checkbox" name="compra 2" id="2" /> Compra 2</label
+            >
+            <label
+              ><input type="checkbox" name="compra 3" id="3" /> Compra 3
+            </label>
+            <label
+              ><input type="checkbox" name="compra 4" id="4" /> Compra 4
+            </label>
+            <input
+              type="number"
+              name="precioTotal"
+              id="precioFinal"
+              placeholder="Total"
+            />
+            <input type="submit" value="Finalizar compra" />
+            <input type="reset" value="Cancelar compra" />
+          </form>
+        </aside>
+      </div>
+      <aside class="suscribe">
+        <h3>
+          Para mantenerte al dia sobre los nuevos productos y noticias,
+          Suscribete
+        </h3>
+        <p>
+          Es realmente facil y solo te tomara unos segundos. <br />
+          Deseo recibir informacion acerca de:
+        </p>
+        <form action="suscrib" id="suscripcion">
+          <input type="checkbox" name="productos" id="productos" /> Productos
+          <br />
+          <input type="checkbox" name="eventos" id="eventos" /> Eventos y
+          Talleres <br />
+          <input type="checkbox" name="novedades" id="novedades" /> Noticias
+          <br />
+          <input type="checkbox" name="general" id="general" /> Interes general
+          <br />
+          <input type="checkbox" name="artistas" id="artistas" /> Artistas
+          <br />
+          <input type="email" placeholder="Correo electronico" />
+          <p>
+            He leido y acepto los
+            <a href="www.ilustracionesarg.com/legal"> terminos y condiciones</a>
+          </p>
+          <input type="radio" name="legal" id="yes" /> Acepto <br />
+          <input type="radio" name="legal" id="no" /> No acepto <br />
+          <input type="submit" value="Suscribirme" />
+          <input type="reset" value="Restablecer" />
+        </form>
+      </aside>
+    </main>
+    <footer>
+      <ul>
+        <li>Contenido</li>
+        <li>Sobre nosotros</li>
+        <li>Legales</li>
+        <li>Soporte</li>
+        <li>Trabaja con nosotros</li>
+      </ul>
+      <aside class="contacto">
+        <ul>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Correo electronico</a></li>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Pinterest</a></li>
+          <li><a href="">Ubicacion</a></li>
+        </ul>
+      </aside>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+/*ver todo*/
+.ver-todo {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .detalle-producto{
+    width: fit-content;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .detalle-producto>figure>img:hover{
+    cursor: -webkit-zoom-in;
+  }
+  .disponibles{
+  height: 640px;
+  max-height: max-content;
+  overflow: hidden;
+  }
+  .listado-modelos{
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(243, 243, 243);
+  }
+  .listado-modelos img{
+    width: 70px;
+    margin: 1rem;
+  }
+  
+  .ver-todo> a>img{
+    width: 2rem;
+    height: 50vh;
+  }
+  .ver-todo>a{
+    background-color: rgb(255, 255, 255);
+  }
+  .listado-productos{
+    display: flex;
+    flex-flow: wrap;
+    width: 45vw;
+    list-style: none;
+    height: 620px;
+    max-height: max-content;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: rgb(255, 255, 255);
+    border-left-style: solid;
+    border-left-color: rgb(243, 243, 243);
+    border-left-width: 2px;
+  }
+  .listado-productos img{
+    border: rgb(243, 243, 243) solid;
+    width: 240px;
+    height: 240px;
+    margin: 1rem;
+  }
+  /*fin ver-todo*/

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Noticias</title>
+    <link rel="stylesheet" href="style/general.css" />
+    <link rel="stylesheet" href="style/noticias.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Josefin+Slab&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="principalTitle">
+          <img
+            src="assets/artistas/ArtistasLogos/braianruiz.png"
+            alt="Braian"
+          />
+          <img src="assets/artistas/ArtistasLogos/calu.png" alt="Calu" />
+          <img src="assets/artistas/ArtistasLogos/juan.png" alt="Juan" />
+          @Ilustraciones
+          <img src="assets/logo/logo.png" alt="logo" />
+          <img src="assets/artistas/ArtistasLogos/lavaca.jpg" alt="Vaca" />
+          <img src="assets/artistas/ArtistasLogos/nico.png" alt="Nico" />
+          <img src="assets/artistas/ArtistasLogos/will.png" alt="Will" />
+        </h1>
+      </div>
+      <nav>
+        <!--Productos disponibles segun su tipo, independiente del autor-->
+        <ul class="menu">
+          <li>
+            <a class="menu" href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a class="menu" href="ilustradores.html">Ilustradores</a>
+          </li>
+          <li>
+            Productos
+            <ul>
+              <li><a class="menu" href="ver-todo.html">Ilustraciones</a></li>
+              <li><a class="menu" href="ver-todo.html">Cuadros</a></li>
+              <li><a class="menu" href="ver-todo.html">Remeras</a></li>
+              <li><a class="menu" href="ver-todo.html">Tazas</a></li>
+              <li><a class="menu" href="ver-todo.html">Agendas</a></li>
+              <li><a class="menu" href="ver-todo.html">Planners</a></li>
+            </ul>
+          </li>
+          <li>
+            Puntos de venta
+            <ul>
+              <li><a class="menu" href="ver-todo.html">Argentina</a></li>
+              <li><a class="menu" href="ver-todo.html">Otros Paises</a></li>
+            </ul>
+          </li>
+          <li><a class="menu" href="eventos.html">Eventos</a></li>
+          <li><a class="menu" href="noticias.html">Noticias</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="iniciarSecion" class="iniciarSesion">
+        <input type="email" placeholder="Usuario o Correo electronico" />
+        <input type="password" placeholder="Contraseña" />
+        <input type="button" value="Iniciar Sesion" />
+      </form>
+      <h2 class="seccion">Noticias</h2>
+      <div class="noticias">
+        <figure>
+          <img src="./assets/tools/noticias.png" alt="" width="600" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            sagittis accumsan augue. Nulla iaculis elit eget dolor pharetra
+            tristique. Phasellus a diam ut diam laoreet iaculis at ut lorem.
+            Phasellus suscipit metus quis egestas porttitor. Etiam condimentum,
+            justo vel commodo feugiat, ex quam vestibulum urna, in imperdiet mi
+            enim at orci.
+          </p>
+        </figure>
+        <figure>
+          <img src="./assets/tools/noticias.png" alt="" width="600" />
+          <p>
+            Curabitur eget justo imperdiet, vulputate neque quis, semper eros.
+            Cras et est a ante aliquam vulputate et sed lectus. Praesent blandit
+            quam urna, a lacinia lacus tristique sed. Duis eget pulvinar magna.
+            Ut nec orci eros. Curabitur a nulla et nulla blandit consectetur.
+            Morbi et eleifend odio.
+          </p>
+        </figure>
+        <figure>
+          <img src="./assets/tools/noticias.png" alt="" width="600" />
+          <p>
+            Vivamus posuere elementum tellus, vitae rutrum ante sollicitudin
+            nec. Pellentesque porttitor, turpis a vestibulum aliquet, magna
+            justo ullamcorper diam, eu maximus lorem mi eu justo. Etiam faucibus
+            augue nec risus hendrerit, at tempor enim ultrices. Pellentesque
+            bibendum ligula a massa hendrerit, eget rhoncus lectus tristique.
+          </p>
+        </figure>
+        <figure>
+          <img src="./assets/tools/noticias.png" alt="" width="600" />
+          <p>
+            Duis facilisis pellentesque velit, ac placerat erat cursus ut.
+            Integer eget tortor eu sapien blandit hendrerit. Sed orci orci,
+            ultricies a augue quis, pulvinar maximus massa. Curabitur rhoncus
+            sapien tellus, dictum blandit urna vehicula at. Maecenas
+            pellentesque blandit purus, sed faucibus ligula lobortis luctus.
+          </p>
+        </figure>
+      </div>
+      <aside class="suscribe">
+        <h3>
+          Para mantenerte al dia sobre los nuevos productos y noticias,
+          Suscribete
+        </h3>
+        <p>
+          Es realmente facil y solo te tomara unos segundos. <br />
+          Deseo recibir informacion acerca de:
+        </p>
+        <form action="suscrib" id="suscripcion">
+          <input type="checkbox" name="productos" id="productos" /> Productos
+          <br />
+          <input type="checkbox" name="eventos" id="eventos" /> Eventos y
+          Talleres <br />
+          <input type="checkbox" name="novedades" id="novedades" /> Noticias
+          <br />
+          <input type="checkbox" name="general" id="general" /> Interes general
+          <br />
+          <input type="checkbox" name="artistas" id="artistas" /> Artistas
+          <br />
+          <input type="email" placeholder="Correo electronico" />
+          <p>
+            He leido y acepto los
+            <a href="www.ilustracionesarg.com/legal"> terminos y condiciones</a>
+          </p>
+          <input type="radio" name="legal" id="yes" /> Acepto <br />
+          <input type="radio" name="legal" id="no" /> No acepto <br />
+          <input type="submit" value="Suscribirme" />
+          <input type="reset" value="Restablecer" />
+        </form>
+      </aside>
+    </main>
+    <footer>
+      <ul>
+        <li>Contenido</li>
+        <li>Sobre nosotros</li>
+        <li>Legales</li>
+        <li>Soporte</li>
+        <li>Trabaja con nosotros</li>
+      </ul>
+      <aside class="contacto">
+          <ul>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Correo electronico</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Pinterest</a></li>
+            <li><a href="">Ubicacion</a></li>
+          </ul>
+        </aside>
+    </footer>
+  </body>
+</html>

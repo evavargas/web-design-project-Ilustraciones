@@ -1,0 +1,377 @@
+/*General*/
+html, body {
+  height: 100%;
+  vertical-align: baseline;
+}
+body {
+  margin: 0% !important;
+  background-color: rgb(243, 252, 253);
+}
+header{
+  margin: 0;
+}
+main {
+  margin-top: -12vh;
+  margin-bottom: 3rem;
+}
+/*Index*/
+.principalTitle {
+  color: rgb(0, 153, 255);
+  font-size: 400%;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  letter-spacing: 7px;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0rem;
+  padding: 0rem;
+
+}
+.principalTitle img {
+  height: 3rem;
+}
+header > div {
+  border-bottom: 0.3rem inset rgb(192, 216, 216);
+}
+nav {
+  display: inline-block;
+  background-color: azure;
+  width: 100vw;
+  z-index: 2;
+}
+.menu {
+  text-decoration-line: none;
+  color: rgb(58, 50, 50);
+  line-height: 1.6;
+  list-style: none; /* saca los "puntitos" */
+  font-family: "Josefin Slab", serif;
+  font-weight: 600;
+  z-index: 2;
+
+}
+/*menu*/
+.menu > ul {
+  font-size: 0; /* truco por el uso de inline-block*/
+  /* IMPORTANTE */
+  padding: 2rem;
+}
+.menu li {
+  display: inline-block;
+  width: 12%;
+  text-align: center;
+  font-size: 16px;
+  border-right: solid 1px;
+  box-sizing: border-box; /* Contempla el ancho total con el padding y borde que llegue a tener el elemento */
+  z-index: 2;
+  /* IMPORTANTE */
+  position: relative;
+}
+.menu li:last-child {
+  border-right: none; /* indica que el último LI (es decir el último hijo del UL, no tenga borde a la derecha) */
+}
+
+.menu ul {
+  /* si un ul es padre de otro ul entonces... esto seria el submenu */
+
+  /* IMPORTANTE */
+  position: absolute;
+  display: none;
+}
+
+/* IMPORTANTE */
+.menu ul li {
+  display: block;
+  border: none;
+  padding: 1rem;
+
+  width: 100%;
+}
+/* Al pasar sobre los LI, si tiene un UL, se MOSTRARA */
+ul li:hover ul {
+  display: block;
+  background-color: rgba(240, 255, 255, 0.726);
+}
+/*fin menu*/
+/*sticky iniciar sesion*/
+.iniciarSesion {
+  background-color: rgb(220, 247, 243);
+  position: sticky;
+  padding: 0.7rem;
+  width: 11rem;
+  top: 0.3rem;
+  left: 100vw;
+  display: inline-block;
+  margin: 0.8rem 0 0 0;
+  border-radius: 1rem;
+  border: ridge rgb(220, 247, 243);
+  z-index: 2;
+}
+.iniciarSesion input {
+  display: block;
+}
+/*fin iniciar sesion*/
+/*h2*/
+.seccion {
+  color: rgb(105, 210, 231);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 200%;
+  margin-left: 1.3rem;
+}
+/*lista*/
+.artistasSeleccion {
+  color: rgb(0, 153, 255);
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 2;
+  font-size: large;
+  width: fit-content;
+}
+#ilustradores {
+  display: inline-block;
+  position: relative;
+  padding: 0 1.7rem 1rem 2rem;
+}
+.articulo {
+  display: inline;
+  margin: 0%;
+  display: inline-block;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  position: relative;
+}
+#descripcion {
+  display: inline-block;
+  position: absolute;
+
+}
+figure > img {
+  border-style: solid;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(243, 243, 243);
+  width: 300px;
+}
+.introduccion {
+  color: rgb(58, 50, 50);
+  line-height: 1.8;
+  font-size: 120%;
+  font-family: "Josefin Slab", serif;
+  font-style: oblique;
+  padding-right: 2.2rem;
+  padding-left: 2.2rem;
+  width: 30rem;
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+}
+.video {
+  width: 400px;
+  height: 400px;
+  border: rgb(58, 50, 50) ridge 3px;
+  width: 300px;
+  height: 300px;
+  margin: 2rem;
+  display: inline-block;
+}
+.biografia {
+  color: rgb(58, 50, 50);
+  font-family: "Josefin Slab", serif;
+  font-weight: bolder;
+  line-height: 1.5;
+  font-size: large;
+  display: inline-block;
+  position: absolute;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 30rem;
+}
+#redesIlustrador {
+  position: absolute;;
+  display: inline-block;
+  padding-left: 550px;
+  padding-top: 20px;
+}
+.redes {
+  width: fit-content;
+}
+.redes > li > a,
+.redes > li {
+  color: purple;
+  text-decoration: none;
+  font-size: large;
+  line-height: 1.6;
+  font-family: "Josefin Slab", serif;
+}
+/*producto-compra*/
+#producto-compra{
+  display: flex;
+  flex-flow:row;
+  flex-wrap: wrap;
+}
+#producto-descripcion{
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+
+}
+table {
+  border: rgb(224, 228, 204) ridge 3px;
+  font-size: large;
+  font-family: "Josefin Slab", serif;
+  line-height: 1.5;
+  width: fit-content;
+  display: inline-block;
+  margin-top: 50px;
+}
+table td{
+  padding: 0.4rem;
+}
+.producto-descripcion ol {
+  color: rgb(58, 50, 50);
+  line-height: 1.4;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: large;
+  text-align: left;
+  list-style-position: inside;
+  width: 20rem;
+  display: block;
+  margin: 0;
+}
+#compra{
+ 
+  margin-left: 1rem;
+  color: rgb(58,50,50);
+  
+}
+#compra p{
+  color: rgb(58,50,50);
+  font-weight: 600;
+}
+#compra input{
+  background-color:azure;
+  padding: 0.4rem;
+  margin-left: 1rem;
+  width: 6.5rem;
+}
+#compra > #precio,#compra > #cantidad{
+  width: 4rem;
+
+}
+#compra input:hover{
+  background-color: rgb(105, 210, 231);
+}
+.compras {
+  color: rgb(58,50,50);
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.8;
+  display: inline-block;
+  border-style: solid;
+  border-color: rgb(243, 243, 243);
+  border-width: 2px;
+  padding: 0.3rem;
+}
+.compras label{
+  display:block;
+  padding: 0.2rem;
+}
+.compras input{
+  background-color:azure;
+  padding: 0.4rem;
+  margin-left: 1rem;
+  width: 7rem;
+
+}
+.compras input:hover{
+  background-color: rgb(105, 210, 231);
+}
+.suscribe {
+  margin-top: 5rem;
+  margin-left: 3rem;
+  color: rgb(58, 50, 50);
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 2;
+  font-size: large;
+  margin-bottom: 3rem;
+}
+.suscribe h3{
+  color: rgb(0, 153, 255);
+}
+.suscribe input{
+  background-color:azure;
+  padding: 0.4rem;
+  margin-left: 1rem;
+}
+.suscribe input:hover{
+  background-color: rgb(105, 210, 231);
+}
+/*info de la pagina*/
+footer{
+  border-top: solid rgb(0, 153, 255);
+  background-color: black;
+}
+footer ul, .contacto ul{
+  margin:0;
+  padding-top: 0 !important;
+  padding-bottom: 0% !important;
+}
+footer > ul> li{ 
+  color: rgb(0, 153, 255);
+  font-family: "Josefin Sans", sans-serif;
+    /*para volverlo menu*/
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  font-size: 20px;
+  border-right: solid 1px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0.7rem;
+}
+footer>ul{
+  font-size: 0;
+  padding: 2rem;
+}
+footer>ul>li:last-child {
+  border-right: none;
+}
+footer> ul>li:hover {
+
+  background-color: azure;
+}
+/*fin info pagina*/
+/*Contacto*/
+.contacto > ul> li{
+  color: rgb(105, 210, 231);
+  font-family: "Josefin Sans", sans-serif;
+    /*para volverlo menu*/
+  display: inline-block;
+  width: 16%;
+  text-align: center;
+  font-size: 20px;
+  border-right: solid 1px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0.7rem;
+}
+.contacto>ul{
+  font-size: 0;
+  padding: 2rem;
+}
+.contacto>ul>li:last-child {
+  border-right: none;
+}
+.contacto> ul>li:hover {
+
+  background-color: azure;
+}
+.contacto{
+  text-decoration-line: none !important;
+  color: rgb(58, 50, 50);
+  line-height: 1.6;
+  list-style: none; /* saca los "puntitos" */
+  font-family: "Josefin Slab", serif;
+  font-weight: 600;
+}
+/*fin contacto*/
+/*fin index*/

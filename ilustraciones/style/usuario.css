@@ -1,0 +1,19 @@
+.usuario > img {
+    border: rgb(167, 219, 216) ridge 3px;
+    width: 150px;
+    height: 150px;
+  }
+  .tabUsuario {
+    color: rgb(0, 153, 255);
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 1.4;
+    font-size: large;
+  }  
+.proceso-de-compra input{
+    background-color:azure;
+    padding: 0.4rem;
+    margin-left: 1rem;
+  }
+.proceso-de-compra input:hover{
+    background-color: rgb(105, 210, 231);
+  }
