@@ -1,0 +1,21 @@
+.suscribe {
+    margin-top: 5rem;
+    margin-left: 3rem;
+    color: rgb(58, 50, 50);
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 2;
+    font-size: large;
+    margin-bottom: 3rem;
+  }
+  .suscribe h3{
+    color: rgb(0, 153, 255);
+  }
+  .suscribe input{
+    background-color:azure;
+    padding: 0.4rem;
+    margin-left: 1rem;
+  }
+  .suscribe input:hover{
+    background-color: rgb(105, 210, 231);
+  }
+  

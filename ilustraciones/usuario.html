@@ -1,124 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Panel de usuario</title>
-    <link rel="stylesheet" href="style/general.css" />
-    <link rel="stylesheet" href="style/usuario.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Josefin+Slab&display=swap");
-    </style>
-  </head>
-  <body>
-    <header>
-      <div>
-        <h1 class="principalTitle">
-          <img
-            src="assets/artistas/ArtistasLogos/braianruiz.png"
-            alt="Braian"
-          />
-          <img src="assets/artistas/ArtistasLogos/calu.png" alt="Calu" />
-          <img src="assets/artistas/ArtistasLogos/juan.png" alt="Juan" />
-          @Ilustraciones
-          <img src="assets/logo/logo.png" alt="logo" />
-          <img src="assets/artistas/ArtistasLogos/lavaca.jpg" alt="Vaca" />
-          <img src="assets/artistas/ArtistasLogos/nico.png" alt="Nico" />
-          <img src="assets/artistas/ArtistasLogos/will.png" alt="Will" />
-        </h1>
-      </div>
-      <nav>
-        <!--Productos disponibles segun su tipo, independiente del autor-->
-        <ul class="menu">
-          <li>
-            <a class="menu" href="index.html">Inicio</a>
-          </li>
-          <li>
-            <a class="menu" href="ilustradores.html">Ilustradores</a>
-          </li>
-          <li>
-            Productos
-            <ul>
-              <li><a class="menu" href="ver-todo.html">Ilustraciones</a></li>
-              <li><a class="menu" href="ver-todo.html">Cuadros</a></li>
-              <li><a class="menu" href="ver-todo.html">Remeras</a></li>
-              <li><a class="menu" href="ver-todo.html">Tazas</a></li>
-              <li><a class="menu" href="ver-todo.html">Agendas</a></li>
-              <li><a class="menu" href="ver-todo.html">Planners</a></li>
-            </ul>
-          </li>
-          <li>
-            Puntos de venta
-            <ul>
-              <li><a class="menu" href="ver-todo.html">Argentina</a></li>
-              <li><a class="menu" href="ver-todo.html">Otros Paises</a></li>
-            </ul>
-          </li>
-          <li><a class="menu" href="eventos.html">Eventos</a></li>
-          <li><a class="menu" href="noticias.html">Noticias</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!--Iniciar sesion-->
-    <form action="iniciarSesion" class="iniciarSesion">
-      <input type="email" placeholder="Usuario o Correo electronico" />
-      <input type="password" placeholder="Contraseña" />
-      <input type="submit" value="Iniciar Sesion" />
-    </form>
-    <main>
-      <h2 class="seccion">Panel de usuario</h2>
-      <h3 class="subtitulo">*Nombre de usuario*</h3>
 
-      <figure class="usuario">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbRIv8-HoTTw2K7k3974Ra6LvGxsONXIhgNYVd14WimZDV8C1J"
-          alt="Usuario"
-          width="200"
-        />
-      </figure>
-      <article class="tabUsuario">
-        <h4 class="detalle">Informacion personal</h4>
-        <ol>
-          <li>Actividad reciente</li>
-          <li>Historial de compras</li>
-          <li>Informacion de cliente</li>
-        </ol>
-        <textarea name="info" id="infoPersonal" cols="30" rows="10"></textarea>
-      </article>
-      <aside class="proceso-de-compra">
-        <!--Si quedaron compras en el carrito, apareceran aca-->
-        <h3 class="subtitulo">Proceso de compra</h3>
+<head>
+  <meta charset="UTF-8" />
+  <title>Panel de usuario</title>
+  <link type="text/css" rel="stylesheet" href="style/general.css" />
+  <link type="text/css" rel="stylesheet" href="style/usuario.css" />
+  <link type="text/css" rel="stylesheet" href="style/top.css" />
+  <link type="text/css" rel="stylesheet" href="style/menu.css" />
+  <link type="text/css" rel="stylesheet" href="style/compras.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Josefin+Slab&display=swap");
+  </style>
+</head>
+
+<body>
+  <header>
+    <aside class="top">
+      <div>
         <div>
-          <h4 class="menu">/Progress Bar/</h4>
-          <!--Se pueden agregar compras realizadas desde el historial de compras, para en ese caso, 
+          <p><a href="./">Click Here!</a></p>
+        </div>
+      </div>
+    </aside>
+    <div>
+      <h1 class="principalTitle">
+        <img src="assets/artistas/ArtistasLogos/braianruiz.png" alt="Braian" />
+        <img src="assets/artistas/ArtistasLogos/calu.png" alt="Calu" />
+        <img src="assets/artistas/ArtistasLogos/juan.png" alt="Juan" />
+        @Ilustraciones
+        <img src="assets/logo/logo.png" alt="logo" />
+        <img src="assets/artistas/ArtistasLogos/lavaca.jpg" alt="Vaca" />
+        <img src="assets/artistas/ArtistasLogos/nico.png" alt="Nico" />
+        <img src="assets/artistas/ArtistasLogos/will.png" alt="Will" />
+      </h1>
+    </div>
+    <nav>
+      <!--Productos disponibles segun su tipo, independiente del autor-->
+      <ul class="menu">
+        <li>
+          <a class="menu" href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a class="menu" href="ilustradores.html">Ilustradores</a>
+        </li>
+        <li>
+          Productos
+          <ul>
+            <li><a class="menu" href="ver-todo.html">Ilustraciones</a></li>
+            <li><a class="menu" href="ver-todo.html">Cuadros</a></li>
+            <li><a class="menu" href="ver-todo.html">Remeras</a></li>
+            <li><a class="menu" href="ver-todo.html">Tazas</a></li>
+            <li><a class="menu" href="ver-todo.html">Agendas</a></li>
+            <li><a class="menu" href="ver-todo.html">Planners</a></li>
+          </ul>
+        </li>
+        <li>
+          Puntos de venta
+          <ul>
+            <li><a class="menu" href="ver-todo.html">Argentina</a></li>
+            <li><a class="menu" href="ver-todo.html">Otros Paises</a></li>
+          </ul>
+        </li>
+        <li><a class="menu" href="eventos.html">Eventos</a></li>
+        <li><a class="menu" href="noticias.html">Noticias</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--Iniciar sesion-->
+  <form action="iniciarSesion" class="iniciarSesion">
+    <input type="submit" value="Cerrar Sesion" />
+  </form>
+  <main>
+    <div id="usuario-grid">
+    <h2 class="seccion">Panel de usuario</h2>
+    <h3 class="name-usuario">*Nombre de usuario*</h3>
+    <figure class="usuario">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbRIv8-HoTTw2K7k3974Ra6LvGxsONXIhgNYVd14WimZDV8C1J"
+        alt="Usuario" width="200" />
+    </figure>
+    <article class="tab-usuario">
+      <!-- Tab links -->
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'LastBuy')">Ultima Compra</button>
+        <button class="tablinks" onclick="openTab(event, 'InfoUser')">Información Personal</button>
+        <button class="tablinks" onclick="openTab(event, 'Config')">Configuracion de cuenta</button>
+        <button class="tablinks" onclick="openTab(event, 'Solicitud')">Solicitudes</button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="LastBuy" class="tabcontent">
+        <h3>Descripcion</h3>
+        <p>Diseño:</p>
+        <p>Articulo:</p>
+        <p>Cantidad:</p>
+        <p>Envio:</p>
+        <input type="submit" value="Agregar al Carrito">
+      </div>
+      <div id="InfoUser" class="tabcontent">
+        <h3>Información personal</h3>
+        <p>Nombre:</p>
+        <p>Direccion:</p>
+        <p>Formas de pago:</p>
+      </div>
+      <div id="Config" class="tabcontent">
+        <h3>Configuracion</h3>
+        <p>Cambiar datos de usuario</p>
+        <p>Cambiar datos de pago</p>
+        <p>Cambiar imagen de perfil</p>
+      </div>
+      <div id="Solicitud" class="tabcontent">
+        <h3>Solicitudes</h3>
+        <p>No hay solicitudes recientes</p>
+        <h3>Agregar solicitud</h3>
+        <textarea name="solicitud" id="" cols="50" rows="10"></textarea>
+        <input type="submit" value="Enviar">
+      </div>
+    </article>
+    <aside id="carrito">
+      <form class="compras" action="-">
+        <h3>Carrito</h3>
+        <label><input type="checkbox" name="compra 1" id="1" /> Compra 1
+        </label>
+        <label><input type="checkbox" name="compra 2" id="2" /> Compra 2</label>
+        <label><input type="checkbox" name="compra 3" id="3" /> Compra 3
+        </label>
+        <label><input type="checkbox" name="compra 4" id="4" /> Compra 4
+        </label>
+        <input type="number" name="precioTotal" id="precioFinal" placeholder="Total" />
+        <input type="submit" value="Finalizar compra" />
+        <input type="reset" value="Cancelar compra" />
+      </form>
+    </aside>
+    <aside class="proceso-de-compra">
+      <div  class="paso">
+        <h3>Tercer paso: Usted ha seleccionado:</h3>
+        <span>Diseño nº52</span>
+        <span>Articulo: Remera</span>
+        <span>Cantidad: 12</span>
+        <span>Envio: Chile</span>
+        <span>Precio: $$</span>
+      </div>
+      <!--Si quedaron compras en el carrito, apareceran aca-->
+      <div class="bar">
+        <input class="bar-input" type="radio" name="input" id="input_0" />
+        <div class="bar-view">
+          <label class="bar-button" for="input_0"></label>
+        </div>
+        <input class="bar-input" type="radio" name="input" id="input_1" />
+        <div class="bar-view">
+          <label class="bar-button" for="input_1"></label>
+        </div>
+        <input class="bar-input" type="radio" name="input" id="input_2" />
+        <div class="bar-view">
+          <label class="bar-button" for="input_2"></label>
+        </div>
+        <input class="bar-input" type="radio" name="input" id="input_3" />
+        <div class="bar-view">
+          <label class="bar-button" for="input_3"></label>
+        </div>
+        <input class="bar-input" type="radio" name="input" id="input_4" />
+        <div class="bar-view">
+          <label class="bar-button" for="input_4"></label>
+        </div>
+      </div>
+      <!--<div class="command">click on any one of the options</div>-->
+      <!--Se pueden agregar compras realizadas desde el historial de compras, para en ese caso, 
                 repetir la compra para ahorrar tiempo, guiado por un panel con barra de progreso,
             al finalizar las compras, siempre va dirigido a esta pagina del usuario, y se refleja en este panel
         siendo el lugar definitivo para la emision de factura.-->
-        </div>
-        <div>
-          <h4 class="comentario">*Steps*</h4>
-        </div>
-        <input type="submit" value="Siguiente paso" />
-        <input type="reset" value="Cancelar compra" />
-      </aside>
-    </main>
-    <footer>
+        <form action="">
+          <input type="submit" value="Siguiente paso" />
+          <input type="reset" value="Cancelar compra" />
+        </form>
+    </aside>
+    </div>
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+  </main>
+  <footer>
+    <ul>
+      <li>Contenido</li>
+      <li>Sobre nosotros</li>
+      <li>Legales</li>
+      <li>Soporte</li>
+      <li>Trabaja con nosotros</li>
+    </ul>
+    <aside class="contacto">
       <ul>
-        <li>Contenido</li>
-        <li>Sobre nosotros</li>
-        <li>Legales</li>
-        <li>Soporte</li>
-        <li>Trabaja con nosotros</li>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Correo electronico</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Pinterest</a></li>
+        <li><a href="">Ubicacion</a></li>
       </ul>
-      <aside class="contacto">
-          <ul>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">Correo electronico</a></li>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Pinterest</a></li>
-            <li><a href="">Ubicacion</a></li>
-          </ul>
-        </aside>
-    </footer>
-  </body>
+    </aside>
+  </footer>
+</body>
+
 </html>

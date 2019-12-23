@@ -1,5 +1,27 @@
-/*Noticias*/
+/*grid*/
+#main-grid{
+  display: grid;
+  grid-template-areas:
+  "seccion "
+  "noticias"
+  "suscribe"
+  ;
+  grid-template-rows: 25px 700px 700px;
+  grid-template-columns: 96vw;
+  grid-column-gap:5px;
+  grid-row-gap: 15px;
 
+}
+h2.seccion{
+  grid-area: seccion;
+}
+div.noticias{
+  grid-area: noticias;
+}
+aside.suscribe{
+  grid-area: suscribe;
+}
+/*Noticias*/
 .noticias img {
   border: rgb(243, 243, 243) solid;
   width: 240px;
@@ -21,9 +43,41 @@ figure{
   flex-wrap: wrap;
   width: 45vw;
   margin: 0.7rem;
+  animation: slideInUp 1s  0.2s  ease-in;
 }
 .noticias{
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
+}
+/*!Animation*/
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
 }

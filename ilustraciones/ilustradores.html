@@ -3,20 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <title>Ilustradores</title>
-    <link rel="stylesheet" href="style/general.css" />
-    <link rel="stylesheet" href="style/ilustradores.css" />
+    <link type="text/css" rel="stylesheet" href="style/general.css" />
+    <link type="text/css" rel="stylesheet" href="style/ilustradores.css" />
+    <link type="text/css" rel="stylesheet" href="style/top.css" />
+    <link type="text/css" rel="stylesheet" href="style/menu.css" />
+    <link type="text/css" rel="stylesheet" href="style/suscribe.css" />
+    <link rel="stylesheet" href="/wow-js-css/animate.css">
     <style>
       @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Josefin+Slab&display=swap");
     </style>
   </head>
   <body>
     <header>
+      <aside class="top">
+        <div>
+          <div>
+            <p><a href="./">Click Here!</a></p>
+          </div>
+        </div>
+      </aside>
       <div>
         <h1 class="principalTitle">
-          <img
-            src="assets/artistas/ArtistasLogos/braianruiz.png"
-            alt="Braian"
-          />
+          <img src="assets/artistas/ArtistasLogos/braianruiz.png" alt="Braian" />
           <img src="assets/artistas/ArtistasLogos/calu.png" alt="Calu" />
           <img src="assets/artistas/ArtistasLogos/juan.png" alt="Juan" />
           @Ilustraciones
@@ -58,172 +66,175 @@
         </ul>
       </nav>
     </header>
+    <!--Iniciar sesion-->
     <form action="iniciarSesion" class="iniciarSesion">
       <input type="email" placeholder="Usuario o Correo electronico" />
       <input type="password" placeholder="Contraseña" />
-      <input type="button" value="Iniciar Sesion" />
+      <input type="submit" value="Iniciar Sesion" />
     </form>
     <main>
-      <h2 class="seccion">Nuestros ilustradores</h2>
-      <article class="ilustradores">
-        <figure>
-          <h3>La Vaca Stile</h3>
-          <a href="https://www.instagram.com/lavacastyle/"
-            ><img
-              src="./assets/artistas/ArtistasPerfil/lavacastyle.jpg"
-              alt=""
-            />
-          </a>
+      <div>
+        <h2 class="seccion">Nuestros ilustradores</h2>
+        <article class="ilustradores ">
+          <figure>
+            <h3>La Vaca Stile</h3>
+            <a href="https://www.instagram.com/lavacastyle/"
+              ><img
+                src="./assets/artistas/ArtistasPerfil/lavacastyle.jpg"
+                alt=""
+              />
+            </a>
+            <p>
+              Esta innovadora artista, es activista por los derechos y bienestar
+              de los animales. Con sus trabajos de gran impacto, busca generar un
+              estilo de vida consciente y respetuoso con el planeta. Tal es su
+              impacto que actualmente tiene mas de 28mil seguidores en instagram,
+              y va en ascenso. Apoyando su trabajo, se destina una parte de lo
+              recaudado a ONGs en contra del maltrato animal.
+            </p>
+          </figure>
+          <figure>
+            <h3>Nico Ilustraciones</h3>
+            <a href="https://www.instagram.com/nicoilustraciones/"
+              ><img
+                src="./assets/artistas/ArtistasPerfil/nicoilustraciones.jpg"
+                alt="Nico"
+            /></a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              efficitur vitae arcu sit amet aliquam. Interdum et malesuada fames
+              ac ante ipsum primis in faucibus. Interdum et malesuada fames ac
+              ante ipsum primis in faucibus. In at ex a orci auctor vulputate.
+            </p>
+          </figure>
+          <figure>
+            <h3>Braian Ruiz Ilustraciones</h3>
+            <a href="https://www.instagram.com/braianruiz_ilustraciones/"
+              ><img
+                src="./assets/artistas/ArtistasPerfil/braianruizilustraciones.jpg"
+                alt="Braian"
+            /></a>
+            <p>
+              Cras ultrices interdum mauris, non dapibus lorem porttitor quis.
+              Aliquam vel auctor elit. Suspendisse potenti. Nullam quis libero
+              scelerisque sem tempus egestas. Morbi nisi erat, varius et metus
+              malesuada, auctor fermentum enim.Nullam quis libero scelerisque sem
+              tempus egestas. Morbi nisi erat, varius et metus malesuada, auctor
+              fermentum enim.
+            </p>
+          </figure>
+          <figure>
+            <h3>Juan Szela Ilustraciones</h3>
+            <a href="https://www.instagram.com/juanszela.ilustraciones"
+              ><img
+                src="./assets/artistas/ArtistasPerfil/juanszelailustraciones.jpg"
+                alt=""
+            /></a>
+            <p>
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+              per inceptos himenaeos. Ut auctor sagittis elit, ac convallis dolor
+              varius iaculis. Donec fringilla neque velit, eget aliquam leo
+              feugiat ac. Aliquam ut neque commodo, suscipit elit sit amet,
+              sollicitudin enim.Nullam quis libero scelerisque sem tempus egestas.
+              Morbi nisi erat, varius et metus malesuada, auctor fermentum enim.
+            </p>
+          </figure>
+          <figure>
+            <h3>Calu By Rox</h3>
+            <a href="https://www.instagram.com/calubyroxx"
+              ><img
+                src="./assets/artistas/ArtistasPerfil/calubyrox.jpg"
+                alt="Calu"
+            /></a>
+            <p>
+              Proin et dolor nec arcu sagittis congue. Cras et sollicitudin enim,
+              ac sodales massa. In tincidunt ligula lorem, interdum congue lorem
+              lobortis non. In molestie dui in sapien feugiat scelerisque.Nullam
+              quis libero scelerisque sem tempus egestas. Morbi nisi erat, varius
+              et metus malesuada, auctor fermentum enim.
+            </p>
+          </figure>
+          <figure>
+            <h3>Will La Beta</h3>
+            <a href="https://www.instagram.com/will.la.beta/"
+              ><img
+                src="./assets/artistas/ArtistasPerfil/willlabeta.jpg"
+                alt="Will"
+            /></a>
+            <p>
+              Nulla in augue ac nibh ultricies lobortis. Donec dictum ante cursus,
+              ultrices quam ac, blandit est. In hac habitasse platea dictumst.
+              Vivamus vitae velit mollis, varius lorem eget, mattis nisl.
+              Suspendisse diam magna, efficitur in vestibulum a, elementum in
+              lectus.Nullam quis libero scelerisque sem tempus egestas. Morbi nisi
+              erat, varius et metus malesuada, auctor fermentum enim.
+            </p>
+          </figure>
+          <figure>
+            <h3>Cielo Joaquin Castro</h3>
+            <a href="https://www.instagram.com/cielojoaquincastro/"
+              ><img
+                src="./assets/artistas/ArtistasPerfil/cielojoaquincastro.jpg"
+                alt="Cielo"
+            /></a>
+            <p>
+              Nulla in augue ac nibh ultricies lobortis. Donec dictum ante cursus,
+              ultrices quam ac, blandit est. In hac habitasse platea dictumst.
+              Vivamus vitae velit mollis, varius lorem eget, mattis nisl.
+              Suspendisse diam magna, efficitur in vestibulum a, elementum in
+              lectus.Nullam quis libero scelerisque sem tempus egestas. Morbi nisi
+              erat, varius et metus malesuada, auctor fermentum enim.
+            </p>
+          </figure>
+          <figure>
+            <h3>Fede Calderon</h3>
+            <a href="https://www.instagram.com/fede.calde"
+              ><img
+                src="./assets/artistas/ArtistasPerfil/fedecalde.jpg"
+                alt="Fede Calde"
+            /></a>
+            <p>
+              Quisque pulvinar mi eros, a ultrices erat imperdiet quis.
+              Suspendisse quis turpis vel ligula venenatis efficitur. Pellentesque
+              habitant morbi tristique senectus et netus et malesuada fames ac
+              turpis egestas.Nulla in augue ac nibh ultricies lobortis. Donec
+              dictum ante cursus, ultrices quam ac, blandit est. In hac habitasse
+              platea dictumst.
+            </p>
+          </figure>
+        </article>
+        <aside class="suscribe wow fadeInUp">
+          <h3>
+            Para mantenerte al dia sobre los nuevos productos y noticias,
+            Suscribete
+          </h3>
           <p>
-            Esta innovadora artista, es activista por los derechos y bienestar
-            de los animales. Con sus trabajos de gran impacto, busca generar un
-            estilo de vida consciente y respetuoso con el planeta. Tal es su
-            impacto que actualmente tiene mas de 28mil seguidores en instagram,
-            y va en ascenso. Apoyando su trabajo, se destina una parte de lo
-            recaudado a ONGs en contra del maltrato animal.
+            Es realmente facil y solo te tomara unos segundos. <br />
+            Deseo recibir informacion acerca de:
           </p>
-        </figure>
-        <figure>
-          <h3>Nico Ilustraciones</h3>
-          <a href="https://www.instagram.com/nicoilustraciones/"
-            ><img
-              src="./assets/artistas/ArtistasPerfil/nicoilustraciones.jpg"
-              alt="Nico"
-          /></a>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            efficitur vitae arcu sit amet aliquam. Interdum et malesuada fames
-            ac ante ipsum primis in faucibus. Interdum et malesuada fames ac
-            ante ipsum primis in faucibus. In at ex a orci auctor vulputate.
-          </p>
-        </figure>
-        <figure>
-          <h3>Braian Ruiz Ilustraciones</h3>
-          <a href="https://www.instagram.com/braianruiz_ilustraciones/"
-            ><img
-              src="./assets/artistas/ArtistasPerfil/braianruizilustraciones.jpg"
-              alt="Braian"
-          /></a>
-          <p>
-            Cras ultrices interdum mauris, non dapibus lorem porttitor quis.
-            Aliquam vel auctor elit. Suspendisse potenti. Nullam quis libero
-            scelerisque sem tempus egestas. Morbi nisi erat, varius et metus
-            malesuada, auctor fermentum enim.Nullam quis libero scelerisque sem
-            tempus egestas. Morbi nisi erat, varius et metus malesuada, auctor
-            fermentum enim.
-          </p>
-        </figure>
-        <figure>
-          <h3>Juan Szela Ilustraciones</h3>
-          <a href="https://www.instagram.com/juanszela.ilustraciones"
-            ><img
-              src="./assets/artistas/ArtistasPerfil/juanszelailustraciones.jpg"
-              alt=""
-          /></a>
-          <p>
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-            per inceptos himenaeos. Ut auctor sagittis elit, ac convallis dolor
-            varius iaculis. Donec fringilla neque velit, eget aliquam leo
-            feugiat ac. Aliquam ut neque commodo, suscipit elit sit amet,
-            sollicitudin enim.Nullam quis libero scelerisque sem tempus egestas.
-            Morbi nisi erat, varius et metus malesuada, auctor fermentum enim.
-          </p>
-        </figure>
-        <figure>
-          <h3>Calu By Rox</h3>
-          <a href="https://www.instagram.com/calubyroxx"
-            ><img
-              src="./assets/artistas/ArtistasPerfil/calubyrox.jpg"
-              alt="Calu"
-          /></a>
-          <p>
-            Proin et dolor nec arcu sagittis congue. Cras et sollicitudin enim,
-            ac sodales massa. In tincidunt ligula lorem, interdum congue lorem
-            lobortis non. In molestie dui in sapien feugiat scelerisque.Nullam
-            quis libero scelerisque sem tempus egestas. Morbi nisi erat, varius
-            et metus malesuada, auctor fermentum enim.
-          </p>
-        </figure>
-        <figure>
-          <h3>Will La Beta</h3>
-          <a href="https://www.instagram.com/will.la.beta/"
-            ><img
-              src="./assets/artistas/ArtistasPerfil/willlabeta.jpg"
-              alt="Will"
-          /></a>
-          <p>
-            Nulla in augue ac nibh ultricies lobortis. Donec dictum ante cursus,
-            ultrices quam ac, blandit est. In hac habitasse platea dictumst.
-            Vivamus vitae velit mollis, varius lorem eget, mattis nisl.
-            Suspendisse diam magna, efficitur in vestibulum a, elementum in
-            lectus.Nullam quis libero scelerisque sem tempus egestas. Morbi nisi
-            erat, varius et metus malesuada, auctor fermentum enim.
-          </p>
-        </figure>
-        <figure>
-          <h3>Cielo Joaquin Castro</h3>
-          <a href="https://www.instagram.com/cielojoaquincastro/"
-            ><img
-              src="./assets/artistas/ArtistasPerfil/cielojoaquincastro.jpg"
-              alt="Cielo"
-          /></a>
-          <p>
-            Nulla in augue ac nibh ultricies lobortis. Donec dictum ante cursus,
-            ultrices quam ac, blandit est. In hac habitasse platea dictumst.
-            Vivamus vitae velit mollis, varius lorem eget, mattis nisl.
-            Suspendisse diam magna, efficitur in vestibulum a, elementum in
-            lectus.Nullam quis libero scelerisque sem tempus egestas. Morbi nisi
-            erat, varius et metus malesuada, auctor fermentum enim.
-          </p>
-        </figure>
-        <figure>
-          <h3>Fede Calderon</h3>
-          <a href="https://www.instagram.com/fede.calde"
-            ><img
-              src="./assets/artistas/ArtistasPerfil/fedecalde.jpg"
-              alt="Fede Calde"
-          /></a>
-          <p>
-            Quisque pulvinar mi eros, a ultrices erat imperdiet quis.
-            Suspendisse quis turpis vel ligula venenatis efficitur. Pellentesque
-            habitant morbi tristique senectus et netus et malesuada fames ac
-            turpis egestas.Nulla in augue ac nibh ultricies lobortis. Donec
-            dictum ante cursus, ultrices quam ac, blandit est. In hac habitasse
-            platea dictumst.
-          </p>
-        </figure>
-      </article>
-      <aside class="suscribe">
-        <h3>
-          Para mantenerte al dia sobre los nuevos productos y noticias,
-          Suscribete
-        </h3>
-        <p>
-          Es realmente facil y solo te tomara unos segundos. <br />
-          Deseo recibir informacion acerca de:
-        </p>
-        <form action="suscrib" id="suscripcion">
-          <input type="checkbox" name="productos" id="productos" /> Productos
-          <br />
-          <input type="checkbox" name="eventos" id="eventos" /> Eventos y
-          Talleres <br />
-          <input type="checkbox" name="novedades" id="novedades" /> Noticias
-          <br />
-          <input type="checkbox" name="general" id="general" /> Interes general
-          <br />
-          <input type="checkbox" name="artistas" id="artistas" /> Artistas
-          <br />
-          <input type="email" placeholder="Correo electronico" />
-          <p>
-            He leido y acepto los
-            <a href="www.ilustracionesarg.com/legal"> terminos y condiciones</a>
-          </p>
-          <input type="radio" name="legal" id="yes" /> Acepto <br />
-          <input type="radio" name="legal" id="no" /> No acepto <br />
-          <input type="submit" value="Suscribirme" />
-          <input type="reset" value="Restablecer" />
-        </form>
-      </aside>
+          <form action="suscrib" id="suscripcion">
+            <input type="checkbox" name="productos" id="productos" /> Productos
+            <br />
+            <input type="checkbox" name="eventos" id="eventos" /> Eventos y
+            Talleres <br />
+            <input type="checkbox" name="novedades" id="novedades" /> Noticias
+            <br />
+            <input type="checkbox" name="general" id="general" /> Interes general
+            <br />
+            <input type="checkbox" name="artistas" id="artistas" /> Artistas
+            <br />
+            <input type="email" placeholder="Correo electronico" />
+            <p>
+              He leido y acepto los
+              <a href="www.ilustracionesarg.com/legal"> terminos y condiciones</a>
+            </p>
+            <input type="radio" name="legal" id="yes" /> Acepto <br />
+            <input type="radio" name="legal" id="no" /> No acepto <br />
+            <input type="submit" value="Suscribirme" />
+            <input type="reset" value="Restablecer" />
+          </form>
+        </aside>
+      </div>
     </main>
     <footer>
       <ul>
@@ -244,5 +255,9 @@
           </ul>
         </aside>
     </footer>
+    <script src="/wow-js-css/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
   </body>
 </html>

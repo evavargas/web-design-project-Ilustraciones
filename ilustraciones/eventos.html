@@ -1,73 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Eventos</title>
-    <link rel="stylesheet" href="style/general.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Josefin+Slab&display=swap");
-    </style>
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Eventos</title>
+  <link type="text/css" rel="stylesheet" href="style/general.css" />
+  <link type="text/css" rel="stylesheet" href="style/top.css" />
+  <link type="text/css" rel="stylesheet" href="style/menu.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Josefin+Slab&display=swap");
+  </style>
+</head>
+
+<body>
+  <header>
+    <aside class="top">
       <div>
-        <h1 class="principalTitle">
-          <img
-            src="assets/artistas/ArtistasLogos/braianruiz.png"
-            alt="Braian"
-          />
-          <img src="assets/artistas/ArtistasLogos/calu.png" alt="Calu" />
-          <img src="assets/artistas/ArtistasLogos/juan.png" alt="Juan" />
-          @Ilustraciones
-          <img src="assets/logo/logo.png" alt="logo" />
-          <img src="assets/artistas/ArtistasLogos/lavaca.jpg" alt="Vaca" />
-          <img src="assets/artistas/ArtistasLogos/nico.png" alt="Nico" />
-          <img src="assets/artistas/ArtistasLogos/will.png" alt="Will" />
-        </h1>
+        <div>
+          <p><a href="./">Click Here!</a></p>
+        </div>
       </div>
-      <nav>
-        <!--Productos disponibles segun su tipo, independiente del autor-->
-        <ul class="menu">
-          <li>
-            <a class="menu" href="index.html">Inicio</a>
-          </li>
-          <li>
-            <a class="menu" href="ilustradores.html">Ilustradores</a>
-          </li>
-          <li>
-            Productos
-            <ul>
-              <li><a class="menu" href="ver-todo.html">Ilustraciones</a></li>
-              <li><a class="menu" href="ver-todo.html">Cuadros</a></li>
-              <li><a class="menu" href="ver-todo.html">Remeras</a></li>
-              <li><a class="menu" href="ver-todo.html">Tazas</a></li>
-              <li><a class="menu" href="ver-todo.html">Agendas</a></li>
-              <li><a class="menu" href="ver-todo.html">Planners</a></li>
-            </ul>
-          </li>
-          <li>
-            Puntos de venta
-            <ul>
-              <li><a class="menu" href="ver-todo.html">Argentina</a></li>
-              <li><a class="menu" href="ver-todo.html">Otros Paises</a></li>
-            </ul>
-          </li>
-          <li><a class="menu" href="eventos.html">Eventos</a></li>
-          <li><a class="menu" href="noticias.html">Noticias</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!--Iniciar sesion-->
-    <form action="iniciarSecion" class="iniciarSesion">
-      <input type="email" placeholder="Usuario o Correo electronico" />
-      <input type="password" placeholder="Contraseña" />
-      <input type="button" value="Iniciar Sesion" />
-    </form>
-    <main>
+    </aside>
+    <div>
+      <h1 class="principalTitle">
+        <img src="assets/artistas/ArtistasLogos/braianruiz.png" alt="Braian" />
+        <img src="assets/artistas/ArtistasLogos/calu.png" alt="Calu" />
+        <img src="assets/artistas/ArtistasLogos/juan.png" alt="Juan" />
+        @Ilustraciones
+        <img src="assets/logo/logo.png" alt="logo" />
+        <img src="assets/artistas/ArtistasLogos/lavaca.jpg" alt="Vaca" />
+        <img src="assets/artistas/ArtistasLogos/nico.png" alt="Nico" />
+        <img src="assets/artistas/ArtistasLogos/will.png" alt="Will" />
+      </h1>
+    </div>
+    <nav>
+      <!--Productos disponibles segun su tipo, independiente del autor-->
+      <ul class="menu">
+        <li>
+          <a class="menu" href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a class="menu" href="ilustradores.html">Ilustradores</a>
+        </li>
+        <li>
+          Productos
+          <ul>
+            <li><a class="menu" href="ver-todo.html">Ilustraciones</a></li>
+            <li><a class="menu" href="ver-todo.html">Cuadros</a></li>
+            <li><a class="menu" href="ver-todo.html">Remeras</a></li>
+            <li><a class="menu" href="ver-todo.html">Tazas</a></li>
+            <li><a class="menu" href="ver-todo.html">Agendas</a></li>
+            <li><a class="menu" href="ver-todo.html">Planners</a></li>
+          </ul>
+        </li>
+        <li>
+          Puntos de venta
+          <ul>
+            <li><a class="menu" href="ver-todo.html">Argentina</a></li>
+            <li><a class="menu" href="ver-todo.html">Otros Paises</a></li>
+          </ul>
+        </li>
+        <li><a class="menu" href="eventos.html">Eventos</a></li>
+        <li><a class="menu" href="noticias.html">Noticias</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--Iniciar sesion-->
+  <form action="iniciarSesion" class="iniciarSesion">
+    <input type="email" placeholder="Usuario o Correo electronico" />
+    <input type="password" placeholder="Contraseña" />
+    <input type="submit" value="Iniciar Sesion" />
+  </form>
+  <main>
+    <div>
       <h2 class="seccion">@Ilustraciones participo del "Taller" bla bla bla</h2>
       <iframe class="video" src="youtube.com/algo"></iframe>
       <aside>
-        <p class="subtitulo">
+        <p class="seccion">
           Si desea participar en los proximos eventos, contactenos en las redes
           sociales
         </p>
@@ -80,25 +89,27 @@
           <li><a href="http://www.artist.com">Pagina web</a></li>
         </ul>
       </aside>
-    </main>
-    <footer>
+    </div>
+  </main>
+  <footer>
+    <ul>
+      <li>Contenido</li>
+      <li>Sobre nosotros</li>
+      <li>Legales</li>
+      <li>Soporte</li>
+      <li>Trabaja con nosotros</li>
+    </ul>
+    <aside class="contacto">
       <ul>
-        <li>Contenido</li>
-        <li>Sobre nosotros</li>
-        <li>Legales</li>
-        <li>Soporte</li>
-        <li>Trabaja con nosotros</li>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Correo electronico</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Pinterest</a></li>
+        <li><a href="">Ubicacion</a></li>
       </ul>
-      <aside class="contacto">
-        <ul>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">Correo electronico</a></li>
-          <li><a href="">Facebook</a></li>
-          <li><a href="">Pinterest</a></li>
-          <li><a href="">Ubicacion</a></li>
-        </ul>
-      </aside>
-    </footer>
-  </body>
+    </aside>
+  </footer>
+</body>
+
 </html>

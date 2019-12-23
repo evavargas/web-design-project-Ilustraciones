@@ -1,0 +1,100 @@
+.menu {
+  text-decoration-line: none;
+  color: rgb(58, 50, 50);
+  line-height: 1.2;
+  list-style: none;
+  /* saca los "puntitos" */
+  font-family: "Josefin Slab", serif;
+  font-weight: 600;
+  z-index: 2;
+  padding: 0;
+  margin: 0rem;
+}
+
+/*menu*/
+.menu ul {
+  padding: 1rem;
+}
+
+.menu li {
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+  font-size: 16px;
+  border-right: solid 1px;
+  box-sizing: border-box;
+  /* Contempla el ancho total con el padding y borde que llegue a tener el elemento */
+  z-index: 2;
+  /* IMPORTANTE */
+  position: relative;
+  padding: 1rem;
+}
+
+/*!Animation*/
+.menu li {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.menu li:hover,
+.menu li:focus,
+.menu li:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098D1;
+  background-color: #2098d1;
+}
+
+.menu>li:last-child {
+  border-right: none;
+  /* indica que el último LI (es decir el último hijo del UL, no tenga borde a la derecha) */
+}
+
+.menu ul {
+  /* si un ul es padre de otro ul entonces... esto seria el submenu */
+  /* IMPORTANTE */
+  position: absolute;
+  display: none;
+}
+
+/* IMPORTANTE */
+.menu ul li {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  background-color: azure;
+}
+
+/* Al pasar sobre los LI, si tiene un UL, se MOSTRARA */
+ul li:hover ul {
+  display: block;
+}
+
+/*fin menu*/
+
+/* Back Pulse */
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}

@@ -1,11 +1,39 @@
+/*grid*/
+#main-grid{
+  width: 97vw;
+  display: grid;
+  grid-template-areas:
+  "seccion seccion"
+  "detalle disponible"
+  "compra p-descripcion "
+  "carrito carrito"
+  ;
+  grid-template-rows: 60px 660px 450px 240px;
+  grid-template-columns: 40vw 56vw;
+  grid-column-gap:15px;
+  grid-row-gap: 10px;
+}
+#main-grid h2.seccion{
+  grid-area: seccion;
+}
+#main-grid section.detalle-producto{
+  grid-area: detalle;
+}
+#main-grid section.disponibles{
+  grid-area: disponible;
+}
+#div-index-grid> #producto-compra {
+  grid-area: compra;
+}
+
+#div-index-grid>.producto-descripcion {
+  grid-area: p-descripcion;
+}
+#div-index-grid>#carrito {
+  grid-area: carrito;
+}
 /*ver todo*/
-.ver-todo {
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
+
   .detalle-producto{
     width: fit-content;
     padding-right: 2rem;
@@ -20,6 +48,9 @@
   overflow: hidden;
   }
   .listado-modelos{
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-around;
     border-style: solid;
     background-color: rgb(255, 255, 255);
     border-color: rgb(243, 243, 243);
@@ -27,13 +58,33 @@
   .listado-modelos img{
     width: 70px;
     margin: 1rem;
+    padding: 1rem;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+  }
+  .listado-modelos img:hover{
+    background-color:rgba(197, 197, 197, 0.2);
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
   }
   
-  .ver-todo> a>img{
-    width: 2rem;
-    height: 50vh;
-  }
-  .ver-todo>a{
+  .listado-modelos a{
     background-color: rgb(255, 255, 255);
   }
   .listado-productos{

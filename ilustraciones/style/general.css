@@ -1,24 +1,102 @@
+/*!GRID*/
+#div-index-grid {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo"
+    "ilustradores gallery descripcion"
+    "autor autor autor"
+    "sugerencias sugerencias sugerencias"
+    "compra p-descripcion p-descripcion "
+    "carrito carrito carrito"
+    "suscribe suscribe suscribe"
+  ;
+  grid-template-rows: 60px 400px 480px 400px 450px 240px 630px;
+  grid-template-columns: 28vw 30vw 36vw;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  align-content: center;
+}
+#div-index-grid>h2.seccion {
+  grid-area: titulo;
+}
+
+aside#ilustradores {
+  grid-area: ilustradores;
+}
+
+#div-index-grid>.slideGallery {
+  grid-area: gallery;
+}
+
+#div-index-grid>aside#descripcion {
+  grid-area: descripcion;
+}
+
+#div-index-grid>article.autor {
+  grid-area: autor;
+}
+#div-index-grid>#sugerencias {
+  grid-area: sugerencias;
+}
+
+#div-index-grid> #producto-compra {
+  grid-area: compra;
+}
+
+#div-index-grid>.producto-descripcion {
+  grid-area: p-descripcion;
+}
+#div-index-grid>#carrito {
+  grid-area: carrito;
+}
+
+#div-index-grid>aside.suscribe.wow.fadeInUp {
+  grid-area: suscribe;
+}
+
+
+
+#div-index-grid {
+  width: 99vw;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(197, 197, 197, 0.2);
+  vertical-align: baseline;
+}
+
 /*General*/
-html, body {
+h3 {
+  margin: 0.2em;
+}
+
+body {
+  background-color: rgba(243, 252, 253, 0.658);
+  margin: 0em;
+  padding-left: 1px;
+  padding-right: 1px;
   height: 100%;
   vertical-align: baseline;
 }
-body {
-  margin: 0% !important;
-  background-color: rgb(243, 252, 253);
-}
-header{
+
+header {
   margin: 0;
+  padding: 0em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 99vw;
 }
+
 main {
-  margin-top: -12vh;
-  margin-bottom: 3rem;
+  margin-top: -5.7rem;
+  margin-bottom: 2rem;
 }
+
 /*Index*/
 .principalTitle {
   color: rgb(0, 153, 255);
   font-size: 400%;
-  line-height: 1.5;
+  line-height: 1.2;
   text-align: center;
   font-family: "Amatic SC", cursive;
   letter-spacing: 7px;
@@ -27,73 +105,27 @@ main {
   background-repeat: no-repeat;
   margin: 0rem;
   padding: 0rem;
+  width: 99vw;
+}
+
+.principalTitle img {
+  height: 2.6rem;
+}
+
+header>div {
+  border-bottom: 0.3rem inset rgb(192, 216, 216);
 
 }
-.principalTitle img {
-  height: 3rem;
-}
-header > div {
-  border-bottom: 0.3rem inset rgb(192, 216, 216);
-}
+
 nav {
   display: inline-block;
-  background-color: azure;
-  width: 100vw;
+  background-color: rgba(197, 197, 197, 0.2);
+  width: 98vw;
   z-index: 2;
-}
-.menu {
-  text-decoration-line: none;
-  color: rgb(58, 50, 50);
-  line-height: 1.6;
-  list-style: none; /* saca los "puntitos" */
-  font-family: "Josefin Slab", serif;
-  font-weight: 600;
-  z-index: 2;
-
-}
-/*menu*/
-.menu > ul {
-  font-size: 0; /* truco por el uso de inline-block*/
-  /* IMPORTANTE */
-  padding: 2rem;
-}
-.menu li {
-  display: inline-block;
-  width: 12%;
-  text-align: center;
-  font-size: 16px;
-  border-right: solid 1px;
-  box-sizing: border-box; /* Contempla el ancho total con el padding y borde que llegue a tener el elemento */
-  z-index: 2;
-  /* IMPORTANTE */
-  position: relative;
-}
-.menu li:last-child {
-  border-right: none; /* indica que el último LI (es decir el último hijo del UL, no tenga borde a la derecha) */
+  animation: slideInDown 0.7s ease-out;
 }
 
-.menu ul {
-  /* si un ul es padre de otro ul entonces... esto seria el submenu */
-
-  /* IMPORTANTE */
-  position: absolute;
-  display: none;
-}
-
-/* IMPORTANTE */
-.menu ul li {
-  display: block;
-  border: none;
-  padding: 1rem;
-
-  width: 100%;
-}
-/* Al pasar sobre los LI, si tiene un UL, se MOSTRARA */
-ul li:hover ul {
-  display: block;
-  background-color: rgba(240, 255, 255, 0.726);
-}
-/*fin menu*/
+/*Menu in menu.css*/
 /*sticky iniciar sesion*/
 .iniciarSesion {
   background-color: rgb(220, 247, 243);
@@ -107,10 +139,13 @@ ul li:hover ul {
   border-radius: 1rem;
   border: ridge rgb(220, 247, 243);
   z-index: 2;
+  animation: fadeInRight 1s ease-out;
 }
+
 .iniciarSesion input {
   display: block;
 }
+
 /*fin iniciar sesion*/
 /*h2*/
 .seccion {
@@ -118,7 +153,94 @@ ul li:hover ul {
   font-family: "Josefin Sans", sans-serif;
   font-size: 200%;
   margin-left: 1.3rem;
+  display: block;
 }
+
+/*info de la pagina*/
+footer {
+  border-top: solid rgb(0, 153, 255);
+  background-color: black;
+}
+
+footer ul,
+.contacto ul {
+  margin: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0% !important;
+}
+
+footer>ul>li {
+  color: rgb(0, 153, 255);
+  font-family: "Josefin Sans", sans-serif;
+  /*para volverlo menu*/
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  font-size: 20px;
+  border-right: solid 1px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0.7rem;
+}
+
+footer>ul {
+  font-size: 0;
+  padding: 2rem;
+}
+
+footer>ul>li:last-child {
+  border-right: none;
+}
+
+footer>ul>li:hover {
+
+  background-color: azure;
+}
+
+/*fin info pagina*/
+/*Contacto*/
+.contacto>ul>li {
+  color: rgb(105, 210, 231);
+  font-family: "Josefin Sans", sans-serif;
+  /*para volverlo menu*/
+  display: inline-block;
+  width: 16%;
+  text-align: center;
+  font-size: 20px;
+  border-right: solid 1px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0.7rem;
+}
+
+.contacto>ul {
+  font-size: 0;
+  padding: 2rem;
+}
+
+.contacto>ul>li:last-child {
+  border-right: none;
+}
+
+.contacto>ul>li:hover {
+
+  background-color: azure;
+}
+
+.contacto {
+  text-decoration-line: none !important;
+  color: rgb(58, 50, 50);
+  line-height: 1.6;
+  list-style: none;
+  /* saca los "puntitos" */
+  font-family: "Josefin Slab", serif;
+  font-weight: 600;
+}
+
+/*fin contacto*/
+/*fin general*/
+
+/*!INDEX*/
 /*lista*/
 .artistasSeleccion {
   color: rgb(0, 153, 255);
@@ -126,32 +248,235 @@ ul li:hover ul {
   line-height: 2;
   font-size: large;
   width: fit-content;
+  animation: fadeInLeft 2s 0.2s ease-in;
 }
+
 #ilustradores {
   display: inline-block;
-  position: relative;
-  padding: 0 1.7rem 1rem 2rem;
+  padding: 0.5rem 1.7rem 1rem 2rem;
+  background-color: rgba(197, 197, 197, 0.2);
+  border-color: azure;
+  border-style: solid;
+  border-width: 1px;
 }
-.articulo {
-  display: inline;
-  margin: 0%;
-  display: inline-block;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 2rem;
-  position: relative;
-}
-#descripcion {
-  display: inline-block;
-  position: absolute;
 
+/*!GALLERY SLIDER*/
+.slidegallery {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
-figure > img {
+
+/* SLIDER */
+
+.slidegallery .slider {
+  height: 100%;
+  white-space: nowrap;
+  font-size: 0;
+  transition: 0.8s;
+}
+
+/* SLIDES */
+
+.slidegallery .slider>* {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.slidegallery .prevNext {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 100%;
+  height: 0;
+}
+
+.slidegallery .prevNext>div+div {
+  visibility: hidden;
+  /* Hide all but first P/N container */
+}
+
+.slidegallery .prevNext a {
+  background: rgba(197, 197, 197, 0.2);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  opacity: 0.7;
+  left: 0;
+}
+
+.slidegallery .prevNext a:hover {
+  opacity: 1;
+}
+
+.slidegallery .prevNext a+a {
+  left: auto;
+  right: 0;
+}
+
+/* NAVIGATION */
+
+.slidegallery .bullets {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+.slidegallery label {
+  position: absolute;
+  top: 0px;
+  font-family:"Josefin Sans", sans-serif ;
+  color: rgb(58, 50, 50);
+  width: 50%;
+  z-index: 2;
+  opacity: 0.5;
+}
+.slidegallery label:hover  {
+  opacity: 1;
+}
+.slidegallery input {
+  position: absolute;
+  top: 0px;  
+  padding: 10px 0;
+  width: 16px;
+  color: rgb(58, 50, 50);
+  z-index: 2;
+}
+
+.slidegallery .bullets>a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  background: rgba(197, 197, 197, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.slidegallery .bullets>a+a {
+  background: rgba(197, 197, 197, 0.2);
+}
+
+.slidegallery .bullets>a:hover {
+  background: rgba(32, 153, 209, 0.479) !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.slidegallery>s:target~.bullets>* {
+  background: rgba(197, 197, 197, 0.2)
+}
+
+/* ACTIVE */
+#s1:target~.bullets>*:nth-child(1) {
+  background: rgba(197, 197, 197, 0.2);
+}
+
+#s2:target~.bullets>*:nth-child(2) {
+  background: rgba(197, 197, 197, 0.2);
+}
+
+#s3:target~.bullets>*:nth-child(3) {
+  background: rgba(197, 197, 197, 0.2);
+}
+
+#s4:target~.bullets>*:nth-child(4) {
+  background: rgba(197, 197, 197, 0.2);
+}
+
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.slidegallery>s:target~.prevNext>* {
+  visibility: hidden;
+}
+
+/* ACTIVE: */
+#s1:target~.prevNext>*:nth-child(1) {
+  visibility: visible;
+}
+
+#s2:target~.prevNext>*:nth-child(2) {
+  visibility: visible;
+}
+
+#s3:target~.prevNext>*:nth-child(3) {
+  visibility: visible;
+}
+
+#s4:target~.prevNext>*:nth-child(4) {
+  visibility: visible;
+}
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target~.slider {
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+}
+
+#s2:target~.slider {
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+
+#s3:target~.slider {
+  transform: translateX(-200%);
+  -webkit-transform: translateX(-200%);
+}
+
+#s4:target~.slider {
+  transform: translateX(-300%);
+  -webkit-transform: translateX(-300%);
+}
+
+.slidegallery {
+  color: rgba(197, 197, 197, 0.2);
+  text-align: center;
+  background-color: azure;
+  border-color: azure;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.slidegallery a {
+  border-radius: 50%;
+  margin: 0 3px;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+.slidegallery img:hover {
+  cursor: zoom-in;
+}
+
+/*!FIN SLIDER*/
+#descripcion {
+  display: flex;
+  flex-grow: 2;
+  flex-flow: wrap;
+  width: 40vw;
+}
+
+figure>img {
   border-style: solid;
   background-color: rgb(255, 255, 255);
   border-color: rgb(243, 243, 243);
   width: 300px;
 }
+
 .introduccion {
   color: rgb(58, 50, 50);
   line-height: 1.8;
@@ -160,11 +485,18 @@ figure > img {
   font-style: oblique;
   padding-right: 2.2rem;
   padding-left: 2.2rem;
-  width: 30rem;
-  position: relative;
-  display: inline-block;
   font-weight: 600;
 }
+
+.boton-inicio {
+  position: sticky;
+  top: 490px;
+  display: inline-block;
+  width: 50px;
+  left: 90vw;
+  z-index: 3;
+}
+
 .video {
   width: 400px;
   height: 400px;
@@ -173,7 +505,9 @@ figure > img {
   height: 300px;
   margin: 2rem;
   display: inline-block;
+  animation: fadeInLeft 2s 0.2s ease-in;
 }
+
 .biografia {
   color: rgb(58, 50, 50);
   font-family: "Josefin Slab", serif;
@@ -186,61 +520,120 @@ figure > img {
   padding: 0.5rem;
   width: 30rem;
 }
+
 #redesIlustrador {
-  position: absolute;;
+  position: absolute;
+  ;
   display: inline-block;
   padding-left: 550px;
   padding-top: 20px;
+  animation: fadeInRight 2s 0.2s ease-in;
 }
+
 .redes {
   width: fit-content;
 }
-.redes > li > a,
-.redes > li {
+
+.redes>li>a,
+.redes>li {
   color: purple;
   text-decoration: none;
   font-size: large;
   line-height: 1.6;
   font-family: "Josefin Slab", serif;
 }
-/*producto-compra*/
+
+#sugerencias {
+  width: 96%;
+  height: 200px;
+  padding: 0.2rem;
+}
+
+#sugerencias ol {
+  overflow: hidden;
+  overflow-x: scroll;
+  display: flex;
+  flex-flow: nowrap;
+  flex-direction: row;
+  margin: 0em;
+  padding: 0.5rem;
+
+}
+
+#sugerencias li {
+  width: fit-content;
+  list-style: none;
+  margin: 0.2rem;
+  padding: 0.3rem;
+  background-color: rgba(197, 197, 197, 0.2);
+}
+
+#sugerencias ol>li>div {
+  width: 145px;
+  display: inline-flex;
+  height: 220px;
+}
+
+#sugerencias ol>li>div>a>div {
+  width: 145px;
+  background-color: rgba(243, 252, 253, 0.658);
+}
+
+#sugerencias img {
+  width: 140px;
+}
+#sugerencias a:hover {
+  color: rgb(105, 210, 231);
+}
+#sugerencias p.nombre-producto{
+  font-family: "Josefin Sans", sans-serif;;
+}
+
+/*producto-compra - Diseño seleccionado*/
 #producto-compra{
   display: flex;
-  flex-flow:row;
+  flex-flow:column;
   flex-wrap: wrap;
 }
+/*!Tabla - diseno-descripcion*/
+
 #producto-descripcion{
   display: flex;
   flex-flow: column;
   flex-wrap: wrap;
 
 }
-table {
-  border: rgb(224, 228, 204) ridge 3px;
-  font-size: large;
+#diseno-descripcion {
+  border: rgb(224, 228, 204) ridge 2px;
+  font-size: medium;
   font-family: "Josefin Slab", serif;
-  line-height: 1.5;
+  line-height: 1.3;
   width: fit-content;
   display: inline-block;
   margin-top: 50px;
+  border-spacing: 0.1rem;
+  border-collapse: separate;
 }
-table td{
+#diseno-descripcion tr:nth-child(even){
+  background-color: rgba(192, 216, 216, 0.664);
+}
+#diseno-descripcion tr:nth-child(odd){
+  background-color:rgb(220, 247, 243);
+}
+#diseno-descripcion td, tr, th{
   padding: 0.4rem;
 }
-.producto-descripcion ol {
-  color: rgb(58, 50, 50);
-  line-height: 1.4;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: large;
-  text-align: left;
-  list-style-position: inside;
-  width: 20rem;
-  display: block;
-  margin: 0;
+#diseno-descripcion caption{
+  background-color: azure;
 }
+#diseno-descripcion tr:hover{
+  background-color: rgba(32, 153, 209, 0.479);
+}
+
+
 #compra{
  
-  margin-left: 1rem;
+  margin:0;
   color: rgb(58,50,50);
   
 }
@@ -261,117 +654,105 @@ table td{
 #compra input:hover{
   background-color: rgb(105, 210, 231);
 }
-.compras {
-  color: rgb(58,50,50);
-  font-family: "Josefin Sans", sans-serif;
-  line-height: 1.8;
-  display: inline-block;
-  border-style: solid;
-  border-color: rgb(243, 243, 243);
-  border-width: 2px;
-  padding: 0.3rem;
-}
-.compras label{
-  display:block;
-  padding: 0.2rem;
-}
-.compras input{
-  background-color:azure;
-  padding: 0.4rem;
-  margin-left: 1rem;
-  width: 7rem;
 
-}
-.compras input:hover{
-  background-color: rgb(105, 210, 231);
-}
-.suscribe {
-  margin-top: 5rem;
-  margin-left: 3rem;
-  color: rgb(58, 50, 50);
-  font-family: "Josefin Sans", sans-serif;
-  line-height: 2;
-  font-size: large;
-  margin-bottom: 3rem;
-}
-.suscribe h3{
-  color: rgb(0, 153, 255);
-}
-.suscribe input{
-  background-color:azure;
-  padding: 0.4rem;
-  margin-left: 1rem;
-}
-.suscribe input:hover{
-  background-color: rgb(105, 210, 231);
-}
-/*info de la pagina*/
-footer{
-  border-top: solid rgb(0, 153, 255);
-  background-color: black;
-}
-footer ul, .contacto ul{
-  margin:0;
-  padding-top: 0 !important;
-  padding-bottom: 0% !important;
-}
-footer > ul> li{ 
-  color: rgb(0, 153, 255);
-  font-family: "Josefin Sans", sans-serif;
-    /*para volverlo menu*/
-  display: inline-block;
-  width: 20%;
-  text-align: center;
-  font-size: 20px;
-  border-right: solid 1px;
-  box-sizing: border-box;
-  position: relative;
-  padding: 0.7rem;
-}
-footer>ul{
-  font-size: 0;
-  padding: 2rem;
-}
-footer>ul>li:last-child {
-  border-right: none;
-}
-footer> ul>li:hover {
+/*! FIN INDEX*/
 
-  background-color: azure;
-}
-/*fin info pagina*/
-/*Contacto*/
-.contacto > ul> li{
-  color: rgb(105, 210, 231);
-  font-family: "Josefin Sans", sans-serif;
-    /*para volverlo menu*/
-  display: inline-block;
-  width: 16%;
-  text-align: center;
-  font-size: 20px;
-  border-right: solid 1px;
-  box-sizing: border-box;
-  position: relative;
-  padding: 0.7rem;
-}
-.contacto>ul{
-  font-size: 0;
-  padding: 2rem;
-}
-.contacto>ul>li:last-child {
-  border-right: none;
-}
-.contacto> ul>li:hover {
+/*!Animaciones*/
+/*Fade in left*/
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
 
-  background-color: azure;
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
-.contacto{
-  text-decoration-line: none !important;
-  color: rgb(58, 50, 50);
-  line-height: 1.6;
-  list-style: none; /* saca los "puntitos" */
-  font-family: "Josefin Slab", serif;
-  font-weight: 600;
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
-/*fin contacto*/
-/*fin index*/
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+/*Fade in right*/
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
