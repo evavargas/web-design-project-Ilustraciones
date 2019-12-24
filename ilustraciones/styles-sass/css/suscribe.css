@@ -1,0 +1,30 @@
+/*suscribe*/
+/* line 9, ../proyecto/ilustraciones/styles-sass/sass/suscribe.scss */
+.suscribe {
+  color: #3a3232;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 5rem;
+  margin-left: 3rem;
+  line-height: 2;
+  font-size: large;
+  margin-bottom: 3rem;
+}
+
+/* line 17, ../proyecto/ilustraciones/styles-sass/sass/suscribe.scss */
+.suscribe h3 {
+  color: #0099ff;
+}
+
+/* line 21, ../proyecto/ilustraciones/styles-sass/sass/suscribe.scss */
+.suscribe input {
+  background-color: azure;
+  padding: 0.4rem;
+  margin-left: 1rem;
+}
+
+/* line 26, ../proyecto/ilustraciones/styles-sass/sass/suscribe.scss */
+.suscribe input:hover {
+  background-color: #69d2e7;
+}
+
+/*# sourceMappingURL=suscribe.css.map */

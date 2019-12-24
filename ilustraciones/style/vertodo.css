@@ -1,5 +1,5 @@
 /*grid*/
-#main-grid{
+#main-vertodo-grid{
   width: 97vw;
   display: grid;
   grid-template-areas:
@@ -13,23 +13,23 @@
   grid-column-gap:15px;
   grid-row-gap: 10px;
 }
-#main-grid h2.seccion{
+h2.seccion{
   grid-area: seccion;
 }
-#main-grid section.detalle-producto{
+ section.detalle-producto{
   grid-area: detalle;
 }
-#main-grid section.disponibles{
+ section.disponibles{
   grid-area: disponible;
 }
-#div-index-grid> #producto-compra {
+ #producto-compra {
   grid-area: compra;
 }
 
-#div-index-grid>.producto-descripcion {
+.producto-descripcion {
   grid-area: p-descripcion;
 }
-#div-index-grid>#carrito {
+#carrito {
   grid-area: carrito;
 }
 /*ver todo*/

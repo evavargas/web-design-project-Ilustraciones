@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "compras.css",
+	"sources": [
+		"../sass/compras.scss",
+		"../sass/_color-fuente.scss"
+	],
+	"sourcesContent": [
+		"/*compras*/\r\n@import 'color-fuente';\r\n\r\n@mixin color-fuente ($color, $fuente) {\r\n  color: $color;\r\n  font-family: $fuente;\r\n}\r\n\r\n.compras {\r\n  @include color-fuente($color-lectura, $fuente-principal);\r\n  line-height: 1.8;\r\n  display: inline-block;\r\n  border-style: solid;\r\n  border-color: rgb(243, 243, 243);\r\n  border-width: 2px;\r\n  border-radius: 20px;\r\n  padding: 0.5rem;\r\n  animation: fadeInLeft 2s 0.2s ease-in;\r\n  z-index: 2;\r\n\r\n  label {\r\n    display: block;\r\n    padding: 0.2rem;\r\n  }\r\n\r\n  input {\r\n    background-color: azure;\r\n    padding: 0.4rem;\r\n    margin-left: 1rem;\r\n    width: 7rem;\r\n\r\n    &:hover {\r\n      background-color: $color-titulo;\r\n    }\r\n  }\r\n\r\n}",
+		"$color-titulo:rgb(105, 210, 231);\r\n$color-titulo-principal:rgb(0, 153, 255);\r\n$color-lectura:rgb(58, 50, 50);\r\n$color-resaltador: rgb(0, 153, 255);\r\n$color-fondo-general: rgba(197, 197, 197, 0.2);\r\n$color-fondo-body: rgba(243, 252, 253, 0.658);\r\n\r\n$fuente-principal:'Josefin Sans',\r\nsans-serif;\r\n$fuente-secundaria:\"Josefin Slab\",\r\nserif;\r\n$fuente-titulo: \"Amatic SC\",\r\ncursive;"
+	],
+	"names": [],
+	"mappings": "AAAA,WAAW;;AAQX,AAAA,QAAQ,CAAC;EAJP,KAAK,ECFQ,OAAe;EDG5B,WAAW,ECEK,cAAc,EAChC,UAAU;EDER,WAAW,EAAE,GAAG;EAChB,OAAO,EAAE,YAAY;EACrB,YAAY,EAAE,KAAK;EACnB,YAAY,EAAE,OAAkB;EAChC,YAAY,EAAE,GAAG;EACjB,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,MAAM;EACf,SAAS,EAAE,0BAA0B;EACrC,OAAO,EAAE,CAAC;CAkBX;;;AA5BD,AAYE,QAZM,CAYN,KAAK,CAAC;EACJ,OAAO,EAAE,KAAK;EACd,OAAO,EAAE,MAAM;CAChB;;;AAfH,AAiBE,QAjBM,CAiBN,KAAK,CAAC;EACJ,gBAAgB,EAAE,KAAK;EACvB,OAAO,EAAE,MAAM;EACf,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,IAAI;CAKZ;;;AA1BH,AAuBI,QAvBI,CAiBN,KAAK,AAMF,MAAM,CAAC;EACN,gBAAgB,EChCR,OAAkB;CDiC3B"
+}

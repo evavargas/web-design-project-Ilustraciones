@@ -1,55 +1,40 @@
-/*grid*/
-#main-noticias-grid{
-  display: grid;
-  grid-template-areas:
-  "seccion "
-  "noticias"
-  "suscribe"
-  ;
-  grid-template-rows: 25px 700px 700px;
-  grid-template-columns: 96vw;
-  grid-column-gap:5px;
-  grid-row-gap: 15px;
+/*noticias*/
+/* line 9, ../proyecto/ilustraciones/styles-sass/sass/noticias.scss */
+.noticias {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
 
-}
-h2.seccion{
-  grid-area: seccion;
-}
-div.noticias{
-  grid-area: noticias;
-}
-aside.suscribe{
-  grid-area: suscribe;
-}
-/*Noticias*/
+/* line 14, ../proyecto/ilustraciones/styles-sass/sass/noticias.scss */
 .noticias img {
-  border: rgb(243, 243, 243) solid;
+  border: #f3f3f3 solid;
   width: 240px;
   height: 240px;
   margin: 1rem;
   display: inline-block;
 }
-.noticias > figure > p {
-  color: rgb(0, 153, 255);
+
+/* line 22, ../proyecto/ilustraciones/styles-sass/sass/noticias.scss */
+.noticias figure {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 45vw;
+  margin: 0.7rem;
+  animation: slideInUp 1s 0.2s ease-in;
+}
+
+/* line 30, ../proyecto/ilustraciones/styles-sass/sass/noticias.scss */
+.noticias figure p {
+  color: #0099ff;
   font-family: "Josefin Sans", sans-serif;
   line-height: 2;
   font-size: large;
   width: 20rem;
   display: inline-block;
 }
-figure{
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  width: 45vw;
-  margin: 0.7rem;
-  animation: slideInUp 1s  0.2s  ease-in;
-}
-.noticias{
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-}
+
 /*!Animation*/
 @-webkit-keyframes slideInUp {
   from {
@@ -57,7 +42,6 @@ figure{
     transform: translate3d(0, 100%, 0);
     visibility: visible;
   }
-
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -70,14 +54,16 @@ figure{
     transform: translate3d(0, 100%, 0);
     visibility: visible;
   }
-
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
 
+/* line 67, ../proyecto/ilustraciones/styles-sass/sass/noticias.scss */
 .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
 }
+
+/*# sourceMappingURL=noticias.css.map */

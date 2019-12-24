@@ -1,0 +1,50 @@
+/*ilustradores html*/
+/* line 9, ../proyecto/ilustraciones/styles-sass/sass/ilustradores.scss */
+.ilustradores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+/* line 15, ../proyecto/ilustraciones/styles-sass/sass/ilustradores.scss */
+.ilustradores figure {
+  width: 25vw;
+}
+
+/* line 19, ../proyecto/ilustraciones/styles-sass/sass/ilustradores.scss */
+.ilustradores img {
+  border-radius: 100%;
+  border-style: groove;
+  border-bottom-color: darksalmon;
+  border-left-color: #ff7300;
+  border-top-color: #ff0062;
+  border-right-color: #ff2600;
+  width: 10rem;
+}
+
+/* line 28, ../proyecto/ilustraciones/styles-sass/sass/ilustradores.scss */
+.ilustradores img:hover {
+  border-style: dashed;
+}
+
+/* line 33, ../proyecto/ilustraciones/styles-sass/sass/ilustradores.scss */
+.ilustradores p {
+  color: #3a3232;
+  font-family: "Josefin Slab", serif;
+  font-weight: bolder;
+  line-height: 1.5;
+  font-size: large;
+}
+
+/* line 40, ../proyecto/ilustraciones/styles-sass/sass/ilustradores.scss */
+.ilustradores h3 {
+  color: #0099ff;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 2;
+  font-size: large;
+}
+
+/*fin ilustradores*/
+
+/*# sourceMappingURL=ilustradores.css.map */

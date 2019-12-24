@@ -1,0 +1,36 @@
+/*compras*/
+/* line 9, ../proyecto/ilustraciones/styles-sass/sass/compras.scss */
+.compras {
+  color: #3a3232;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.8;
+  display: inline-block;
+  border-style: solid;
+  border-color: #f3f3f3;
+  border-width: 2px;
+  border-radius: 20px;
+  padding: 0.5rem;
+  animation: fadeInLeft 2s 0.2s ease-in;
+  z-index: 2;
+}
+
+/* line 21, ../proyecto/ilustraciones/styles-sass/sass/compras.scss */
+.compras label {
+  display: block;
+  padding: 0.2rem;
+}
+
+/* line 26, ../proyecto/ilustraciones/styles-sass/sass/compras.scss */
+.compras input {
+  background-color: azure;
+  padding: 0.4rem;
+  margin-left: 1rem;
+  width: 7rem;
+}
+
+/* line 32, ../proyecto/ilustraciones/styles-sass/sass/compras.scss */
+.compras input:hover {
+  background-color: #69d2e7;
+}
+
+/*# sourceMappingURL=compras.css.map */

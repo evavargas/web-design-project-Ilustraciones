@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "ilustradores.css",
+	"sources": [
+		"../sass/ilustradores.scss",
+		"../sass/_color-fuente.scss"
+	],
+	"sourcesContent": [
+		"@import 'color-fuente';\r\n\r\n@mixin color-fuente ($color, $fuente) {\r\n  color: $color;\r\n  font-family: $fuente;\r\n}\r\n\r\n/*ilustradores html*/\r\n.ilustradores {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-evenly;\r\n  margin: 0;\r\n\r\n  figure {\r\n    width: 25vw;\r\n  }\r\n\r\n  img {\r\n    border-radius: 100%;\r\n    border-style: groove;\r\n    border-bottom-color: darksalmon;\r\n    border-left-color: rgb(255, 115, 0);\r\n    border-top-color: rgb(255, 0, 98);\r\n    border-right-color: rgb(255, 38, 0);\r\n    width: 10rem;\r\n\r\n    &:hover {\r\n      border-style: dashed;\r\n    }\r\n  }\r\n\r\n  p {\r\n    @include color-fuente($color-lectura, $fuente-secundaria);\r\n    font-weight: bolder;\r\n    line-height: 1.5;\r\n    font-size: large;\r\n  }\r\n\r\n  h3 {\r\n    @include color-fuente($color-resaltador, $fuente-principal);\r\n    line-height: 2;\r\n    font-size: large;\r\n  }\r\n}\r\n\r\n/*fin ilustradores*/",
+		"$color-titulo:rgb(105, 210, 231);\r\n$color-titulo-principal:rgb(0, 153, 255);\r\n$color-lectura:rgb(58, 50, 50);\r\n$color-resaltador: rgb(0, 153, 255);\r\n$color-fondo-general: rgba(197, 197, 197, 0.2);\r\n$color-fondo-body: rgba(243, 252, 253, 0.658);\r\n\r\n$fuente-principal:'Josefin Sans',\r\nsans-serif;\r\n$fuente-secundaria:\"Josefin Slab\",\r\nserif;\r\n$fuente-titulo: \"Amatic SC\",\r\ncursive;"
+	],
+	"names": [],
+	"mappings": "AAOA,qBAAqB;;AACrB,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,YAAY;EAC7B,MAAM,EAAE,CAAC;CAgCV;;;AApCD,AAME,aANW,CAMX,MAAM,CAAC;EACL,KAAK,EAAE,IAAI;CACZ;;;AARH,AAUE,aAVW,CAUX,GAAG,CAAC;EACF,aAAa,EAAE,IAAI;EACnB,YAAY,EAAE,MAAM;EACpB,mBAAmB,EAAE,UAAU;EAC/B,iBAAiB,EAAE,OAAgB;EACnC,gBAAgB,EAAE,OAAe;EACjC,kBAAkB,EAAE,OAAe;EACnC,KAAK,EAAE,KAAK;CAKb;;;AAtBH,AAmBI,aAnBS,CAUX,GAAG,AASA,MAAM,CAAC;EACN,YAAY,EAAE,MAAM;CACrB;;;AArBL,AAwBE,aAxBW,CAwBX,CAAC,CAAC;EA7BF,KAAK,ECDQ,OAAe;EDE5B,WAAW,ECKM,cAAc,EACjC,KAAK;EDwBD,WAAW,EAAE,MAAM;EACnB,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,KAAK;CACjB;;;AA7BH,AA+BE,aA/BW,CA+BX,EAAE,CAAC;EApCH,KAAK,ECAY,OAAgB;EDCjC,WAAW,ECGK,cAAc,EAChC,UAAU;EDiCN,WAAW,EAAE,CAAC;EACd,SAAS,EAAE,KAAK;CACjB;;AAGH,oBAAoB"
+}
