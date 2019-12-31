@@ -1,0 +1,20 @@
+.suscribe
+    +color-fuente($color-lectura,$fuente-principal)
+    margin-top: 5rem
+    margin-left: 3rem
+    line-height: 2
+    font-size: large
+    margin-bottom: 3rem
+    h3
+        color: $color-resaltador
+    input
+        background-color: azure
+        padding: 0.4rem
+        margin-left: 1rem
+        &:hover
+            background-color: $color-titulo
+
+@import color-fuente
+=color-fuente($color,$fuente)
+    color: $color
+    font-family: $fuente

@@ -1,0 +1,125 @@
+header
+    margin: 0
+    padding: 0
+    display: flex
+    flex-flow: column
+    justify-content: center
+    align-items: center
+    width: 99vw
+    >div
+        border-bottom: 0.3rem inset rgb(192,216,216)
+
+.principalTitle
+    color: rgb(0, 153, 255)
+    font-size: 400%
+    line-height: 1.2
+    text-align: center
+    font-family: "Amatic SC", cursive
+    letter-spacing: 7px
+    background-color: black
+    background-size: cover
+    background-repeat: no-repeat
+    margin: 0rem
+    padding: 0rem
+    width: 99vw
+    img
+        height: 2.6rem
+nav
+    display: inline-block
+    background-color: rgba(197, 197, 197, 0.2)
+    width: 98vw
+    z-index: 2
+    animation: slideInDown 0.7s ease-out
+
+.menu
+    text-decoration-line: none
+    color: rgb(58,50,50)
+    line-height: 1.2
+    list-style: none
+    font-family: "Josefin Slab", serif
+    font-weight: 600
+    z-index: 2
+    padding: 0
+    margin: 0
+    ul
+        padding: 1rem
+        position: absolute
+        display: none
+        li
+            display: block
+            padding: 1rem
+            width: 100%
+            background-color: azure
+    >li
+        &:last-child
+            border-right: none
+    li
+        display: inline-block
+        width: 15%
+        text-align: center
+        font-size: 16px
+        border-right: solid 1px
+        box-sizing: border-box
+        z-index: 2
+        position: relative
+        padding: 1rem
+        vertical-align: middle
+        -webkit-transform: perspective(1px) translateZ(0)
+        transform: perspective(1px) translateZ(0)
+        box-shadow: 0 0 1px black
+        -webkit-transition-duration: 0.5s
+        transition-duration: 0.5s
+        -webkit-transition-property: color, background-color
+        transition-property: color, background-color
+        &:hover
+            -webkit-animation-name: hvr-back-pulse
+            animation-name: hvr-back-pulse
+            -webkit-animation-duration: 1s
+            animation-duration: 1s
+            -webkit-animation-delay: 0.5s
+            animation-delay: 0.5s
+            -webkit-animation-timing-function: linear
+            animation-timing-function: linear
+            -webkit-animation-iteration-count: infinite
+            animation-iteration-count: infinite
+            background-color: #2098D1
+            background-color: #2098d1
+        &:focus
+            -webkit-animation-name: hvr-back-pulse
+            animation-name: hvr-back-pulse
+            -webkit-animation-duration: 1s
+            animation-duration: 1s
+            -webkit-animation-delay: 0.5s
+            animation-delay: 0.5s
+            -webkit-animation-timing-function: linear
+            animation-timing-function: linear
+            -webkit-animation-iteration-count: infinite
+            animation-iteration-count: infinite
+            background-color: #2098D1
+            background-color: #2098d1
+        &:active
+            -webkit-animation-name: hvr-back-pulse
+            animation-name: hvr-back-pulse
+            -webkit-animation-duration: 1s
+            animation-duration: 1s
+            -webkit-animation-delay: 0.5s
+            animation-delay: 0.5s
+            -webkit-animation-timing-function: linear
+            animation-timing-function: linear
+            -webkit-animation-iteration-count: infinite
+            animation-iteration-count: infinite
+            background-color: #2098D1
+            background-color: #2098d1
+
+ul
+    li
+        &:hover
+            ul
+                display: block
+@-webkit-keyframes hvr-back-pulse
+  50%
+            background-color: rgba(32, 152, 209, 0.75)
+
+@keyframes hvr-back-pulse
+    50%
+        background-color: rgba(32, 152, 209, 0.75)

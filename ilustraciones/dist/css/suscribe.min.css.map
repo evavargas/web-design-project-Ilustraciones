@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAQA,AAAA,SAAS,AAAC,CALR,KAAK,CCDS,OAAe,CDE7B,WAAW,CCGM,cAAc,CAAE,UAAU,CDG3C,UAAU,CAAE,IAAI,CAChB,WAAW,CAAE,IAAI,CACjB,WAAW,CAAE,CAAC,CACd,SAAS,CAAE,KAAK,CAChB,aAAa,CAAE,IAAI,CAepB,AArBD,AAQE,SARO,CAQP,EAAE,AAAC,CACD,KAAK,CCdU,IAAgB,CDehC,AAVH,AAYE,SAZO,CAYP,KAAK,AAAC,CACJ,gBAAgB,CAAE,KAAK,CACvB,OAAO,CAAE,MAAM,CACf,WAAW,CAAE,IAAI,CAKlB,AApBH,AAiBI,SAjBK,CAYP,KAAK,AAKF,MAAM,AAAC,CACN,gBAAgB,CC1BP,OAAkB,CD2B5B",
+    "sources": [
+        "../../styles-sass/sass/suscribe.scss",
+        "../../styles-sass/sass/_color-fuente.sass"
+    ],
+    "names": [],
+    "file": "suscribe.min.css"
+}

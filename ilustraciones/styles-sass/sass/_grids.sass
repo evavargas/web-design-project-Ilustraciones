@@ -1,0 +1,106 @@
+#div-index-grid
+    width: 99vw
+    border-style: solid
+    border-width: 1px
+    border-color: rgba(197, 197, 197, 0.2)
+    vertical-align: baseline
+    display: grid
+    grid-template-areas: "titulo titulo titulo" "ilustradores gallery descripcion" "autor autor autor" "sugerencias sugerencias sugerencias" "compra p-descripcion p-descripcion" "carrito carrito carrito" "suscribe suscribe suscribe"
+    grid-template-rows: 60px 400px 480px 400px 450px 240px 630px
+    grid-template-columns: 28vw 30vw 36vw
+    grid-column-gap: 10px
+    grid-row-gap: 10px
+    align-content: center
+    >h2
+        &.seccion
+            grid-area: titulo
+    >#ilustradores
+        grid-area: ilustradores
+    >div
+        &.slideGallery
+            grid-area: gallery
+    >#descripcion
+        grid-area: descripcion
+    >article
+        &.autor
+            grid-area: autor
+    >#sugerencias
+        grid-area: sugerencias
+    >#producto-compra
+        grid-area: compra
+    >div
+        &.producto-descripcion
+            grid-area: p-descripcion
+    >#carrito
+        grid-area: carrito
+    >aside
+        &.suscribe.wow.fadeInUp
+            grid-area: suscribe
+
+#main-noticias-grid
+    display: grid
+    grid-template-areas: "seccion" "noticias" "suscribe"
+    grid-template-rows: 25px 700px 700px
+    grid-template-columns: 96vw
+    grid-column-gap: 5px
+    grid-row-gap: 15px
+    h2
+        &.seccion
+            grid-area: seccion
+    div
+        &.noticias
+            grid-area: noticias
+    aside
+        &.suscribe
+            grid-area: suscribe
+
+#main-vertodo-grid
+    width: 97vw
+    display: grid
+    grid-template-areas: "seccion seccion" "detalle disponible" "compra p-descripcion" "carrito carrito"
+    grid-template-rows: 60px 660px 450px 240px
+    grid-template-columns: 40vw 56vw
+    grid-column-gap: 15px
+    grid-row-gap: 10px
+    h2
+        &.seccion
+            grid-area: seccion
+    section
+        &.detalle-producto
+            grid-area: detalle
+    section
+        &.disponibles
+            grid-area: disponible
+    #producto-compra
+        grid-area: compra
+    div
+        &.producto-descripcion
+            grid-area: p-descripcion
+    #carrito
+        grid-area: carrito
+
+#usuario-grid
+    display: grid
+    grid-template-areas: "titulo titulo" "nombre-usuario tab-usuario" "card-usuario tab-usuario" "carrito proceso-compra"
+    grid-template-rows: 60px 60px 300px 300px
+    grid-template-columns: 36vw 58vw
+    grid-column-gap: 10px
+    grid-row-gap: 10px
+    align-content: center
+    h2
+        &.seccion
+            grid-area: titulo
+    h3
+        &.name-usuario
+            grid-area: nombre-usuario
+    figure
+        &.usuario
+            grid-area: card-usuario
+    article
+        &.tab-usuario
+            grid-area: tab-usuario
+    >#carrito
+        grid-area: carrito
+    aside
+        &.proceso-de-compra
+            grid-area: proceso-compra

@@ -632,7 +632,11 @@ figure>img {
 
 
 #compra{
- 
+ /*Agregado en sass
+ display: inline-block;
+ position: relative;
+ */
+
   margin:0;
   color: rgb(58,50,50);
   
