@@ -6,27 +6,29 @@ header
     justify-content: center
     align-items: center
     width: 99vw
-    >div
-        border-bottom: 0.3rem inset rgb(192,216,216)
-
+.fondo-titulo
+    background-image: url(/assets/logo/fondo-titulo-full.png)
+    width: 99vw
+    margin: 0rem
+    padding: 0rem
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+.titulo-header
+    text-align: center
 .principalTitle
     color: rgb(0, 153, 255)
     font-size: 400%
-    line-height: 1.2
+    line-height: 3
     text-align: center
     font-family: "Amatic SC", cursive
-    letter-spacing: 7px
-    background-color: black
-    background-size: cover
-    background-repeat: no-repeat
+    letter-spacing: 5px
     margin: 0rem
     padding: 0rem
-    width: 99vw
-    img
-        height: 2.6rem
+
 nav
     display: inline-block
-    background-color: rgba(197, 197, 197, 0.2)
     width: 98vw
     z-index: 2
     animation: slideInDown 0.7s ease-out
@@ -43,16 +45,6 @@ nav
     margin: 0
     ul
         padding: 1rem
-        position: absolute
-        display: none
-        li
-            display: block
-            padding: 1rem
-            width: 100%
-            background-color: azure
-    >li
-        &:last-child
-            border-right: none
     li
         display: inline-block
         width: 15%
@@ -66,7 +58,6 @@ nav
         vertical-align: middle
         -webkit-transform: perspective(1px) translateZ(0)
         transform: perspective(1px) translateZ(0)
-        box-shadow: 0 0 1px black
         -webkit-transition-duration: 0.5s
         transition-duration: 0.5s
         -webkit-transition-property: color, background-color
@@ -110,6 +101,25 @@ nav
             animation-iteration-count: infinite
             background-color: #2098D1
             background-color: #2098d1
+        li
+            display: block
+            padding: 1rem
+            width: 100%
+            background-color: azure
+    >li
+        &:last-child
+            border-right: none
+    ul
+        position: absolute
+        display: none
+    ul
+        li
+            display: block
+            padding: 1rem
+            width: 100%
+            background-color: azure
+
+
 
 ul
     li
@@ -118,7 +128,7 @@ ul
                 display: block
 @-webkit-keyframes hvr-back-pulse
   50%
-            background-color: rgba(32, 152, 209, 0.75)
+    background-color: rgba(32, 152, 209, 0.75)
 
 @keyframes hvr-back-pulse
     50%

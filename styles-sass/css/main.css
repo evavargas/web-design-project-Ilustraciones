@@ -17,32 +17,34 @@ header {
   width: 99vw;
 }
 
-header > div {
-  border-bottom: 0.3rem inset #c0d8d8;
+.fondo-titulo {
+  background-image: url(/assets/logo/fondo-titulo-full.png);
+  width: 99vw;
+  margin: 0rem;
+  padding: 0rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.titulo-header {
+  text-align: center;
 }
 
 .principalTitle {
   color: #0099ff;
   font-size: 400%;
-  line-height: 1.2;
+  line-height: 3;
   text-align: center;
   font-family: "Amatic SC", cursive;
-  letter-spacing: 7px;
-  background-color: black;
-  background-size: cover;
-  background-repeat: no-repeat;
+  letter-spacing: 5px;
   margin: 0rem;
   padding: 0rem;
-  width: 99vw;
-}
-
-.principalTitle img {
-  height: 2.6rem;
 }
 
 nav {
   display: inline-block;
-  background-color: rgba(197, 197, 197, 0.2);
   width: 98vw;
   z-index: 2;
   -webkit-animation: slideInDown 0.7s ease-out;
@@ -64,19 +66,6 @@ nav {
 
 .menu ul {
   padding: 1rem;
-  position: absolute;
-  display: none;
-}
-
-.menu ul li {
-  display: block;
-  padding: 1rem;
-  width: 100%;
-  background-color: azure;
-}
-
-.menu > li:last-child {
-  border-right: none;
 }
 
 .menu li {
@@ -93,8 +82,6 @@ nav {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px black;
-          box-shadow: 0 0 1px black;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
   -webkit-transition-property: color, background-color;
@@ -146,6 +133,29 @@ nav {
   background-color: #2098d1;
 }
 
+.menu li li {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  background-color: azure;
+}
+
+.menu > li:last-child {
+  border-right: none;
+}
+
+.menu ul {
+  position: absolute;
+  display: none;
+}
+
+.menu ul li {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  background-color: azure;
+}
+
 ul li:hover ul {
   display: block;
 }
@@ -163,7 +173,7 @@ ul li:hover ul {
 }
 
 body {
-  background-color: rgba(243, 252, 253, 0.658);
+  background-color: #f5f6fa;
   margin: 0em;
   padding-left: 1px;
   padding-right: 1px;
@@ -176,22 +186,22 @@ h3 {
 }
 
 main {
-  margin-top: -5.7rem;
+  margin-top: -6.4rem;
   margin-bottom: 2rem;
 }
 
 .iniciarSesion {
-  background-color: #dcf7f3;
+  background-color: #f5f6fa;
   position: -webkit-sticky;
   position: sticky;
   padding: 0.7rem;
   width: 11rem;
-  top: 0.3rem;
+  top: 0.2rem;
   left: 100vw;
   display: inline-block;
-  margin: 0.8rem 0 0 0;
+  margin: 0.6rem 0 0 0;
   border-radius: 1rem;
-  border: ridge #dcf7f3;
+  border: ridge #f5f6fa;
   z-index: 2;
   -webkit-animation: fadeInRight 1s ease-out;
           animation: fadeInRight 1s ease-out;
@@ -388,9 +398,9 @@ footer ul {
   vertical-align: baseline;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo" "ilustradores gallery descripcion" "autor autor autor" "sugerencias sugerencias sugerencias" "compra p-descripcion p-descripcion" "carrito carrito carrito" "suscribe suscribe suscribe";
-  -ms-grid-rows: 60px 400px 480px 400px 450px 240px 630px;
-      grid-template-rows: 60px 400px 480px 400px 450px 240px 630px;
+      grid-template-areas: "titulo titulo titulo" "ilustradores gallery descripcion" "autor autor autor" "compra p-descripcion p-descripcion" "sugerencias sugerencias sugerencias" "carrito carrito carrito" "suscribe suscribe suscribe";
+  -ms-grid-rows: 80px 320px 450px 450px 380px 240px 630px;
+      grid-template-rows: 80px 320px 450px 450px 380px 240px 630px;
   -ms-grid-columns: 28vw 30vw 36vw;
       grid-template-columns: 28vw 30vw 36vw;
   grid-column-gap: 10px;
@@ -432,7 +442,7 @@ footer ul {
 }
 
 #div-index-grid > #sugerencias {
-  -ms-grid-row: 4;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: sugerencias;
@@ -595,6 +605,10 @@ footer ul {
   grid-area: proceso-compra;
 }
 
+#ilustradores {
+  display: inline-block;
+}
+
 .artistasSeleccion {
   color: #0099ff;
   font-family: "Josefin Sans", sans-serif;
@@ -605,15 +619,11 @@ footer ul {
   width: fit-content;
   -webkit-animation: fadeInLeft 2s 0.2s ease-in;
           animation: fadeInLeft 2s 0.2s ease-in;
-}
-
-#ilustradores {
-  display: inline-block;
-  padding: 0.5rem 1.7rem 1rem 2rem;
   background-color: rgba(197, 197, 197, 0.2);
   border-color: azure;
   border-style: solid;
   border-width: 1px;
+  padding: 0.5rem 1.7rem 1rem 2rem;
 }
 
 .slidegallery {
@@ -624,10 +634,7 @@ footer ul {
   -webkit-box-sizing: border-box;
   color: rgba(197, 197, 197, 0.2);
   text-align: center;
-  background-color: azure;
-  border-color: azure;
-  border-style: solid;
-  border-width: 1px;
+  background-color: #d7f0eb;
 }
 
 .slidegallery img:hover {
@@ -679,12 +686,7 @@ footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  width: 40vw;
+  width: 36vw;
 }
 
 figure > img {
@@ -731,8 +733,8 @@ figure > img {
   color: #3a3232;
   font-family: "Josefin Slab", serif;
   font-weight: bolder;
-  line-height: 1.5;
-  font-size: large;
+  line-height: 1.8;
+  font-size: 120%;
   display: inline-block;
   position: absolute;
   margin: 1rem;
@@ -771,9 +773,75 @@ figure > img {
   font-family: "Josefin Slab",serif;
 }
 
+#producto-compra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#producto-descripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#diseno-descripcion {
+  border: #e0e4cc ridge 2px;
+  font-size: medium;
+  font-family: "Josefin Slab", serif;
+  line-height: 1.3;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  margin-top: 50px;
+  border-spacing: 0.1rem;
+  border-collapse: separate;
+}
+
+#diseno-descripcion td {
+  padding: 0.4rem;
+}
+
+#diseno-descripcion th {
+  padding: 0.4rem;
+}
+
+#diseno-descripcion tr {
+  padding: 0.4rem;
+}
+
+#diseno-descripcion tr:nth-child(even) {
+  background-color: #f3eddc;
+}
+
+#diseno-descripcion tr:nth-child(odd) {
+  background-color: #f7f5f6;
+}
+
+#diseno-descripcion tr:hover {
+  background-color: rgba(32, 153, 209, 0.479);
+}
+
+#diseno-descripcion caption {
+  background-color: #f1dde4;
+}
+
 #sugerencias {
   width: 96%;
-  height: 200px;
+  height: 380px;
   padding: 0.2rem;
 }
 
@@ -828,72 +896,6 @@ figure > img {
   color: #69d2e7;
 }
 
-#producto-compra {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#producto-descripcion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#diseno-descripcion {
-  border: #e0e4cc ridge 2px;
-  font-size: medium;
-  font-family: "Josefin Slab", serif;
-  line-height: 1.3;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: inline-block;
-  margin-top: 50px;
-  border-spacing: 0.1rem;
-  border-collapse: separate;
-}
-
-#diseno-descripcion td {
-  padding: 0.4rem;
-}
-
-#diseno-descripcion th {
-  padding: 0.4rem;
-}
-
-#diseno-descripcion tr {
-  padding: 0.4rem;
-}
-
-#diseno-descripcion tr:nth-child(even) {
-  background-color: rgba(192, 216, 216, 0.664);
-}
-
-#diseno-descripcion tr:nth-child(odd) {
-  background-color: #dcf7f3;
-}
-
-#diseno-descripcion tr:hover {
-  background-color: rgba(32, 153, 209, 0.479);
-}
-
-#diseno-descripcion caption {
-  background-color: azure;
-}
-
 #compra {
   display: inline-block;
   position: relative;
@@ -927,15 +929,15 @@ figure > img {
 
 @-webkit-keyframes fadeInLeft {
   from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
   }
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
   to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
   }
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 @keyframes fadeInLeft {
