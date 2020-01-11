@@ -456,7 +456,6 @@ footer > div {
 }
 
 #div-index-grid {
-  width: 99vw;
   border-style: solid;
   border-width: 1px;
   border-color: rgba(197, 197, 197, 0.2);
@@ -569,7 +568,6 @@ footer > div {
 }
 
 #main-vertodo-grid {
-  width: 97vw;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "seccion seccion" "detalle disponible" "compra p-descripcion" "carrito carrito";
@@ -692,59 +690,101 @@ footer > div {
 }
 
 .slidegallery {
-  position: relative;
-  overflow: hidden;
   height: 100%;
-  box-sizing: border-box;
   -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: rgba(197, 197, 197, 0.2);
   text-align: center;
   background-color: #cff2f6;
+  display: block;
 }
 
-.slidegallery img:hover {
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
-}
-
-.slidegallery a {
-  border-radius: 50%;
-  margin: 0 3px;
-  color: rgba(0, 0, 0, 0.8);
-  text-decoration: none;
-}
-
-.slidegallery.slider {
-  height: 100%;
-  white-space: nowrap;
-  font-size: 0;
-}
-
-.slidegallery.slider* {
-  display: inline-block;
-  white-space: normal;
-  vertical-align: top;
-  height: 100%;
+.slidegallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.slidegallery label {
+.slidegallery ul li {
   position: absolute;
-  top: 0px;
+  -webkit-animation: fadeOut 20s infinite;
+          animation: fadeOut 20s infinite;
+  z-index: 2;
+}
+
+.slidegallery ul li:nth-child(2) {
+  z-index: 3;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.slidegallery ul li:nth-child(3) {
+  z-index: 4;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.slidegallery ul li:nth-child(4) {
+  z-index: 5;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+.slidegallery ul li img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slidegallery > div > label {
   font-family: "Josefin Sans", sans-serif;
   color: #3a3232;
   width: 50%;
-  z-index: 2;
-  opacity: 0.5;
+  z-index: 10;
 }
 
-.slidegallery input {
-  position: absolute;
-  top: 0px;
+.slidegallery > div > input {
   padding: 10px 0;
   width: 16px;
   color: #3a3232;
-  z-index: 2;
+  z-index: 10;
+}
+
+@-webkit-keyframes fadeOut {
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #descripcion {
@@ -1450,5 +1490,29 @@ figure > img {
   position: absolute;
   top: -9999px;
   left: -9999px;
+}
+
+.container-eventos {
+  width: 98%;
+}
+
+.container-ilustradores {
+  width: 98%;
+}
+
+.container-index {
+  width: 98%;
+}
+
+.container-noticias {
+  width: 98%;
+}
+
+.container-usuario {
+  width: 98%;
+}
+
+.container-vertodo {
+  width: 98%;
 }
 /*# sourceMappingURL=main.css.map */

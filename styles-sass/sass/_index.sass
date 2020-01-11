@@ -15,47 +15,57 @@
 
 
 .slidegallery
-    position: relative
-    overflow: hidden
     height: 100%
     box-sizing: border-box
-    -webkit-box-sizing: border-box
     color: rgba(197,197,197,0.2)
     text-align: center
     background-color: rgb(207,242,246)
-    img
-        &:hover
-            cursor: zoom-in
-    a
-        border-radius: 50%
-        margin: 0 3px
-        color: rgba(0,0,0,0.8)
-        text-decoration: none
-    &.slider
-        height: 100%
-        white-space: nowrap
-        font-size: 0
-        &*
-            display: inline-block
-            white-space: normal
-            vertical-align: top
-            height: 100%
-            width: 100%
-    label
-        position: absolute
-        top: 0px
-        font-family: "Josefin Sans", sans-serif
-        color: rgb(58, 50, 50)
-        width: 50%
-        z-index: 2
-        opacity: 0.5
-    input
-        position: absolute
-        top: 0px
-        padding: 10px 0
-        width: 16px
-        color: rgb(58, 50, 50)
-        z-index: 2
+    display: block
+    ul
+        display: flex
+        justify-content: center
+        width: 100%
+        list-style: none
+        padding: 0
+        margin: 0
+        li
+            position: absolute
+            animation: fadeOut 20s infinite
+            z-index: 2
+            &:nth-child(2)
+                z-index: 3
+                animation-delay: 5s
+            &:nth-child(3)
+                z-index: 4
+                animation-delay: 10s
+            &:nth-child(4)
+                z-index: 5
+                animation-delay: 15s
+            img
+                width: 100%
+                object-fit: cover
+    >div
+        >label
+            font-family: "Josefin Sans", sans-serif
+            color: rgb(58, 50, 50)
+            width: 50%
+            z-index: 10
+        >input
+            padding: 10px 0
+            width: 16px
+            color: rgb(58, 50, 50)
+            z-index: 10
+
+@keyframes fadeOut
+    10%
+        opacity: 0
+    50%
+        opacity: 0
+    80%
+        opacity: 1
+    100%
+        opacity: 1
+
 #descripcion
     display: flex
     width: 36vw

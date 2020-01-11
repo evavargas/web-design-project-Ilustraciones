@@ -64,109 +64,110 @@
     <input type="submit" value="Cerrar Sesion" />
   </form>
   <main>
-    <div id="usuario-grid">
-      <h2 class="seccion">Panel de usuario</h2>
-      <h3 class="name-usuario">*Nombre de usuario*</h3>
-      <figure class="usuario">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbRIv8-HoTTw2K7k3974Ra6LvGxsONXIhgNYVd14WimZDV8C1J"
-          alt="Usuario" width="200" />
-      </figure>
-      <article class="tab-usuario">
-        <!-- Tab links -->
-        <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'LastBuy')">Ultima Compra</button>
-          <button class="tablinks" onclick="openTab(event, 'InfoUser')">Información Personal</button>
-          <button class="tablinks" onclick="openTab(event, 'Config')">Configuracion de cuenta</button>
-          <button class="tablinks" onclick="openTab(event, 'Solicitud')">Solicitudes</button>
-        </div>
-
-        <!-- Tab content -->
-        <div id="LastBuy" class="tabcontent">
-          <h3>Descripcion</h3>
-          <p>Diseño:</p>
-          <p>Articulo:</p>
-          <p>Cantidad:</p>
-          <p>Envio:</p>
-          <input type="submit" value="Agregar al Carrito">
-        </div>
-        <div id="InfoUser" class="tabcontent">
-          <h3>Información personal</h3>
-          <p>Nombre:</p>
-          <p>Direccion:</p>
-          <p>Formas de pago:</p>
-        </div>
-        <div id="Config" class="tabcontent">
-          <h3>Configuracion</h3>
-          <p>Cambiar datos de usuario</p>
-          <p>Cambiar datos de pago</p>
-          <p>Cambiar imagen de perfil</p>
-        </div>
-        <div id="Solicitud" class="tabcontent">
-          <h3>Solicitudes</h3>
-          <p>No hay solicitudes recientes</p>
-          <h3>Agregar solicitud</h3>
-          <textarea name="solicitud" id="" cols="50" rows="10"></textarea>
-          <input type="submit" value="Enviar">
-        </div>
-      </article>
-      <aside id="carrito">
-        <form class="compras" action="-">
-          <h3>Carrito</h3>
-          <label><input type="checkbox" name="compra 1" id="1" /> Compra 1
-          </label>
-          <label><input type="checkbox" name="compra 2" id="2" /> Compra 2</label>
-          <label><input type="checkbox" name="compra 3" id="3" /> Compra 3
-          </label>
-          <label><input type="checkbox" name="compra 4" id="4" /> Compra 4
-          </label>
-          <input type="number" name="precioTotal" id="precioFinal" placeholder="Total" />
-          <input type="submit" value="Finalizar compra" />
-          <input type="reset" value="Cancelar compra" />
-        </form>
-      </aside>
-      <aside class="proceso-de-compra">
-        <div class="paso">
-          <h3>Tercer paso: Usted ha seleccionado:</h3>
-          <span>Diseño nº52</span>
-          <span>Articulo: Remera</span>
-          <span>Cantidad: 12</span>
-          <span>Envio: Chile</span>
-          <span>Precio: $$</span>
-        </div>
-        <!--Si quedaron compras en el carrito, apareceran aca-->
-        <div class="bar">
-          <input class="bar-input" type="radio" name="input" id="input_0" />
-          <div class="bar-view">
-            <label class="bar-button" for="input_0"></label>
+    <div class="container-usuario">
+      <div id="usuario-grid">
+        <h2 class="seccion">Panel de usuario</h2>
+        <h3 class="name-usuario">*Nombre de usuario*</h3>
+        <figure class="usuario">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbRIv8-HoTTw2K7k3974Ra6LvGxsONXIhgNYVd14WimZDV8C1J"
+            alt="Usuario" width="200" />
+        </figure>
+        <article class="tab-usuario">
+          <!-- Tab links -->
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'LastBuy')">Ultima Compra</button>
+            <button class="tablinks" onclick="openTab(event, 'InfoUser')">Información Personal</button>
+            <button class="tablinks" onclick="openTab(event, 'Config')">Configuracion de cuenta</button>
+            <button class="tablinks" onclick="openTab(event, 'Solicitud')">Solicitudes</button>
           </div>
-          <input class="bar-input" type="radio" name="input" id="input_1" />
-          <div class="bar-view">
-            <label class="bar-button" for="input_1"></label>
+          <!-- Tab content -->
+          <div id="LastBuy" class="tabcontent">
+            <h3>Descripcion</h3>
+            <p>Diseño:</p>
+            <p>Articulo:</p>
+            <p>Cantidad:</p>
+            <p>Envio:</p>
+            <input type="submit" value="Agregar al Carrito">
           </div>
-          <input class="bar-input" type="radio" name="input" id="input_2" />
-          <div class="bar-view">
-            <label class="bar-button" for="input_2"></label>
+          <div id="InfoUser" class="tabcontent">
+            <h3>Información personal</h3>
+            <p>Nombre:</p>
+            <p>Direccion:</p>
+            <p>Formas de pago:</p>
           </div>
-          <input class="bar-input" type="radio" name="input" id="input_3" />
-          <div class="bar-view">
-            <label class="bar-button" for="input_3"></label>
+          <div id="Config" class="tabcontent">
+            <h3>Configuracion</h3>
+            <p>Cambiar datos de usuario</p>
+            <p>Cambiar datos de pago</p>
+            <p>Cambiar imagen de perfil</p>
           </div>
-          <input class="bar-input" type="radio" name="input" id="input_4" />
-          <div class="bar-view">
-            <label class="bar-button" for="input_4"></label>
+          <div id="Solicitud" class="tabcontent">
+            <h3>Solicitudes</h3>
+            <p>No hay solicitudes recientes</p>
+            <h3>Agregar solicitud</h3>
+            <textarea name="solicitud" id="" cols="50" rows="10"></textarea>
+            <input type="submit" value="Enviar">
           </div>
-        </div>
-        <!--<div class="command">click on any one of the options</div>-->
-        <!--Se pueden agregar compras realizadas desde el historial de compras, para en ese caso, 
-                repetir la compra para ahorrar tiempo, guiado por un panel con barra de progreso,
-            al finalizar las compras, siempre va dirigido a esta pagina del usuario, y se refleja en este panel
-        siendo el lugar definitivo para la emision de factura.-->
-        <form action="">
-          <input type="submit" value="Siguiente paso" />
-          <input type="reset" value="Cancelar compra" />
-        </form>
-      </aside>
+        </article>
+        <aside id="carrito">
+          <form class="compras" action="-">
+            <h3>Carrito</h3>
+            <label><input type="checkbox" name="compra 1" id="1" /> Compra 1
+            </label>
+            <label><input type="checkbox" name="compra 2" id="2" /> Compra 2</label>
+            <label><input type="checkbox" name="compra 3" id="3" /> Compra 3
+            </label>
+            <label><input type="checkbox" name="compra 4" id="4" /> Compra 4
+            </label>
+            <input type="number" name="precioTotal" id="precioFinal" placeholder="Total" />
+            <input type="submit" value="Finalizar compra" />
+            <input type="reset" value="Cancelar compra" />
+          </form>
+        </aside>
+        <aside class="proceso-de-compra">
+          <div class="paso">
+            <h3>Tercer paso: Usted ha seleccionado:</h3>
+            <span>Diseño nº52</span>
+            <span>Articulo: Remera</span>
+            <span>Cantidad: 12</span>
+            <span>Envio: Chile</span>
+            <span>Precio: $$</span>
+          </div>
+          <!--Si quedaron compras en el carrito, apareceran aca-->
+          <div class="bar">
+            <input class="bar-input" type="radio" name="input" id="input_0" />
+            <div class="bar-view">
+              <label class="bar-button" for="input_0"></label>
+            </div>
+            <input class="bar-input" type="radio" name="input" id="input_1" />
+            <div class="bar-view">
+              <label class="bar-button" for="input_1"></label>
+            </div>
+            <input class="bar-input" type="radio" name="input" id="input_2" />
+            <div class="bar-view">
+              <label class="bar-button" for="input_2"></label>
+            </div>
+            <input class="bar-input" type="radio" name="input" id="input_3" />
+            <div class="bar-view">
+              <label class="bar-button" for="input_3"></label>
+            </div>
+            <input class="bar-input" type="radio" name="input" id="input_4" />
+            <div class="bar-view">
+              <label class="bar-button" for="input_4"></label>
+            </div>
+          </div>
+          <!--<div class="command">click on any one of the options</div>-->
+          <!--Se pueden agregar compras realizadas desde el historial de compras, para en ese caso, 
+                    repetir la compra para ahorrar tiempo, guiado por un panel con barra de progreso,
+                al finalizar las compras, siempre va dirigido a esta pagina del usuario, y se refleja en este panel
+            siendo el lugar definitivo para la emision de factura.-->
+          <form action="">
+            <input type="submit" value="Siguiente paso" />
+            <input type="reset" value="Cancelar compra" />
+          </form>
+        </aside>
+      </div>
     </div>
     <script>
       function openTab(evt, tabName) {
