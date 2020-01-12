@@ -1,11 +1,8 @@
 #div-index-grid
-    border-style: solid
-    border-width: 1px
-    border-color: rgba(197, 197, 197, 0.2)
     vertical-align: baseline
     display: grid
-    grid-template-areas: "titulo titulo titulo" "ilustradores gallery descripcion" "autor autor autor" "compra p-descripcion p-descripcion" "sugerencias sugerencias sugerencias" "carrito carrito carrito" "suscribe suscribe suscribe"
-    grid-template-rows: 80px 320px 450px 450px 380px 240px 630px
+    grid-template-areas: "titulo titulo titulo" "ilustradores gallery descripcion" "titulo-autor titulo-autor titulo-autor""autor-video autor-biografia autor-redes" "titulo-diseno titulo-diseno titulo-diseno" "compra p-descripcion p-descripcion" "sugerencias sugerencias sugerencias" "carrito carrito carrito" "suscribe suscribe suscribe"
+    grid-template-rows: 80px 320px 80px 360px 80px 450px 380px 240px 630px
     grid-template-columns: 28vw 30vw 36vw
     grid-column-gap: 10px
     grid-row-gap: 10px
@@ -20,11 +17,21 @@
             grid-area: gallery
     >#descripcion
         grid-area: descripcion
-    >article
-        &.autor
-            grid-area: autor
+    >#titulo-autor
+        grid-area: titulo-autor
+    >iframe
+        &.autor-video
+            grid-area: autor-video
+    >aside
+        &.biografia
+            grid-area: autor-biografia
+    >aside
+        &#redesIlustrador
+            grid-area: autor-redes
     >#sugerencias
         grid-area: sugerencias
+    >#titulo-diseno
+        grid-area: titulo-diseno
     >#producto-compra
         grid-area: compra
     >div
@@ -55,14 +62,14 @@
 
 #main-vertodo-grid
     display: grid
-    grid-template-areas: "seccion seccion" "detalle disponible" "compra p-descripcion" "carrito carrito"
+    grid-template-areas: "titulo titulo" "detalle disponible" "compra p-descripcion" "carrito carrito"
     grid-template-rows: 60px 660px 450px 240px
     grid-template-columns: 40vw 56vw
     grid-column-gap: 15px
     grid-row-gap: 10px
     h2
         &.seccion
-            grid-area: seccion
+            grid-area: titulo
     section
         &.detalle-producto
             grid-area: detalle

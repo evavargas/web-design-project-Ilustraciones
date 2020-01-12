@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ilustraciones</title>
   <link type="text/css" rel="stylesheet" href="styles-sass/css/main.css" />
   <link rel="stylesheet" href="/wow-js-css/animate.css">
   <style>
     @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Josefin+Slab&display=swap");
   </style>
+  <title>Ilustraciones</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
       </div>
     </div>
     <nav>
-      <!--Productos disponibles segun su tipo, independiente del autor-->
+      <!--barra de menu-->
       <ul class="menu">
         <li>
           <a class="menu" href="index.html">Inicio</a>
@@ -52,8 +52,8 @@
         <li>
           Puntos de venta
           <ul>
-            <li><a class="menu" href="ver-todo.html">Argentina</a></li>
-            <li><a class="menu" href="ver-todo.html">Otros Paises</a></li>
+            <li><a class="menu" href="puntosdeventa.html">Argentina</a></li>
+            <li><a class="menu" href="puntosdeventa.html">Otros Paises</a></li>
           </ul>
         </li>
         <li><a class="menu" href="eventos.html">Eventos</a></li>
@@ -61,21 +61,21 @@
       </ul>
     </nav>
   </header>
-  <!--Iniciar sesion-->
+  <!--Iniciar sesion sticky-->
   <form action="iniciarSesion" class="iniciarSesion">
     <input type="email" placeholder="Usuario o Correo electronico" />
     <input type="password" placeholder="Contraseña" />
     <input type="submit" value="Iniciar Sesion" />
   </form>
   <div class="boton-inicio wow slideInUp">
-    <a href="#inicio"><img src="./assets/tools/arriba.png" alt="Volver al principio"></a>
+    <a href="#inicio"><img src="./assets/tools/arrow-up.png" alt="Volver al principio"></a>
   </div>
   <main>
     <div class="container-index">
       <div id="div-index-grid">
         <h2 class="seccion">Los mejores artistas</h2>
         <aside id="ilustradores">
-          <!--En este campo, se seleccionan lods productos segun el autor-->
+          <!--En este campo, se seleccionan los diseños segun el autor y se muestran en el slide-->
           <form class="artistasSeleccion">
             <input type="radio" name="ilustrador" value="lavaca" />LaVacaStyle<br />
             <input type="radio" name="ilustrador" value="nico" checked />NicoIlustraciones<br />
@@ -108,11 +108,11 @@
             tellus elit congue elit. Donec erat metus, euismod efficitur nisl vel.
           </p>
         </aside>
-        <article class="autor">
-          <!--Segun el autor seleccionado, sino va pasando de a uno cada x tiempo-->
-          <h2 class="seccion">Sobre el autor</h2>
-          <iframe class="video" src="https://www.youtube.com/embed/RHpDf-L7Ffw"></iframe>
-          <p class="biografia">
+        <h2 class="seccion" id="titulo-autor">Sobre el autor</h2>
+        <!--Segun el autor seleccionado, sino va pasando de a uno cada x tiempo-->
+        <iframe class="autor-video" src="https://www.youtube.com/embed/RHpDf-L7Ffw"></iframe>
+        <aside class="biografia">
+          <p class="introduccion">
             <span>Nico Ilustraciones <br /> </span>
             Nicolás Vilela es el joven artista detrás de 'Nico Ilustraciones',
             nombre con el que identificó sus perfiles en redes sociales. Allí
@@ -120,26 +120,112 @@
             personajes, y que a su vez, son compartidas por cientos de usuarios y
             seguidores.
           </p>
-          <aside id="redesIlustrador">
-            <ul class="redes">
-              <li>
-                <a href="https://www.instagram.com/nicoilustraciones/?hl=es-la">Instagram
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/nicoilustracion?lang=es">Twitter</a>
-              </li>
-              <li>
-                <a href="https://www.pinterest.com/romisap/nico-ilustraciones/">Pinterest</a>
-              </li>
-              <li><a href="https://tlgrm.es/channels">Telegram</a></li>
-              <li><a href="">Correo</a></li>
-              <li>
-                <a href="https://www.bypublications.com/producto/universos-nico-ilustraciones-campana/">Pagina web</a>
-              </li>
-            </ul>
-          </aside>
+        </aside>
+        <aside id="redesIlustrador">
+          <ul class="redes">
+            <li>
+              <a href="https://www.instagram.com/nicoilustraciones/?hl=es-la">Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/nicoilustracion?lang=es">Twitter</a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/romisap/nico-ilustraciones/">Pinterest</a>
+            </li>
+            <li><a href="https://tlgrm.es/channels">Telegram</a></li>
+            <li><a href="">Correo</a></li>
+            <li>
+              <a href="https://www.bypublications.com/producto/universos-nico-ilustraciones-campana/">Pagina web</a>
+            </li>
+          </ul>
+        </aside>
         </article>
+
+        <h2 class="seccion" id="titulo-diseno">Diseño Seleccionado</h2>
+        <section id="producto-compra">
+
+          <figure class="articulo">
+            <div>
+              <a href="">
+                <div>
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKHlKpiF3PvuTU6ReMJ2mux4kI5wI_aSZx5jYRrNXJsBWP3nhv&s"
+                    alt="">
+                </div>
+                <p class="nombre-producto">Diseño nº 10</p>
+              </a>
+            </div>
+          </figure>
+        </section>
+        <div class="producto-descripcion">
+          <table id="diseno-descripcion">
+            <caption>
+              <p>Detalles del diseño</p>
+            </caption>
+            <thead>
+              <tr>
+                <th>Seleccionar</th>
+                <th>Disponibilidad</th>
+                <th>Descripcion</th>
+                <th>Stock</th>
+                <th>Envio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" name="ilustracion" id=""></td>
+                <td>Ilustracion</td>
+                <td>Tamaño A5</td>
+                <td>50 u.</td>
+                <td>Argentina</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="ilustracion" id=""></td>
+                <td>Taza</td>
+                <td>Todos los modelos</td>
+                <td>20u. c/modelo</td>
+                <td>Argentina</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="ilustracion" id=""></td>
+                <td>Cuadro</td>
+                <td>Tamaño A3</td>
+                <td>20u</td>
+                <td>Argentina</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="ilustracion" id=""></td>
+                <td>Remera</td>
+                <td>Talles: S-M-L-XL-XXL</td>
+                <td>300 u.</td>
+                <td>Argentina y Otros</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="ilustracion" id=""></td>
+                <td>Agenda</td>
+                <td>Tamaño A5</td>
+                <td>300 u.</td>
+                <td>Argentina y Otros</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="ilustracion" id=""></td>
+                <td>Planner</td>
+                <td>Tamaño A5</td>
+                <td>300 u.</td>
+                <td>Argentina y Otros</td>
+              </tr>
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+          <form action="-" id="compra">
+            <p class="detalle">Precio:</p>
+            <input type="text" name="precio" id="precio" placeholder="AR$" />
+            <input type="number" name="cantidad" id="cantidad" min="1" max="20" placeholder="0-20" />
+            <input type="submit" value="Añadir" />
+            <input type="reset" value="Restablecer" />
+          </form>
+        </div>
         <article id="sugerencias">
           <h2 class="seccion">Otros diseños que tambien pueden interesarte</h2>
           <ol>
@@ -246,89 +332,6 @@
             </li>
           </ol>
         </article>
-        <section id="producto-compra">
-          <h2 class="seccion">Diseño Seleccionado</h2>
-          <figure class="articulo">
-            <div>
-              <a href="">
-                <div>
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKHlKpiF3PvuTU6ReMJ2mux4kI5wI_aSZx5jYRrNXJsBWP3nhv&s"
-                    alt="">
-                </div>
-                <p class="nombre-producto">Diseño nº 10</p>
-              </a>
-            </div>
-          </figure>
-        </section>
-        <div class="producto-descripcion">
-          <table id="diseno-descripcion">
-            <caption>
-              <p>Detalles del diseño</p>
-            </caption>
-            <thead>
-              <tr>
-                <th>Seleccionar</th>
-                <th>Disponibilidad</th>
-                <th>Descripcion</th>
-                <th>Stock</th>
-                <th>Envio</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id=""></td>
-                <td>Ilustracion</td>
-                <td>Tamaño A5</td>
-                <td>50 u.</td>
-                <td>Argentina</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id=""></td>
-                <td>Taza</td>
-                <td>Todos los modelos</td>
-                <td>20u. c/modelo</td>
-                <td>Argentina</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id=""></td>
-                <td>Cuadro</td>
-                <td>Tamaño A3</td>
-                <td>20u</td>
-                <td>Argentina</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id=""></td>
-                <td>Remera</td>
-                <td>Talles: S-M-L-XL-XXL</td>
-                <td>300 u.</td>
-                <td>Argentina y Otros</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id=""></td>
-                <td>Agenda</td>
-                <td>Tamaño A5</td>
-                <td>300 u.</td>
-                <td>Argentina y Otros</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id=""></td>
-                <td>Planner</td>
-                <td>Tamaño A5</td>
-                <td>300 u.</td>
-                <td>Argentina y Otros</td>
-              </tr>
-            </tbody>
-            <tfoot></tfoot>
-          </table>
-          <form action="-" id="compra">
-            <p class="detalle">Precio:</p>
-            <input type="text" name="precio" id="precio" placeholder="AR$" />
-            <input type="number" name="cantidad" id="cantidad" min="1" max="20" placeholder="0-20" />
-            <input type="submit" value="Añadir" />
-            <input type="reset" value="Restablecer" />
-          </form>
-        </div>
         <aside id="carrito">
           <form class="compras" action="-">
             <h3>Carrito</h3>
@@ -379,33 +382,37 @@
     </div>
   </main>
   <footer>
-    <div>
-      <aside class="informacion-sitio">
-        <ul id="informacion">
-          <li>Ilustraciones</li>
-          <li>Sobre nosotros</li>
-          <li>Proveeedores</li>
-          <li>Ventas a empresa</li>
-          <li>Trabaja con nosotros</li>
-          <li>Ubicación</li>
-        </ul>
-        <ul id="ayuda">
-          <li>Ayuda</li>
-          <li>FAQs</li>
-          <li>Terminos y condiciones</li>
-          <li>Tiempo y costos de envio</li>
-          <li>Politica de privacidad</li>
-          <li>Mapa de Sitio</li>
-        </ul>
-      </aside>
-      <aside class="contacto">
-        <ul>
-          <li>Contactenos</li>
-          <li><img src="./assets/iconos/phone-icon.png" alt="Nro de telefono">(+54) 11 469830XX</li>
-          <li><img src="./assets/iconos/whatsapp-icon.png" alt="whatsapp">(+51) 993 119 000</li>
-          <li><img src="./assets/iconos/correo-icon.png" alt="Correo electronico"> info@Ilustraciones.com</li>
-        </ul>
-      </aside>
+    <div class="container-footer">
+      <div class="info-footer">
+        <aside class="informacion-sitio">
+          <ul id="informacion">
+            <li>Ilustraciones</li>
+            <li>Sobre nosotros</li>
+            <li>Proveeedores</li>
+            <li>Ventas a empresa</li>
+            <li>Trabaja con nosotros</li>
+            <li>Ubicación</li>
+          </ul>
+        </aside>
+        <aside class="ayuda-sitio">
+          <ul id="ayuda">
+            <li>Ayuda</li>
+            <li>FAQs</li>
+            <li>Terminos y condiciones</li>
+            <li>Tiempo y costos de envio</li>
+            <li>Politica de privacidad</li>
+            <li>Mapa de Sitio</li>
+          </ul>
+        </aside>
+        <aside class="contacto">
+          <ul>
+            <li>Contactenos</li>
+            <li><img src="./assets/iconos/phone-icon.png" alt="Nro de telefono">(+54) 11 469830XX</li>
+            <li><img src="./assets/iconos/whatsapp-icon.png" alt="whatsapp">(+51) 993 119 000</li>
+            <li><img src="./assets/iconos/correo-icon.png" alt="Correo electronico"> info@Ilustraciones.com</li>
+          </ul>
+        </aside>
+      </div>
       <aside class="copyright-redes">
         <h4>Copyright 2020- Todos los derechos reservados</h4>
         <ul>

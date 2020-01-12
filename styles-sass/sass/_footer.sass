@@ -1,15 +1,37 @@
 footer
     background-color: rgb(207,242,246)
-    
-    >div
-        width: 98vw
+.container-footer
+    width: 98%
+.info-footer
+    display: flex
+    justify-content: space-between
 .informacion-sitio
     margin: 0 3rem 0 3rem
-    padding: 0 3rem 0 3rem
-    display: inline-block
+    padding: 0 2rem 0 2rem
     box-sizing: border-box
     >ul
-        display: inline-block
+        padding: 2rem
+        >li
+            color: #3a3232
+            list-style: none
+            font-family: "Josefin Sans", sans-serif
+            text-align: left
+            font-size: 16px
+            box-sizing: border-box
+            padding: 0.7rem
+            &:hover
+                background-color: rgb(247,245,246)
+            &:first-child
+                font-size: 26px
+    ul
+        margin: 0
+        padding-top: 0
+        padding-bottom: 0
+.ayuda-sitio
+    margin: 0 3rem 0 3rem
+    padding: 0 2rem 0 2rem
+    box-sizing: border-box
+    >ul
         padding: 2rem
         >li
             color: #3a3232
@@ -40,9 +62,7 @@ footer
             cursor: default
 .contacto
     margin: 0 3rem 0 3rem
-    padding: 0 3rem 0 3rem
-    position: absolute
-    display: inline-block
+    padding: 0 2rem 0 2rem
     font-family: "Josefin Slab",serif
     box-sizing: border-box
     >ul
