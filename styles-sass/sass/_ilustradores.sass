@@ -1,12 +1,10 @@
-.container-ilustradores
-    width: 98%
 .ilustradores
     display: flex
     flex-wrap: wrap
     justify-content: space-evenly
     margin: 0
     figure
-        width: 25vw
+        width: 25%
     img
         border-radius: 100%
         border-style: groove
@@ -31,3 +29,16 @@
 =color-fuente($color,$fuente)
     color: $color
     font-family: $fuente
+
+@media screen and ( min-width: 319px ) and ( max-width: 409px )
+    .ilustradores
+        figure
+            width: 98%
+@media screen and ( min-width: 410px ) and ( max-width: 766px )
+    .ilustradores
+        figure
+            width: 98%
+@media screen and ( min-width: 767px ) and ( max-width: 1023px )
+    .ilustradores
+        figure
+            width: 38%

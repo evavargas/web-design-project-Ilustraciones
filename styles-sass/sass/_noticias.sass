@@ -1,28 +1,31 @@
-.container-noticias
-    width: 98%
+
 .noticias
     display: flex
     flex-flow: row
     flex-wrap: wrap
-    img
-        border: rgb(243, 243, 243) solid
-        width: 240px
-        height: 240px
-        margin: 1rem
-        display: inline-block
+    justify-content: space-evenly
+    align-content: flex-start
     >figure
         display: flex
         flex-flow: row
         flex-wrap: wrap
-        width: 45vw
+        align-items: flex-start
         margin: 0.7rem
         animation: slideInUp 1s 0.2s ease-in
+
+        >img
+            border: rgb(243, 243, 243) solid
+            margin: 1rem
+            display: inline-block
+            width: 25%
+
         >p
             +color-fuente($color-resaltador, $fuente-principal)
             line-height: 2
             font-size: large
-            width: 20rem
             display: inline-block
+            position: relative
+            width: 50%
 
 @keyframes slideInUp
     from

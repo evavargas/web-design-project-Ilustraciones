@@ -8,6 +8,7 @@
         margin: 2rem
         padding: 3rem
         text-align: left
+        width: 98%
     h3
         color: rgb(58,50,50)
         line-height: 1.8
@@ -17,3 +18,21 @@
         font-family: "Josefin Sans", sans-serif
         color: rgb(58, 50, 50)
         list-style-image: url("../../assets/tools/ubicacion.png")
+
+@media screen and ( min-width: 319px ) and ( max-width: 409px )
+    .puntos-venta
+        display: flex
+        flex-wrap: wrap
+        flex-flow: column
+        justify-content: space-around
+        >section
+            margin: 0
+            padding: 0
+@media screen and ( min-width: 410px ) and ( max-width: 766px )
+    .puntos-venta
+        display: flex
+        flex-wrap: wrap
+        flex-flow: column
+        >section
+            margin: 0
+            padding: 0

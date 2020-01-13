@@ -11,64 +11,63 @@
   </style>
   <title>Noticias</title>
 </head>
-
 <body>
-  <header>
-    <aside class="top">
-      <div>
+  <div class="container">
+    <header>
+      <aside class="top">
         <div>
-          <p><a href="./">Click Here!</a></p>
+          <div>
+            <p><a href="./">Click Here!</a></p>
+          </div>
+        </div>
+      </aside>
+      <div class="fondo-titulo">
+        <div class="titulo-header">
+          <h1 class="principalTitle">
+            @Ilustraciones
+            <img src="assets/logo/logo.png" alt="logo" />
+          </h1>
         </div>
       </div>
-    </aside>
-    <div class="fondo-titulo">
-      <div class="titulo-header">
-        <h1 class="principalTitle">
-          @Ilustraciones
-          <img src="assets/logo/logo.png" alt="logo" />
-        </h1>
-      </div>
-    </div>
-    <nav>
-      <!--Productos disponibles segun su tipo, independiente del autor-->
-      <ul class="menu">
-        <li>
-          <a class="menu" href="index.html">Inicio</a>
-        </li>
-        <li>
-          <a class="menu" href="ilustradores.html">Ilustradores</a>
-        </li>
-        <li>
-          Productos
-          <ul>
-            <li><a class="menu" href="ver-todo.html">Ilustraciones</a></li>
-            <li><a class="menu" href="ver-todo.html">Cuadros</a></li>
-            <li><a class="menu" href="ver-todo.html">Remeras</a></li>
-            <li><a class="menu" href="ver-todo.html">Tazas</a></li>
-            <li><a class="menu" href="ver-todo.html">Agendas</a></li>
-            <li><a class="menu" href="ver-todo.html">Planners</a></li>
-          </ul>
-        </li>
-        <li>
-          Puntos de venta
-          <ul>
-            <li><a class="menu" href="puntosdeventa.html">Argentina</a></li>
-            <li><a class="menu" href="puntosdeventa.html">Otros Paises</a></li>
-          </ul>
-        </li>
-        <li><a class="menu" href="eventos.html">Eventos</a></li>
-        <li><a class="menu" href="noticias.html">Noticias</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!--Iniciar sesion-->
-  <form action="iniciarSesion" class="iniciarSesion">
-    <input type="email" placeholder="Usuario o Correo electronico" />
-    <input type="password" placeholder="Contraseña" />
-    <input type="submit" value="Iniciar Sesion" />
-  </form>
-  <main>
-    <div class="container-noticias">
+      <nav>
+        <!--Productos disponibles segun su tipo, independiente del autor-->
+        <ul class="menu">
+          <li>
+            <a class="menu" href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a class="menu" href="ilustradores.html">Ilustradores</a>
+          </li>
+          <li>
+            Productos
+            <ul>
+              <li><a class="menu" href="ver-todo.html">Ilustraciones</a></li>
+              <li><a class="menu" href="ver-todo.html">Cuadros</a></li>
+              <li><a class="menu" href="ver-todo.html">Remeras</a></li>
+              <li><a class="menu" href="ver-todo.html">Tazas</a></li>
+              <li><a class="menu" href="ver-todo.html">Agendas</a></li>
+              <li><a class="menu" href="ver-todo.html">Planners</a></li>
+            </ul>
+          </li>
+          <li>
+            Puntos de venta
+            <ul>
+              <li><a class="menu" href="puntosdeventa.html">Argentina</a></li>
+              <li><a class="menu" href="puntosdeventa.html">Otros Paises</a></li>
+            </ul>
+          </li>
+          <li><a class="menu" href="eventos.html">Eventos</a></li>
+          <li><a class="menu" href="noticias.html">Noticias</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--Iniciar sesion-->
+    <form action="iniciarSesion" class="iniciarSesion">
+      <input type="email" placeholder="Usuario o Correo electronico" />
+      <input type="password" placeholder="Contraseña" />
+      <input type="submit" value="Iniciar Sesion" />
+    </form>
+    <main>
       <div id="main-noticias-grid">
         <h2 class="seccion">Noticias</h2>
         <div class="noticias">
@@ -147,53 +146,55 @@
         </aside>
 
       </div>
-    </div>
-  </main>
-  <footer>
-    <div class="container-footer">
-      <div class="info-footer">
-        <aside class="informacion-sitio">
-          <ul id="informacion">
-            <li>Ilustraciones</li>
-            <li>Sobre nosotros</li>
-            <li>Proveeedores</li>
-            <li>Ventas a empresa</li>
-            <li>Trabaja con nosotros</li>
-            <li>Ubicación</li>
-          </ul>
-        </aside>
-        <aside class="ayuda-sitio">
-          <ul id="ayuda">
-            <li>Ayuda</li>
-            <li>FAQs</li>
-            <li>Terminos y condiciones</li>
-            <li>Tiempo y costos de envio</li>
-            <li>Politica de privacidad</li>
-            <li>Mapa de Sitio</li>
-          </ul>
-        </aside>
-        <aside class="contacto">
+
+    </main>
+    <footer>
+      <div class="container-footer">
+        <div class="info-footer">
+          <aside class="informacion-sitio">
+            <ul id="informacion">
+              <li>Ilustraciones</li>
+              <li>Sobre nosotros</li>
+              <li>Proveeedores</li>
+              <li>Ventas a empresa</li>
+              <li>Trabaja con nosotros</li>
+              <li>Ubicación</li>
+            </ul>
+          </aside>
+          <aside class="ayuda-sitio">
+            <ul id="ayuda">
+              <li>Ayuda</li>
+              <li>FAQs</li>
+              <li>Terminos y condiciones</li>
+              <li>Tiempo y costos de envio</li>
+              <li>Politica de privacidad</li>
+              <li>Mapa de Sitio</li>
+            </ul>
+          </aside>
+          <aside class="contacto">
+            <ul>
+              <li>Contactenos</li>
+              <li><img src="./assets/iconos/phone-icon.png" alt="Nro de telefono">(+54) 11 469830XX</li>
+              <li><img src="./assets/iconos/whatsapp-icon.png" alt="whatsapp">(+51) 993 119 000</li>
+              <li><img src="./assets/iconos/correo-icon.png" alt="Correo electronico"> info@Ilustraciones.com</li>
+            </ul>
+          </aside>
+        </div>
+        <aside class="copyright-redes">
+          <h4>Copyright 2020- Todos los derechos reservados</h4>
           <ul>
-            <li>Contactenos</li>
-            <li><img src="./assets/iconos/phone-icon.png" alt="Nro de telefono">(+54) 11 469830XX</li>
-            <li><img src="./assets/iconos/whatsapp-icon.png" alt="whatsapp">(+51) 993 119 000</li>
-            <li><img src="./assets/iconos/correo-icon.png" alt="Correo electronico"> info@Ilustraciones.com</li>
+            <li><a href="https://www.facebook.com/"><img src="./assets/iconos/facebook-icon.png" alt="Facebook"></a>
+            </li>
+            <li><a href="https://twitter.com/"><img src="./assets/iconos/twitter-icon.png" alt="Twitter"></a></li>
+            <li><a href="https://www.pinterest.com/"><img src="./assets/iconos/pinterest-icon.png" alt="Pinterest"></a>
+            </li>
+            <li><a href="https://www.instagram.com/"><img src="./assets/iconos/instagram-icon.png" alt="Instagram"></a>
+            </li>
           </ul>
         </aside>
       </div>
-      <aside class="copyright-redes">
-        <h4>Copyright 2020- Todos los derechos reservados</h4>
-        <ul>
-          <li><a href="https://www.facebook.com/"><img src="./assets/iconos/facebook-icon.png" alt="Facebook"></a></li>
-          <li><a href="https://twitter.com/"><img src="./assets/iconos/twitter-icon.png" alt="Twitter"></a></li>
-          <li><a href="https://www.pinterest.com/"><img src="./assets/iconos/pinterest-icon.png" alt="Pinterest"></a>
-          </li>
-          <li><a href="https://www.instagram.com/"><img src="./assets/iconos/instagram-icon.png" alt="Instagram"></a>
-          </li>
-        </ul>
-      </aside>
-    </div>
-  </footer>
+    </footer>
+  </div>
   <script src="/wow-js-css/wow.js"></script>
   <script>
     new WOW().init();
