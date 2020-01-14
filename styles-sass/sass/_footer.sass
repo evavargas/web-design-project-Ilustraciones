@@ -109,3 +109,14 @@ footer
                 text-decoration-line: none
                 img
                     width: 2em
+
+/**/
+
+$media_tablet: 767px
+
+@media all and ( min-width: 319px ) and (max-width: $media_tablet)
+    .info-footer
+        display: flex
+        flex-flow: columns
+        flex-wrap: wrap
+        justify-content: space-between

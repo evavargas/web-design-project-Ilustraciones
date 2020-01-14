@@ -47,7 +47,7 @@ header {
 nav {
   display: inline-block;
   width: 98%;
-  z-index: 2;
+  z-index: 20;
   -webkit-animation: slideInDown 0.7s ease-out;
           animation: slideInDown 0.7s ease-out;
 }
@@ -77,7 +77,7 @@ nav {
   border-right: solid 1px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  z-index: 2;
+  z-index: 20;
   position: relative;
   padding: 1rem;
   vertical-align: middle;
@@ -170,6 +170,84 @@ ul li:hover ul {
 @keyframes hvr-back-pulse {
   50% {
     background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+
+/**/
+button#menu-button {
+  display: none;
+}
+
+@media all and (min-width: 319px) and (max-width: 767px) {
+  button#menu-button {
+    display: block;
+  }
+}
+
+button#menu-button:focus + nav#superior {
+  display: block;
+}
+
+@media all and (min-width: 319px) and (max-width: 767px) {
+  #superior {
+    display: none;
+  }
+  #superior > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+@media all and (min-width: 319px) and (max-width: 767px) and (min-width: 319px) and (max-width: 767px) {
+  #superior > ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #superior > ul > li {
+    position: relative;
+    display: block;
+    width: 8em;
+    text-align: center;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+    border: solid 1px;
+    padding: 1rem;
+  }
+  #superior > ul > li a {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media all and (min-width: 319px) and (max-width: 767px) {
+  #superior > ul li:hover ul {
+    display: block;
+  }
+  #superior > ul li ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 8em;
+  }
+}
+
+@media all and (min-width: 319px) and (max-width: 767px) {
+  .principalTitle {
+    color: #0099ff;
+    font-size: 100 .principalTitle;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .fondo-titulo {
+    background-color: black;
+    background-image: none;
   }
 }
 
@@ -349,6 +427,24 @@ footer {
 
 .copyright-redes > ul > li > a img {
   width: 2em;
+}
+
+/**/
+@media all and (min-width: 319px) and (max-width: 767px) {
+  .info-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: columns;
+            flex-flow: columns;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 body {

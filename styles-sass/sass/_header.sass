@@ -31,7 +31,7 @@ header
 nav
     display: inline-block
     width: 98%
-    z-index: 2
+    z-index: 20
     animation: slideInDown 0.7s ease-out
 
 
@@ -54,7 +54,7 @@ nav
         font-size: 16px
         border-right: solid 1px
         box-sizing: border-box
-        z-index: 2
+        z-index: 20
         position: relative
         padding: 1rem
         vertical-align: middle
@@ -135,3 +135,56 @@ ul
 @keyframes hvr-back-pulse
     50%
         background-color: rgba(32, 152, 209, 0.75)
+
+/**/
+
+$media_tablet: 767px
+
+button#menu-button
+    display: none
+    @media all and ( min-width: 319px ) and (max-width: $media_tablet) 
+        display: block
+    &:focus + nav#superior 
+        display: block
+
+
+#superior 
+    @media all and ( min-width: 319px ) and (max-width: $media_tablet) 
+        display: none
+        >ul
+            display: flex
+            margin: 0
+            padding: 1rem
+            @media all and ( min-width: 319px ) and (max-width: $media_tablet) 
+                flex-direction: column
+                >li
+                    position: relative
+                    display: block
+                    width: 8em
+                    text-align: center
+                    transition: 1s all
+                    border: solid 1px
+                    padding: 1rem
+                    a
+                        display: inline-block
+                        box-sizing: border-box
+            li
+                &:hover
+                    ul
+                        display: block
+                ul
+                    display: none
+                    position: absolute
+                    top: 0
+                    left: 8em
+
+@media all and ( min-width: 319px ) and (max-width: $media_tablet)
+    .principalTitle
+        color: rgb(0, 153, 255)
+        font-size: 100&
+        line-height: 1.7
+        text-align: center
+        letter-spacing: 2px
+    .fondo-titulo
+        background-color: black
+        background-image: none
