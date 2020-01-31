@@ -1,5 +1,613 @@
+@media screen and (min-width: 319px) {
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 359px) {
+  container {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 374px) {
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 410px) {
+  .container, .container-footer {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container, .container-footer {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container, .container-footer {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container, .container-footer {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container, .container-footer {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+#div-index-grid {
+  vertical-align: baseline;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "titulo titulo titulo" "ilustradores gallery descripcion" "titulo-autor titulo-autor titulo-autor" "autor-video autor-biografia autor-redes" "titulo-diseno titulo-diseno titulo-diseno" "compra p-descripcion p-descripcion" "sugerencias sugerencias sugerencias" "carrito carrito carrito" "suscribe suscribe suscribe";
+  -ms-grid-rows: 80px 380px 80px 360px 80px 450px 380px 240px 630px;
+      grid-template-rows: 80px 380px 80px 360px 80px 450px 380px 240px 630px;
+  -ms-grid-columns: 28% 35% 36%;
+      grid-template-columns: 28% 35% 36%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#div-index-grid > h2.seccion {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo;
+}
+
+#div-index-grid > #ilustradores {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: ilustradores;
+}
+
+#div-index-grid > div.slideGallery {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: gallery;
+}
+
+#div-index-grid > #descripcion {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: descripcion;
+}
+
+#div-index-grid > #titulo-autor {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: titulo-autor;
+}
+
+#div-index-grid > iframe.autor-video {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: autor-video;
+}
+
+#div-index-grid > aside.biografia {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: autor-biografia;
+}
+
+#div-index-grid > aside#redesIlustrador {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: autor-redes;
+}
+
+#div-index-grid > #sugerencias {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: sugerencias;
+}
+
+#div-index-grid > #titulo-diseno {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: titulo-diseno;
+}
+
+#div-index-grid > #producto-compra {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: compra;
+}
+
+#div-index-grid > div.producto-descripcion {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: p-descripcion;
+}
+
+#div-index-grid > #carrito {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: carrito;
+}
+
+#div-index-grid > aside.suscribe.wow.fadeInUp {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: suscribe;
+}
+
+#main-noticias-grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "seccion" "noticias" "suscribe";
+  -ms-grid-rows: 80px 1370px 640px;
+      grid-template-rows: 80px 1370px 640px;
+  -ms-grid-columns: 98%;
+      grid-template-columns: 98%;
+  grid-column-gap: 5px;
+  grid-row-gap: 15px;
+}
+
+#main-noticias-grid h2.seccion {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: seccion;
+}
+
+#main-noticias-grid div.noticias {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: noticias;
+}
+
+#main-noticias-grid aside.suscribe {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: suscribe;
+}
+
+#vertodo-grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "titulo titulo" "detalle disponible" "compra p-descripcion" "carrito carrito";
+  -ms-grid-rows: 80px 660px 450px 240px;
+      grid-template-rows: 80px 660px 450px 240px;
+  -ms-grid-columns: 42% 56%;
+      grid-template-columns: 42% 56%;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+}
+
+#vertodo-grid h2.seccion {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo;
+}
+
+#vertodo-grid section.detalle-producto {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: detalle;
+}
+
+#vertodo-grid section.disponibles {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: disponible;
+}
+
+#vertodo-grid #producto-compra {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: compra;
+}
+
+#vertodo-grid div.producto-descripcion {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: p-descripcion;
+}
+
+#vertodo-grid #carrito {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: carrito;
+}
+
+#usuario-grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "titulo titulo" "nombre-usuario nombre-usuario" "card-usuario tab-usuario" "carrito proceso-compra";
+  -ms-grid-rows: 80px 80px 350px 320px;
+      grid-template-rows: 80px 80px 350px 320px;
+  -ms-grid-columns: 36% 58%;
+      grid-template-columns: 36% 58%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#usuario-grid h2.seccion {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo;
+}
+
+#usuario-grid h3.name-usuario {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nombre-usuario;
+}
+
+#usuario-grid figure.usuario {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: card-usuario;
+}
+
+#usuario-grid article.tab-usuario {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: tab-usuario;
+}
+
+#usuario-grid > #carrito {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: carrito;
+}
+
+#usuario-grid aside.proceso-de-compra {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: proceso-compra;
+}
+
+@media screen and (min-width: 319px) and (max-width: 409px) {
+  #div-index-grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo" "descripcion" "ilustradores" "gallery" "titulo-autor" "autor-redes" "autor-video" "autor-biografia" "titulo-diseno" "compra" "sugerencias" "carrito" "suscribe";
+    -ms-grid-rows: 80px 340px 340px 300px 80px 220px 200px 380px 80px 260px 400px 280px 760px;
+        grid-template-rows: 80px 340px 340px 300px 80px 220px 200px 380px 80px 260px 400px 280px 760px;
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #div-index-grid > div.producto-descripcion {
+    display: none;
+  }
+  #main-noticias-grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "seccion" "noticias" "suscribe";
+    -ms-grid-rows: 80px 2410px 780px;
+        grid-template-rows: 80px 2410px 780px;
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+  }
+  #main-noticias-grid figure {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #main-noticias-grid figure img {
+    width: 50%;
+  }
+  #main-noticias-grid figure p {
+    width: 98%;
+  }
+  #vertodo-grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo" "detalle" "disponible" "compra" "carrito";
+    -ms-grid-rows: 100px 420px 400px 450px 240px;
+        grid-template-rows: 100px 420px 400px 450px 240px;
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+  }
+  #vertodo-grid > div.producto-descripcion {
+    display: none;
+  }
+  #vertodo-grid .detalle-producto figure img {
+    width: 100%;
+  }
+  #vertodo-grid .listado-modelos {
+    width: 98%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    overflow: hidden;
+    overflow-x: scroll;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #vertodo-grid .listado-modelos a img {
+    width: 100%;
+  }
+  #vertodo-grid .disponibles {
+    width: 99.9%;
+    height: 360px;
+  }
+  #vertodo-grid .listado-productos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 98%;
+  }
+  #usuario-grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo" "nombre-usuario" "card-usuario" "tab-usuario" "carrito" "proceso-compra";
+    -ms-grid-rows: 80px 80px 200px 400px 300px 320px;
+        grid-template-rows: 80px 80px 200px 400px 300px 320px;
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+  }
+}
+
+@media screen and (min-width: 410px) and (max-width: 766px) {
+  #div-index-grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo" "descripcion" "ilustradores" "gallery" "titulo-autor" "autor-redes" "autor-video" "autor-biografia" "titulo-diseno" "compra" "sugerencias" "carrito" "suscribe";
+    -ms-grid-rows: 80px 340px 340px 300px 80px 220px 200px 380px 80px 260px 400px 280px 740px;
+        grid-template-rows: 80px 340px 340px 300px 80px 220px 200px 380px 80px 260px 400px 280px 740px;
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #div-index-grid > div.producto-descripcion {
+    display: none;
+  }
+  #main-noticias-grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "seccion" "noticias" "suscribe";
+    -ms-grid-rows: 80px 2600px 780px;
+        grid-template-rows: 80px 2600px 780px;
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+  }
+  #main-noticias-grid figure {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #main-noticias-grid figure img {
+    width: 75%;
+  }
+  #main-noticias-grid figure p {
+    width: 98%;
+  }
+  #vertodo-grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo" "detalle" "disponible" "compra" "carrito";
+    -ms-grid-rows: 80px 460px 380px 430px 260px;
+        grid-template-rows: 80px 460px 380px 430px 260px;
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+  }
+  #vertodo-grid > div.producto-descripcion {
+    display: none;
+  }
+  #vertodo-grid .detalle-producto figure img {
+    width: 100%;
+  }
+  #vertodo-grid .listado-modelos {
+    width: 98%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    overflow: hidden;
+    overflow-x: scroll;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #vertodo-grid .listado-modelos a img {
+    width: 100%;
+  }
+  #vertodo-grid .disponibles {
+    width: 99.9%;
+    height: 360px;
+  }
+  #vertodo-grid .listado-productos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 98%;
+  }
+  #usuario-grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo" "nombre-usuario" "card-usuario" "tab-usuario" "carrito" "proceso-compra";
+    -ms-grid-rows: 80px 80px 200px 400px 300px 320px;
+        grid-template-rows: 80px 80px 200px 400px 300px 320px;
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  #div-index-grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo titulo" "descripcion descripcion" "ilustradores gallery" "titulo-autor titulo-autor" "autor-redes autor-video" "autor-biografia autor-biografia" "titulo-diseno titulo-diseno" "compra sugerencias" "carrito carrito" "suscribe suscribe";
+    -ms-grid-rows: 80px 200px 340px 80px 220px 200px 80px 360px 260px 680px;
+        grid-template-rows: 80px 200px 340px 80px 220px 200px 80px 360px 260px 680px;
+    -ms-grid-columns: 42% 56%;
+        grid-template-columns: 42% 56%;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #div-index-grid > div.producto-descripcion {
+    display: none;
+  }
+  #main-noticias-grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "seccion" "noticias" "suscribe";
+    -ms-grid-rows: 80px 1420px 600px;
+        grid-template-rows: 80px 1420px 600px;
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+  }
+  #main-noticias-grid figure > img {
+    width: 40%;
+  }
+  #vertodo-grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo titulo" "detalle disponible" "compra carrito";
+    -ms-grid-rows: 80px 450px 380px;
+        grid-template-rows: 80px 450px 380px;
+  }
+  #vertodo-grid > div.producto-descripcion {
+    display: none;
+  }
+  #vertodo-grid .detalle-producto {
+    padding: 0.2rem;
+  }
+  #vertodo-grid .detalle-producto figure img {
+    width: 75%;
+  }
+  #vertodo-grid .listado-modelos {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    overflow: hidden;
+    overflow-x: scroll;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #vertodo-grid .listado-modelos a img {
+    width: 100%;
+  }
+  #vertodo-grid .disponibles {
+    width: 98%;
+    height: 360px;
+  }
+  #vertodo-grid .listado-productos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 98%;
+  }
+  #vertodo-grid #producto-compra {
+    display: block;
+  }
+  #usuario-grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo" "nombre-usuario" "card-usuario" "tab-usuario" "carrito" "proceso-compra";
+    -ms-grid-rows: 80px 80px 200px 400px 300px 320px;
+        grid-template-rows: 80px 80px 200px 400px 300px 320px;
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .detalle-producto {
+    padding: 0.2rem;
+  }
+  .detalle-producto figure img {
+    width: 75%;
+  }
+  .listado-modelos {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    overflow: hidden;
+    overflow-x: scroll;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .listado-modelos a img {
+    width: 100%;
+  }
+}
+
 header {
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,22 +619,119 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 99%;
+  width: 100%;
+  position: relative;
+}
+
+.top {
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top > div {
+  width: 40%;
+  padding: 0;
+}
+
+.top > div > div {
+  margin: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-animation: lightSpeedIn 8s ease-in-out;
+          animation: lightSpeedIn 8s ease-in-out;
+  display: inline-block;
+}
+
+.top p {
+  margin: 0;
+  padding: 0;
+}
+
+.top a {
+  font-family: "Josefin Slab", serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: blueviolet;
+}
+
+.iniciarSesion {
+  background-color: black;
+  padding: 0;
+  display: inline-block;
+  margin: 00;
+  border: ridge black;
+}
+
+@-webkit-keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+            transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: skewX(20deg);
+            transform: skewX(20deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: skewX(-5deg);
+            transform: skewX(-5deg);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+            transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: skewX(20deg);
+            transform: skewX(20deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: skewX(-5deg);
+            transform: skewX(-5deg);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+          animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 .fondo-titulo {
   background-color: black;
   background-image: url("../../assets/logo/fondo-titulo-full.png");
-  width: 99%;
+  width: 100%;
   margin: 0rem;
   padding: 0rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  -webkit-animation: slideInDown 1.2s ease-out;
+          animation: slideInDown 1.2s ease-out;
 }
 
 .titulo-header {
@@ -46,10 +751,8 @@ header {
 
 nav {
   display: inline-block;
-  width: 98%;
+  width: 100%;
   z-index: 20;
-  -webkit-animation: slideInDown 0.7s ease-out;
-          animation: slideInDown 0.7s ease-out;
 }
 
 .menu {
@@ -429,7 +1132,6 @@ footer {
   width: 2em;
 }
 
-/**/
 @media all and (min-width: 319px) and (max-width: 767px) {
   .info-footer {
     display: -webkit-box;
@@ -449,374 +1151,44 @@ footer {
 
 body {
   background-color: #f5f6fa;
-  margin: 0em;
-  padding-left: 1px;
-  padding-right: 1px;
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
   vertical-align: baseline;
 }
 
+h1 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
 h3 {
-  margin: 0.2em;
+  font-size: 1.25em;
+}
+
+a {
+  font-size: 1em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 main {
-  margin-top: -6.4rem;
-  margin-bottom: 2rem;
-}
-
-.iniciarSesion {
-  background-color: #f5f6fa;
-  position: -webkit-sticky;
-  position: sticky;
-  padding: 0.7rem;
-  width: 11rem;
-  top: 0.2rem;
-  left: 100%;
-  display: inline-block;
-  margin: 0.6rem 0 0 0;
-  border-radius: 1rem;
-  border: ridge #f5f6fa;
-  z-index: 2;
-  -webkit-animation: fadeInRight 1s ease-out;
-          animation: fadeInRight 1s ease-out;
-}
-
-.iniciarSesion input {
-  display: block;
-  width: 95%;
+  margin: auto;
+  width: 84%;
+  height: 100%;
 }
 
 .seccion {
   color: #69d2e7;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 200%;
   margin-left: 1.3rem;
   display: block;
-}
-
-.top {
-  margin: 0em;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.top > div {
-  width: 50%;
-  padding: 4px;
-}
-
-.top > div > div {
-  margin: 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  -webkit-animation: lightSpeedIn 8s ease-in-out;
-          animation: lightSpeedIn 8s ease-in-out;
-  display: inline-block;
-}
-
-.top p {
-  margin: 0;
-  padding: 0;
-}
-
-.top a {
-  font-family: "Josefin Slab", serif;
-  font-size: 14px;
-  text-decoration: none;
-  color: blueviolet;
-}
-
-@-webkit-keyframes lightSpeedIn {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes lightSpeedIn {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.lightSpeedIn {
-  -webkit-animation-name: lightSpeedIn;
-  animation-name: lightSpeedIn;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-}
-
-#div-index-grid {
-  vertical-align: baseline;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "titulo titulo titulo" "ilustradores gallery descripcion" "titulo-autor titulo-autor titulo-autor" "autor-video autor-biografia autor-redes" "titulo-diseno titulo-diseno titulo-diseno" "compra p-descripcion p-descripcion" "sugerencias sugerencias sugerencias" "carrito carrito carrito" "suscribe suscribe suscribe";
-  -ms-grid-rows: 80px 380px 80px 360px 80px 450px 380px 240px 630px;
-      grid-template-rows: 80px 380px 80px 360px 80px 450px 380px 240px 630px;
-  -ms-grid-columns: 28% 35% 36%;
-      grid-template-columns: 28% 35% 36%;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-#div-index-grid > h2.seccion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: titulo;
-}
-
-#div-index-grid > #ilustradores {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: ilustradores;
-}
-
-#div-index-grid > div.slideGallery {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: gallery;
-}
-
-#div-index-grid > #descripcion {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: descripcion;
-}
-
-#div-index-grid > #titulo-autor {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: titulo-autor;
-}
-
-#div-index-grid > iframe.autor-video {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: autor-video;
-}
-
-#div-index-grid > aside.biografia {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: autor-biografia;
-}
-
-#div-index-grid > aside#redesIlustrador {
-  -ms-grid-row: 4;
-  -ms-grid-column: 3;
-  grid-area: autor-redes;
-}
-
-#div-index-grid > #sugerencias {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: sugerencias;
-}
-
-#div-index-grid > #titulo-diseno {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: titulo-diseno;
-}
-
-#div-index-grid > #producto-compra {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: compra;
-}
-
-#div-index-grid > div.producto-descripcion {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: p-descripcion;
-}
-
-#div-index-grid > #carrito {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: carrito;
-}
-
-#div-index-grid > aside.suscribe.wow.fadeInUp {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: suscribe;
-}
-
-#main-noticias-grid {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "seccion" "noticias" "suscribe";
-  -ms-grid-rows: 80px 1370px 640px;
-      grid-template-rows: 80px 1370px 640px;
-  -ms-grid-columns: 98%;
-      grid-template-columns: 98%;
-  grid-column-gap: 5px;
-  grid-row-gap: 15px;
-}
-
-#main-noticias-grid h2.seccion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: seccion;
-}
-
-#main-noticias-grid div.noticias {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: noticias;
-}
-
-#main-noticias-grid aside.suscribe {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: suscribe;
-}
-
-#vertodo-grid {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "titulo titulo" "detalle disponible" "compra p-descripcion" "carrito carrito";
-  -ms-grid-rows: 80px 660px 450px 240px;
-      grid-template-rows: 80px 660px 450px 240px;
-  -ms-grid-columns: 42% 56%;
-      grid-template-columns: 42% 56%;
-  grid-column-gap: 15px;
-  grid-row-gap: 10px;
-}
-
-#vertodo-grid h2.seccion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: titulo;
-}
-
-#vertodo-grid section.detalle-producto {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: detalle;
-}
-
-#vertodo-grid section.disponibles {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: disponible;
-}
-
-#vertodo-grid #producto-compra {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: compra;
-}
-
-#vertodo-grid div.producto-descripcion {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: p-descripcion;
-}
-
-#vertodo-grid #carrito {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: carrito;
-}
-
-#usuario-grid {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "titulo titulo" "nombre-usuario nombre-usuario" "card-usuario tab-usuario" "carrito proceso-compra";
-  -ms-grid-rows: 80px 80px 350px 320px;
-      grid-template-rows: 80px 80px 350px 320px;
-  -ms-grid-columns: 36% 58%;
-      grid-template-columns: 36% 58%;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-#usuario-grid h2.seccion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: titulo;
-}
-
-#usuario-grid h3.name-usuario {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: nombre-usuario;
-}
-
-#usuario-grid figure.usuario {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: card-usuario;
-}
-
-#usuario-grid article.tab-usuario {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: tab-usuario;
-}
-
-#usuario-grid > #carrito {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: carrito;
-}
-
-#usuario-grid aside.proceso-de-compra {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: proceso-compra;
 }
 
 .boton-inicio {
@@ -1748,380 +2120,6 @@ h4 {
   .puntos-venta > section {
     margin: 0;
     padding: 0;
-  }
-}
-
-@media screen and (min-width: 319px) {
-  .container {
-    max-width: 315px;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 359px) {
-  container {
-    max-width: 350px;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 374px) {
-  .container {
-    max-width: 370px;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 410px) {
-  .container, .container-footer {
-    max-width: 402px;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .container, .container-footer {
-    max-width: 550px;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container, .container-footer {
-    max-width: 750px;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .container, .container-footer {
-    max-width: 980px;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container, .container-footer {
-    max-width: 1240px;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 319px) and (max-width: 409px) {
-  #div-index-grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "titulo" "descripcion" "ilustradores" "gallery" "titulo-autor" "autor-redes" "autor-video" "autor-biografia" "titulo-diseno" "compra" "sugerencias" "carrito" "suscribe";
-    -ms-grid-rows: 80px 340px 340px 300px 80px 220px 200px 380px 80px 260px 400px 280px 760px;
-        grid-template-rows: 80px 340px 340px 300px 80px 220px 200px 380px 80px 260px 400px 280px 760px;
-    -ms-grid-columns: 98%;
-        grid-template-columns: 98%;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  #div-index-grid > div.producto-descripcion {
-    display: none;
-  }
-  #main-noticias-grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "seccion" "noticias" "suscribe";
-    -ms-grid-rows: 80px 2410px 780px;
-        grid-template-rows: 80px 2410px 780px;
-    -ms-grid-columns: 98%;
-        grid-template-columns: 98%;
-  }
-  #main-noticias-grid figure {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #main-noticias-grid figure img {
-    width: 50%;
-  }
-  #main-noticias-grid figure p {
-    width: 98%;
-  }
-  #vertodo-grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "titulo" "detalle" "disponible" "compra" "carrito";
-    -ms-grid-rows: 100px 420px 400px 450px 240px;
-        grid-template-rows: 100px 420px 400px 450px 240px;
-    -ms-grid-columns: 98%;
-        grid-template-columns: 98%;
-  }
-  #vertodo-grid > div.producto-descripcion {
-    display: none;
-  }
-  #vertodo-grid .detalle-producto figure img {
-    width: 100%;
-  }
-  #vertodo-grid .listado-modelos {
-    width: 98%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    overflow: hidden;
-    overflow-x: scroll;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #vertodo-grid .listado-modelos a img {
-    width: 100%;
-  }
-  #vertodo-grid .disponibles {
-    width: 99.9%;
-    height: 360px;
-  }
-  #vertodo-grid .listado-productos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    overflow: hidden;
-    overflow-x: scroll;
-    width: 98%;
-  }
-  #usuario-grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "titulo" "nombre-usuario" "card-usuario" "tab-usuario" "carrito" "proceso-compra";
-    -ms-grid-rows: 80px 80px 200px 400px 300px 320px;
-        grid-template-rows: 80px 80px 200px 400px 300px 320px;
-    -ms-grid-columns: 98%;
-        grid-template-columns: 98%;
-  }
-}
-
-@media screen and (min-width: 410px) and (max-width: 766px) {
-  #div-index-grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "titulo" "descripcion" "ilustradores" "gallery" "titulo-autor" "autor-redes" "autor-video" "autor-biografia" "titulo-diseno" "compra" "sugerencias" "carrito" "suscribe";
-    -ms-grid-rows: 80px 340px 340px 300px 80px 220px 200px 380px 80px 260px 400px 280px 680px;
-        grid-template-rows: 80px 340px 340px 300px 80px 220px 200px 380px 80px 260px 400px 280px 680px;
-    -ms-grid-columns: 98%;
-        grid-template-columns: 98%;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  #div-index-grid > div.producto-descripcion {
-    display: none;
-  }
-  #main-noticias-grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "seccion" "noticias" "suscribe";
-    -ms-grid-rows: 80px 2600px 780px;
-        grid-template-rows: 80px 2600px 780px;
-    -ms-grid-columns: 98%;
-        grid-template-columns: 98%;
-  }
-  #main-noticias-grid figure {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #main-noticias-grid figure img {
-    width: 75%;
-  }
-  #main-noticias-grid figure p {
-    width: 98%;
-  }
-  #vertodo-grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "titulo" "detalle" "disponible" "compra" "carrito";
-    -ms-grid-rows: 80px 460px 380px 430px 260px;
-        grid-template-rows: 80px 460px 380px 430px 260px;
-    -ms-grid-columns: 98%;
-        grid-template-columns: 98%;
-  }
-  #vertodo-grid > div.producto-descripcion {
-    display: none;
-  }
-  #vertodo-grid .detalle-producto figure img {
-    width: 100%;
-  }
-  #vertodo-grid .listado-modelos {
-    width: 98%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    overflow: hidden;
-    overflow-x: scroll;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #vertodo-grid .listado-modelos a img {
-    width: 100%;
-  }
-  #vertodo-grid .disponibles {
-    width: 99.9%;
-    height: 360px;
-  }
-  #vertodo-grid .listado-productos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    overflow: hidden;
-    overflow-x: scroll;
-    width: 98%;
-  }
-  #usuario-grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "titulo" "nombre-usuario" "card-usuario" "tab-usuario" "carrito" "proceso-compra";
-    -ms-grid-rows: 80px 80px 200px 400px 300px 320px;
-        grid-template-rows: 80px 80px 200px 400px 300px 320px;
-    -ms-grid-columns: 98%;
-        grid-template-columns: 98%;
-  }
-}
-
-@media screen and (min-width: 767px) and (max-width: 1023px) {
-  #div-index-grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "titulo titulo" "descripcion descripcion" "ilustradores gallery" "titulo-autor titulo-autor" "autor-redes autor-video" "autor-biografia autor-biografia" "titulo-diseno titulo-diseno" "compra sugerencias" "carrito carrito" "suscribe suscribe";
-    -ms-grid-rows: 80px 200px 340px 80px 220px 200px 80px 360px 260px 600px;
-        grid-template-rows: 80px 200px 340px 80px 220px 200px 80px 360px 260px 600px;
-    -ms-grid-columns: 42% 56%;
-        grid-template-columns: 42% 56%;
-    grid-column-gap: 5px;
-    grid-row-gap: 10px;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  #div-index-grid > div.producto-descripcion {
-    display: none;
-  }
-  #main-noticias-grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "seccion" "noticias" "suscribe";
-    -ms-grid-rows: 80px 1420px 600px;
-        grid-template-rows: 80px 1420px 600px;
-    -ms-grid-columns: 98%;
-        grid-template-columns: 98%;
-  }
-  #main-noticias-grid figure > img {
-    width: 40%;
-  }
-  #vertodo-grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "titulo titulo" "detalle disponible" "compra carrito";
-    -ms-grid-rows: 80px 450px 380px;
-        grid-template-rows: 80px 450px 380px;
-  }
-  #vertodo-grid > div.producto-descripcion {
-    display: none;
-  }
-  #vertodo-grid .detalle-producto {
-    padding: 0.2rem;
-  }
-  #vertodo-grid .detalle-producto figure img {
-    width: 75%;
-  }
-  #vertodo-grid .listado-modelos {
-    width: 90%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    overflow: hidden;
-    overflow-x: scroll;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #vertodo-grid .listado-modelos a img {
-    width: 100%;
-  }
-  #vertodo-grid .disponibles {
-    width: 98%;
-    height: 360px;
-  }
-  #vertodo-grid .listado-productos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    overflow: hidden;
-    overflow-x: scroll;
-    width: 98%;
-  }
-  #vertodo-grid #producto-compra {
-    display: block;
-  }
-  #usuario-grid {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "titulo" "nombre-usuario" "card-usuario" "tab-usuario" "carrito" "proceso-compra";
-    -ms-grid-rows: 80px 80px 200px 400px 300px 320px;
-        grid-template-rows: 80px 80px 200px 400px 300px 320px;
-    -ms-grid-columns: 98%;
-        grid-template-columns: 98%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .detalle-producto {
-    padding: 0.2rem;
-  }
-  .detalle-producto figure img {
-    width: 75%;
-  }
-  .listado-modelos {
-    width: 90%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    overflow: hidden;
-    overflow-x: scroll;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .listado-modelos a img {
-    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

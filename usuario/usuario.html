@@ -9,7 +9,7 @@
     @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Josefin+Slab&display=swap");
   </style>
   <meta name="description" content="Tienda Ilustraciones: Acceder - Diseños y productos de ilustradores argentinos">
-  <meta name="keywords"  content="usuario tienda ilustraciones, compra tienda ilustraciones, acceder ilustraciones">
+  <meta name="keywords" content="usuario tienda ilustraciones, compra tienda ilustraciones, acceder ilustraciones">
 
   <title>Panel de usuario: Tienda Ilustraciones</title>
 </head>
@@ -23,6 +23,10 @@
             <p><a href="./">Click Here!</a></p>
           </div>
         </div>
+        <!--Iniciar sesion-->
+        <form action="iniciarSesion" class="iniciarSesion">
+          <input type="submit" value="Cerrar Sesion" />
+        </form>
       </aside>
       <div class="fondo-titulo">
         <div class="titulo-header">
@@ -65,10 +69,6 @@
         </ul>
       </nav>
     </header>
-    <!--Iniciar sesion-->
-    <form action="iniciarSesion" class="iniciarSesion">
-      <input type="submit" value="Cerrar Sesion" />
-    </form>
     <main>
       <div id="usuario-grid">
         <h2 class="seccion">Panel de usuario</h2>
@@ -172,67 +172,68 @@
           </form>
         </aside>
       </div>
-  <script>
-    function openTab(evt, tabName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-  </script>
-  </main>
-  <footer>
-    <div class="container-footer">
-      <div class="info-footer">
-        <aside class="informacion-sitio">
-          <ul id="informacion">
-            <li>Ilustraciones</li>
-            <li>Sobre nosotros</li>
-            <li>Proveeedores</li>
-            <li>Ventas a empresa</li>
-            <li>Trabaja con nosotros</li>
-            <li>Ubicación</li>
-          </ul>
-        </aside>
-        <aside class="ayuda-sitio">
-          <ul id="ayuda">
-            <li>Ayuda</li>
-            <li>FAQs</li>
-            <li>Terminos y condiciones</li>
-            <li>Tiempo y costos de envio</li>
-            <li>Politica de privacidad</li>
-            <li><a href="../documentos/mapa-sitio.html">Mapa de sitio</a></li>
-          </ul>
-        </aside>
-        <aside class="contacto">
+      <script>
+        function openTab(evt, tabName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+      </script>
+    </main>
+    <footer>
+      <div class="container-footer">
+        <div class="info-footer">
+          <aside class="informacion-sitio">
+            <ul id="informacion">
+              <li>Ilustraciones</li>
+              <li>Sobre nosotros</li>
+              <li>Proveeedores</li>
+              <li>Ventas a empresa</li>
+              <li>Trabaja con nosotros</li>
+              <li>Ubicación</li>
+            </ul>
+          </aside>
+          <aside class="ayuda-sitio">
+            <ul id="ayuda">
+              <li>Ayuda</li>
+              <li>FAQs</li>
+              <li>Terminos y condiciones</li>
+              <li>Tiempo y costos de envio</li>
+              <li>Politica de privacidad</li>
+              <li><a href="../documentos/mapa-sitio.html">Mapa de sitio</a></li>
+            </ul>
+          </aside>
+          <aside class="contacto">
+            <ul>
+              <li>Contactenos</li>
+              <li><img src="../assets/iconos/phone-icon.png" alt="Nro de telefono">(+54) 11 469830XX</li>
+              <li><img src="../assets/iconos/whatsapp-icon.png" alt="whatsapp">(+51) 993 119 000</li>
+              <li><img src="../assets/iconos/correo-icon.png" alt="Correo electronico"> info@Ilustraciones.com</li>
+            </ul>
+          </aside>
+        </div>
+        <aside class="copyright-redes">
+          <h4>Copyright 2020- Todos los derechos reservados</h4>
           <ul>
-            <li>Contactenos</li>
-            <li><img src="../assets/iconos/phone-icon.png" alt="Nro de telefono">(+54) 11 469830XX</li>
-            <li><img src="../assets/iconos/whatsapp-icon.png" alt="whatsapp">(+51) 993 119 000</li>
-            <li><img src="../assets/iconos/correo-icon.png" alt="Correo electronico"> info@Ilustraciones.com</li>
+            <li><a href="https://www.facebook.com/"><img src="../assets/iconos/facebook-icon.png" alt="Facebook"></a>
+            </li>
+            <li><a href="https://twitter.com/"><img src="../assets/iconos/twitter-icon.png" alt="Twitter"></a></li>
+            <li><a href="https://www.pinterest.com/"><img src="../assets/iconos/pinterest-icon.png" alt="Pinterest"></a>
+            </li>
+            <li><a href="https://www.instagram.com/"><img src="../assets/iconos/instagram-icon.png" alt="Instagram"></a>
+            </li>
           </ul>
         </aside>
       </div>
-      <aside class="copyright-redes">
-        <h4>Copyright 2020- Todos los derechos reservados</h4>
-        <ul>
-          <li><a href="https://www.facebook.com/"><img src="../assets/iconos/facebook-icon.png" alt="Facebook"></a></li>
-          <li><a href="https://twitter.com/"><img src="../assets/iconos/twitter-icon.png" alt="Twitter"></a></li>
-          <li><a href="https://www.pinterest.com/"><img src="../assets/iconos/pinterest-icon.png" alt="Pinterest"></a>
-          </li>
-          <li><a href="https://www.instagram.com/"><img src="../assets/iconos/instagram-icon.png" alt="Instagram"></a>
-          </li>
-        </ul>
-      </aside>
-    </div>
-  </footer>
+    </footer>
   </div>
 </body>
 

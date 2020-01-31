@@ -1,21 +1,70 @@
 header
-    margin: 0
+    margin: 0 !important
     padding: 0
     display: flex
     flex-flow: column
     justify-content: center
-    align-items: center
-    width: 99%
+    width: 100%
+    position: relative
+
+.top
+    background-color: black
+    width: 100%
+    margin: 0
+    padding: 0
+    display: flex
+    justify-content: space-between
+    >div
+        width: 40%
+        padding: 0
+        >div
+            margin: 0
+            width: fit-content
+            animation: lightSpeedIn 8s ease-in-out
+            display: inline-block
+    p
+        margin: 0
+        padding: 0
+    a
+        font-family: "Josefin Slab", serif
+        font-size: 14px
+        text-decoration: none
+        color: blueviolet
+
+.iniciarSesion
+    background-color: black
+    padding: 0
+    display: inline-block
+    margin: 00
+    border: ridge black
+
+@keyframes lightSpeedIn
+    from
+        transform: translate3d(100%, 0, 0) skewX(-30deg)
+        opacity: 0
+    60% 
+        transform: skewX(20deg)
+        opacity: 1
+    80%
+        transform: skewX(-5deg)
+    to
+        transform: translate3d(0, 0, 0)
+
+.lightSpeedIn 
+    animation-name: lightSpeedIn
+    animation-timing-function: ease-out
+
 .fondo-titulo
     background-color: black
     background-image: url("../../assets/logo/fondo-titulo-full.png")
-    width: 99%
+    width: 100%
     margin: 0rem
     padding: 0rem
     background-position: center
     background-repeat: no-repeat
     background-size: cover
     position: relative
+    animation: slideInDown 1.2s ease-out
 .titulo-header
     text-align: center
 .principalTitle
@@ -30,10 +79,8 @@ header
 
 nav
     display: inline-block
-    width: 98%
+    width: 100%
     z-index: 20
-    animation: slideInDown 0.7s ease-out
-
 
 .menu
     text-decoration-line: none
