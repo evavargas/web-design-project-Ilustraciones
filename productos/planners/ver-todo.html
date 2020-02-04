@@ -11,10 +11,11 @@
   <meta name="description" content="Diseños y productos de ilustradores argentinos - Tienda online">
   <meta name="keywords"
     content="nicoilustraciones, lavacastyle, fedecalde, JuanSzelalustraciones, Willabeta, CaluByRox, CieloJoaquinCastro, BraianRuizIlustraciones">
+  <script src="https://kit.fontawesome.com/5273606c33.js" crossorigin="anonymous"></script>
   <title>Ver Productos disponibles- Tienda Ilustraciones</title>
 </head>
 
-<body>
+<body class=" colorsOfSky">
   <div class="container">
     <header>
       <aside class="top">
@@ -38,37 +39,34 @@
           </h1>
         </div>
       </div>
-      <button id="menu-button">menu</button>
-      <nav id="superior">
-        <!--Productos disponibles segun su tipo, independiente del autor-->
-        <ul class="menu">
-          <li>
-            <a class="menu" href="../../index.html">Inicio</a>
-          </li>
-          <li>
-            <a class="menu" href="../../ilustradores/ilustradores.html">Ilustradores</a>
-          </li>
-          <li>
-            Productos
-            <ul>
-              <li><a class="menu" href="../ilustraciones/ver-todo.html">Ilustraciones</a></li>
-              <li><a class="menu" href="../cuadros/ver-todo.html">Cuadros</a></li>
-              <li><a class="menu" href="../remeras/ver-todo.html">Remeras</a></li>
-              <li><a class="menu" href="../tazas/ver-todo.html">Tazas</a></li>
-              <li><a class="menu" href="../agendas/ver-todo.html">Agendas</a></li>
-              <li><a class="menu" href="../planners/ver-todo.html">Planners</a></li>
-            </ul>
-          </li>
-          <li>
-            Puntos de venta
-            <ul>
-              <li><a class="menu" href="../../puntosventa/puntosdeventa.html">Argentina</a></li>
-              <li><a class="menu" href="../../puntosventa/puntosdeventa.html">Otros Paises</a></li>
-            </ul>
-          </li>
-          <li><a class="menu" href="../../eventos/eventos.html">Eventos</a></li>
-          <li><a class="menu" href="../../noticias/noticias.html">Noticias</a></li>
-        </ul>
+      <nav class="topnav" id="myTopnav">
+        <!--barra de menu-->
+        <a href="../../index.html">Inicio</a>
+        <a href="../../tienda.html">Tienda</a>
+        <a href="../../ilustradores/ilustradores.html">Ilustradores</a>
+        <div class="dropdown active">
+          <button class="dropbtn">Productos<i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="../ilustraciones/ver-todo.html">Ilustraciones</a>
+            <a href="../cuadros/ver-todo.html">Cuadros</a>
+            <a href="../remeras/ver-todo.html">Remeras</a>
+            <a href="../agendas/ver-todo.html">Agendas</a>
+            <a href="../tazas/ver-todo.html">Tazas</a>
+            <a href="../planners/ver-todo.html">Planners</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Puntos de venta
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../../puntosventa/puntosdeventa.html">Argentina</a>
+            <a href="../../puntosventa/puntosdeventa.html">Otros Paises</a>
+          </div>
+        </div>
+        <a href="../../eventos/eventos.html">Eventos</a>
+        <a href="../../noticias/noticias.html">Noticias</a>
+        <a href="javascrpt:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
       </nav>
     </header>
     <main>
@@ -282,6 +280,17 @@
       </div>
     </footer>
   </div>
+  <!--Script NavBar-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </body>
 
 </html>

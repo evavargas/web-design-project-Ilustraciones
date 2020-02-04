@@ -2,438 +2,346 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link type="text/css" rel="stylesheet" href="styles-sass/css/main.css" />
-  <link rel="stylesheet" href="/wow-js-css/animate.css">
-  <style>
-    @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Josefin+Slab&display=swap");
-  </style>
-  <meta name="description" content="Diseños y productos de ilustradores argentinos - Tienda online">
-  <meta name="keywords"
-    content="nicoilustraciones, lavacastyle, fedecalde, JuanSzelalustraciones, Willabeta, CaluByRox, CieloJoaquinCastro, BraianRuizIlustraciones">
-  <script src="https://kit.fontawesome.com/5273606c33.js" crossorigin="anonymous"></script>
-  <title>Tienda Ilustraciones</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="styles-sass/css/main.css" />
+    <link rel="stylesheet" href="/wow-js-css/animate.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Josefin+Slab&display=swap");
+    </style>
+    <meta name="description" content="Diseños y productos de ilustradores argentinos - Tienda online">
+    <meta name="keywords"
+        content="nicoilustraciones, lavacastyle, fedecalde, JuanSzelalustraciones, Willabeta, CaluByRox, CieloJoaquinCastro, BraianRuizIlustraciones">
+    <script src="https://kit.fontawesome.com/5273606c33.js" crossorigin="anonymous"></script>
+    <title>Tienda Ilustraciones</title>
 </head>
 
-<body>
-  <div class="container">
-    <header id="inicio">
-      <aside class="top">
-        <div>
-          <div>
-            <p><a href="./">Click Here!</a></p>
-          </div>
-        </div>
-        <!--Iniciar sesion-->
-        <form action="iniciarSesion" class="iniciarSesion">
-          <input type="email" placeholder="Usuario o Correo electronico" />
-          <input type="password" placeholder="Contraseña" />
-          <input type="submit" value="Ingresar" />
-        </form>
-      </aside>
-      <div class="fondo-titulo">
-        <div class="titulo-header">
-          <h1 class="principalTitle">
-            @Ilustraciones
-            <img src="./assets/logo/logo.png" alt="logo" />
-          </h1>
-        </div>
-      </div>
-      <nav id="superior">
-        <!--barra de menu-->
-        <ul class="menu">
-          <li>
-            <a class="menu" href="index.html">Inicio</a>
-          </li>
-          <li>
-            <a class="menu" href="./ilustradores/ilustradores.html">Ilustradores</a>
-          </li>
-          <li>
-            Productos
-            <ul>
-              <li><a class="menu" href="./productos/ilustraciones/ver-todo.html">Ilustraciones</a></li>
-              <li><a class="menu" href="./productos/cuadros/ver-todo.html">Cuadros</a></li>
-              <li><a class="menu" href="./productos/remeras/ver-todo.html">Remeras</a></li>
-              <li><a class="menu" href="./productos/tazas/ver-todo.html">Tazas</a></li>
-              <li><a class="menu" href="./productos/agendas/ver-todo.html">Agendas</a></li>
-              <li><a class="menu" href="./productos/planners/ver-todo.html">Planners</a></li>
-            </ul>
-          </li>
-          <li>
-            Puntos de venta
-            <ul>
-              <li><a class="menu" href="./puntosventa/puntosdeventa.html">Argentina</a></li>
-              <li><a class="menu" href="./puntosventa/puntosdeventa.html">Otros Paises</a></li>
-            </ul>
-          </li>
-          <li><a class="menu" href="./eventos/eventos.html">Eventos</a></li>
-          <li><a class="menu" href="./noticias/noticias.html">Noticias</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="boton-inicio wow slideInUp">
-      <a href="#inicio"><img src="./assets/tools/arrow-up.png" alt="Volver al principio"></a>
-    </div>
-    <main>
-
-      <div id="div-index-grid">
-        <h2 class="seccion">Los mejores artistas</h2>
-        <aside id="ilustradores">
-          <!--En este campo, se seleccionan los diseños segun el autor y se muestran en el slide-->
-          <form class="artistasSeleccion">
-            <input type="radio" name="ilustrador" value="lavaca" />LaVacaStyle<br />
-            <input type="radio" name="ilustrador" value="nico" checked />NicoIlustraciones<br />
-            <input type="radio" name="ilustrador" value="braian" />BraianRuizIlustraciones<br />
-            <input type="radio" name="ilustrador" value="fede" />FedeCalde-Ilustraciones<br />
-            <input type="radio" name="ilustrador" value="juan" />JuanSzelalustraciones<br />
-            <input type="radio" name="ilustrador" value="calu" />CaluByRox<br />
-            <input type="radio" name="ilustrador" value="cielo" />CieloJoaquinCastro<br />
-            <input type="radio" name="ilustrador" value="will" />Willabeta<br />
-          </form>
-        </aside>
-        <!--Slide de diseños-->
-        <div class="slidegallery">
-          <ul>
-            <li><img src="./assets/samples/ej1.jpg" alt=""></li>
-            <li><img src="./assets/samples/ej2.jpg" alt=""></li>
-            <li><img src="./assets/samples/ej3.jpg" alt=""></li>
-            <li><img src="./assets/samples/ej4.jpg" alt=""></li>
-          </ul>
-          <div>
-            <label>Seleccionar diseño</label><input type="checkbox" name="seleccion" id="codigo-producto">
-          </div>
-        </div>
-        <aside id="descripcion">
-          <!--Las especificaciones van cambiando segun cambia el producto mostrado-->
-          <p class="introduccion">
-            Tus Ilustradores favoritos, reunidos en un solo lugar. Accede a todos
-            sus trabajos y diseños, en articulos de gran calidad, personalizados
-            odio at consequat condimentum, lectus eros euismod nulla, id tempor
-            tellus elit congue elit. Donec erat metus, euismod efficitur nisl vel.
-          </p>
-        </aside>
-        <h2 class="seccion" id="titulo-autor">Sobre el autor</h2>
-        <!--Segun el autor seleccionado, sino va pasando de a uno cada x tiempo-->
-        <iframe class="autor-video" src="https://www.youtube.com/embed/RHpDf-L7Ffw"></iframe>
-        <aside class="biografia">
-          <p class="introduccion">
-            <span>Nico Ilustraciones <br /> </span>
-            Nicolás Vilela es el joven artista detrás de 'Nico Ilustraciones',
-            nombre con el que identificó sus perfiles en redes sociales. Allí
-            plasma sus obras que se encuentran atravesadas por diversos temas y
-            personajes, y que a su vez, son compartidas por cientos de usuarios y
-            seguidores.
-          </p>
-        </aside>
-        <aside id="redesIlustrador">
-          <ul class="redes">
-            <li>
-              <a href="https://www.instagram.com/nicoilustraciones/?hl=es-la">Instagram
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/nicoilustracion?lang=es">Twitter</a>
-            </li>
-            <li>
-              <a href="https://www.pinterest.com/romisap/nico-ilustraciones/">Pinterest</a>
-            </li>
-            <li><a href="https://tlgrm.es/channels">Telegram</a></li>
-            <li><a href="">Correo</a></li>
-            <li>
-              <a href="https://www.bypublications.com/producto/universos-nico-ilustraciones-campana/">Pagina web</a>
-            </li>
-          </ul>
-        </aside>
-
-        <h2 class="seccion" id="titulo-diseno">Diseño Seleccionado</h2>
-        <section id="producto-compra">
-          <figure class="articulo">
-            <div>
-              <a href="">
-                <div>
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKHlKpiF3PvuTU6ReMJ2mux4kI5wI_aSZx5jYRrNXJsBWP3nhv&s"
-                    alt="">
+<body class=" colorsOfSky">
+    <div class="container">
+        <header>
+            <nav class="topnav" id="myTopnav">
+                <!--barra de menu-->
+                <a class="active" href="index.html">Inicio</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="./ilustradores/ilustradores.html">Ilustradores</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Productos<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="./productos/ilustraciones/ver-todo.html">Ilustraciones</a>
+                        <a href="./productos/cuadros/ver-todo.html">Cuadros</a>
+                        <a href="./productos/remeras/ver-todo.html">Remeras</a>
+                        <a href="./productos/tazas/ver-todo.html">Tazas</a>
+                        <a href="./productos/agendas/ver-todo.html">Agendas</a>
+                        <a href="./productos/planners/ver-todo.html">Planners</a>
+                    </div>
                 </div>
-                <p class="nombre-producto">Diseño nº 10</p>
-              </a>
+                <div class="dropdown">
+                    <button class="dropbtn">Puntos de venta
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./puntosventa/puntosdeventa.html">Argentina</a>
+                        <a href="./puntosventa/puntosdeventa.html">Otros Paises</a>
+                    </div>
+                </div>
+                <a href="./eventos/eventos.html">Eventos</a>
+                <a href="./noticias/noticias.html">Noticias</a>
+                <a href="javascrpt:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </nav>
+        </header>
+        <main class="welcome">
+            <div id="div-welcome-grid">
+                <article class="cartel-container blueGreen borde-radio">
+                    <h1>@Ilustraciones</h1>
+                    <section class="intro">
+                        <h2>Tienda Online lider en Arte</h2>
+                        <p>Tus Diseños favoritos <span>+</span>Productos Exclusivos</p>
+                    </section>
+                </article>
+                <!--Slide de productos-->
+                <section class="productos-gallery megatron borde-radio">
+                    <h2 class="intro">Productos destacados</h2>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="./assets/sample-products/products-1.png" alt="producto disponible"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="./assets/sample-products/products-2.png" alt="producto disponible"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="./assets/sample-products/products-3.png" alt="producto disponible"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="./assets/sample-products/products-4.png" alt="producto disponible"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="./assets/sample-products/products-5.png" alt="producto disponible"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="./assets/sample-products/products-6.png" alt="producto disponible"
+                                style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="./assets/sample-products/products-7.png" alt="producto disponible"
+                                style="width:100%">
+                        </div>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </section>
+                <section class="intro yellowPink  borde-radio">
+                    <h2>Nuestros ilustradores</h2>
+                    <article class="ilustradores">
+                        <figure>
+                            <h3>La Vaca Stile</h3>
+                            <a href="https://www.instagram.com/lavacastyle/"><img
+                                    src="../assets/artistas/ArtistasPerfil/lavacastyle.jpg" alt="" />
+                            </a>
+                            <p>
+                                Esta innovadora artista, es activista por los derechos y bienestar
+                                de los animales. Con sus trabajos de gran impacto, busca generar un
+                                estilo de vida consciente y respetuoso con el planeta. Tal es su
+                                impacto que actualmente tiene mas de 28mil seguidores en instagram,
+                                y va en ascenso. Apoyando su trabajo, se destina una parte de lo
+                                recaudado a ONGs en contra del maltrato animal.
+                            </p>
+                        </figure>
+                        <figure>
+                            <h3>Nico Ilustraciones</h3>
+                            <a href="https://www.instagram.com/nicoilustraciones/"><img
+                                    src="../assets/artistas/ArtistasPerfil/nicoilustraciones.jpg" alt="Nico" /></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                                efficitur vitae arcu sit amet aliquam. Interdum et malesuada fames
+                                ac ante ipsum primis in faucibus. Interdum et malesuada fames ac
+                                ante ipsum primis in faucibus. In at ex a orci auctor vulputate.
+                            </p>
+                        </figure>
+                        <figure>
+                            <h3>Braian Ruiz Ilustraciones</h3>
+                            <a href="https://www.instagram.com/braianruiz_ilustraciones/"><img
+                                    src="../assets/artistas/ArtistasPerfil/braianruizilustraciones.jpg"
+                                    alt="Braian" /></a>
+                            <p>
+                                Cras ultrices interdum mauris, non dapibus lorem porttitor quis.
+                                Aliquam vel auctor elit. Suspendisse potenti. Nullam quis libero
+                                scelerisque sem tempus egestas. Morbi nisi erat, varius et metus
+                                malesuada, auctor fermentum enim.Nullam quis libero scelerisque sem
+                                tempus egestas. Morbi nisi erat, varius et metus malesuada, auctor
+                                fermentum enim.
+                            </p>
+                        </figure>
+                        <figure>
+                            <h3>Juan Szela Ilustraciones</h3>
+                            <a href="https://www.instagram.com/juanszela.ilustraciones"><img
+                                    src="../assets/artistas/ArtistasPerfil/juanszelailustraciones.jpg" alt="" /></a>
+                            <p>
+                                Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                                per inceptos himenaeos. Ut auctor sagittis elit, ac convallis dolor
+                                varius iaculis. Donec fringilla neque velit, eget aliquam leo
+                                feugiat ac. Aliquam ut neque commodo, suscipit elit sit amet,
+                                sollicitudin enim.Nullam quis libero scelerisque sem tempus egestas.
+                                Morbi nisi erat, varius et metus malesuada, auctor fermentum enim.
+                            </p>
+                        </figure>
+                        <figure>
+                            <h3>Calu By Rox</h3>
+                            <a href="https://www.instagram.com/calubyroxx"><img
+                                    src="../assets/artistas/ArtistasPerfil/calubyrox.jpg" alt="Calu" /></a>
+                            <p>
+                                Proin et dolor nec arcu sagittis congue. Cras et sollicitudin enim,
+                                ac sodales massa. In tincidunt ligula lorem, interdum congue lorem
+                                lobortis non. In molestie dui in sapien feugiat scelerisque.Nullam
+                                quis libero scelerisque sem tempus egestas. Morbi nisi erat, varius
+                                et metus malesuada, auctor fermentum enim.
+                            </p>
+                        </figure>
+                        <figure>
+                            <h3>Will La Beta</h3>
+                            <a href="https://www.instagram.com/will.la.beta/"><img
+                                    src="../assets/artistas/ArtistasPerfil/willlabeta.jpg" alt="Will" /></a>
+                            <p>
+                                Nulla in augue ac nibh ultricies lobortis. Donec dictum ante cursus,
+                                ultrices quam ac, blandit est. In hac habitasse platea dictumst.
+                                Vivamus vitae velit mollis, varius lorem eget, mattis nisl.
+                                Suspendisse diam magna, efficitur in vestibulum a, elementum in
+                                lectus.Nullam quis libero scelerisque sem tempus egestas. Morbi nisi
+                                erat, varius et metus malesuada, auctor fermentum enim.
+                            </p>
+                        </figure>
+                        <figure>
+                            <h3>Cielo Joaquin Castro</h3>
+                            <a href="https://www.instagram.com/cielojoaquincastro/"><img
+                                    src="../assets/artistas/ArtistasPerfil/cielojoaquincastro.jpg" alt="Cielo" /></a>
+                            <p>
+                                Nulla in augue ac nibh ultricies lobortis. Donec dictum ante cursus,
+                                ultrices quam ac, blandit est. In hac habitasse platea dictumst.
+                                Vivamus vitae velit mollis, varius lorem eget, mattis nisl.
+                                Suspendisse diam magna, efficitur in vestibulum a, elementum in
+                                lectus.Nullam quis libero scelerisque sem tempus egestas. Morbi nisi
+                                erat, varius et metus malesuada, auctor fermentum enim.
+                            </p>
+                        </figure>
+                        <figure>
+                            <h3>Fede Calderon</h3>
+                            <a href="https://www.instagram.com/fede.calde"><img
+                                    src="../assets/artistas/ArtistasPerfil/fedecalde.jpg" alt="Fede Calde" /></a>
+                            <p>
+                                Quisque pulvinar mi eros, a ultrices erat imperdiet quis.
+                                Suspendisse quis turpis vel ligula venenatis efficitur. Pellentesque
+                                habitant morbi tristique senectus et netus et malesuada fames ac
+                                turpis egestas.Nulla in augue ac nibh ultricies lobortis. Donec
+                                dictum ante cursus, ultrices quam ac, blandit est. In hac habitasse
+                                platea dictumst.
+                            </p>
+                        </figure>
+                    </article>
+                </section>
+                <aside class="cartel-accion atlas borde-radio">
+                    <p>Calidad, garantia, compromiso, exclusividad. Todo lo que necesitas.</p>
+                    <div>
+                        <a href="index.html">Empezar</a>
+                        <p>Que comience la aventura</p>
+                    </div>
+                </aside>
+
+                <aside class="suscribe wow fadeInUp azureLane borde-radio">
+                    <h3>
+                        Para mantenerte al dia sobre los nuevos productos y noticias,
+                        Suscribete
+                    </h3>
+                    <p>
+                        Es realmente facil y solo te tomara unos segundos. <br />
+                        Deseo recibir informacion acerca de:
+                    </p>
+                    <form action="suscrib" id="suscripcion">
+                        <input type="checkbox" name="productos" id="productos" /> Productos
+                        <br />
+                        <input type="checkbox" name="eventos" id="eventos" /> Eventos y
+                        Talleres <br />
+                        <input type="checkbox" name="novedades" id="novedades" /> Noticias
+                        <br />
+                        <input type="checkbox" name="general" id="general" /> Interes general
+                        <br />
+                        <input type="checkbox" name="artistas" id="artistas" /> Artistas
+                        <br />
+                        <input type="email" placeholder="Correo electronico" />
+                        <p>
+                            He leido y acepto los
+                            <a href="./documentos/legal.html"> terminos y condiciones</a>
+                        </p>
+                        <input type="radio" name="legal" id="yes" /> Acepto <br />
+                        <input type="radio" name="legal" id="no" /> No acepto <br />
+                        <input type="submit" value="Suscribirme" />
+                        <input type="reset" value="Restablecer" />
+                    </form>
+                </aside>
             </div>
-          </figure>
-        </section>
-        <div class="producto-descripcion">
-          <table id="diseno-descripcion">
-            <caption>
-              <p>Detalles del diseño</p>
-            </caption>
-            <thead>
-              <tr>
-                <th>Seleccionar</th>
-                <th>Disponibilidad</th>
-                <th>Descripcion</th>
-                <th>Stock</th>
-                <th>Envio</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id="categoria-ilustracion"></td>
-                <td>Ilustracion</td>
-                <td>Tamaño A5</td>
-                <td>50 u.</td>
-                <td>Argentina</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id="categoria-taza"></td>
-                <td>Taza</td>
-                <td>Todos los modelos</td>
-                <td>20u. c/modelo</td>
-                <td>Argentina</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id="categoria-cuadro"></td>
-                <td>Cuadro</td>
-                <td>Tamaño A3</td>
-                <td>20u</td>
-                <td>Argentina</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id="categoria-remera"></td>
-                <td>Remera</td>
-                <td>Talles: S-M-L-XL-XXL</td>
-                <td>300 u.</td>
-                <td>Argentina y Otros</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id="categoria-agenda"></td>
-                <td>Agenda</td>
-                <td>Tamaño A5</td>
-                <td>300 u.</td>
-                <td>Argentina y Otros</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id="categoria-planner"></td>
-                <td>Planner</td>
-                <td>Tamaño A5</td>
-                <td>300 u.</td>
-                <td>Argentina y Otros</td>
-              </tr>
-            </tbody>
-            <tfoot></tfoot>
-          </table>
-          <form action="-" id="compra">
-            <p class="detalle">Precio:</p>
-            <input type="text" name="precio" id="precio" placeholder="AR$" />
-            <input type="number" name="cantidad" id="cantidad" min="1" max="20" placeholder="0-20" />
-            <input type="submit" value="Añadir" />
-            <input type="reset" value="Restablecer" />
-          </form>
-        </div>
-        <article id="sugerencias">
-          <h2 class="seccion">Otros diseños que tambien pueden interesarte</h2>
-          <ol>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img src="https://i.pinimg.com/474x/68/7e/eb/687eebce6b2bed22c13f483086742c4f.jpg" alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 08</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img src="https://www.radiocantilo.com/wp-content/uploads/2018/10/5b9067ea13ead_1180_664.jpg"
-                      alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 20</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img src="https://i.pinimg.com/236x/82/f0/e6/82f0e6ed3a7ba6457c157873708adb28.jpg" alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 05</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-10GbdEQ4DNanD7xRn3iyZ5JIg4ggPmO9PYsE-ebFk_vooXjH&s"
-                      alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 16</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img
-                      src="https://2.bp.blogspot.com/-ltyA5_E-tQ0/Wx8ru8JkQCI/AAAAAAAAVIk/2ZMom5NxZXc-T9-oMpRM34AavstnZ8JcACLcBGAs/s1600/08.jpg"
-                      alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 04</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img src="https://i.pinimg.com/736x/48/fc/f0/48fcf092b3262604958798430dd84e6e.jpg" alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 12</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img
-                      src="https://scontent-frt3-1.cdninstagram.com/vp/4183656cf9583d31995c03cf6275147a/5E8C566D/t51.2885-15/e35/75426219_2773414142671622_2985316350062362408_n.jpg?_nc_ht=scontent-frt3-1.cdninstagram.com&_nc_cat=102&se=7&ig_cache_key=MjE2Nzk2MTM3MzAyODgxMTE3NQ%3D%3D.2"
-                      alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 25</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img
-                      src="https://scontent-yyz1-1.cdninstagram.com/vp/fb4206ca292dafad306d0dd98636821a/5E3416AE/t51.2885-15/sh0.08/e35/c19.0.1042.1042a/s640x640/61128203_167138254452088_3846076589967870953_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=104"
-                      alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 9</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKHlKpiF3PvuTU6ReMJ2mux4kI5wI_aSZx5jYRrNXJsBWP3nhv&s"
-                      alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 10</p>
-                </a>
-              </div>
-            </li>
-          </ol>
-        </article>
-        <aside id="carrito">
-          <form class="compras" action="-">
-            <h3>Carrito</h3>
-            <label><input type="checkbox" name="compra 1" id="1" /> Compra 1
-            </label>
-            <label><input type="checkbox" name="compra 2" id="2" /> Compra 2</label>
-            <label><input type="checkbox" name="compra 3" id="3" /> Compra 3
-            </label>
-            <label><input type="checkbox" name="compra 4" id="4" /> Compra 4
-            </label>
-            <input type="number" name="precioTotal" id="precioFinal" placeholder="Total" />
-            <input type="submit" value="Finalizar compra" />
-            <input type="reset" value="Cancelar compra" />
-          </form>
-        </aside>
-        <aside class="suscribe wow fadeInUp">
-          <h3>
-            Para mantenerte al dia sobre los nuevos productos y noticias,
-            Suscribete
-          </h3>
-          <p>
-            Es realmente facil y solo te tomara unos segundos. <br />
-            Deseo recibir informacion acerca de:
-          </p>
-          <form action="suscrib" id="suscripcion">
-            <input type="checkbox" name="productos" id="productos" /> Productos
-            <br />
-            <input type="checkbox" name="eventos" id="eventos" /> Eventos y
-            Talleres <br />
-            <input type="checkbox" name="novedades" id="novedades" /> Noticias
-            <br />
-            <input type="checkbox" name="general" id="general" /> Interes general
-            <br />
-            <input type="checkbox" name="artistas" id="artistas" /> Artistas
-            <br />
-            <input type="email" placeholder="Correo electronico" />
-            <p>
-              He leido y acepto los
-              <a href="./documentos/legal.html"> terminos y condiciones</a>
-            </p>
-            <input type="radio" name="legal" id="yes" /> Acepto <br />
-            <input type="radio" name="legal" id="no" /> No acepto <br />
-            <input type="submit" value="Suscribirme" />
-            <input type="reset" value="Restablecer" />
-          </form>
-        </aside>
-      </div>
-    </main>
-    <footer>
-      <div class="container-footer">
-        <div class="info-footer">
-          <aside class="informacion-sitio">
-            <ul id="informacion">
-              <li>Ilustraciones</li>
-              <li>Sobre nosotros</li>
-              <li>Proveeedores</li>
-              <li>Ventas a empresa</li>
-              <li>Trabaja con nosotros</li>
-              <li>Ubicación</li>
-            </ul>
-          </aside>
-          <aside class="ayuda-sitio">
-            <ul id="ayuda">
-              <li>Ayuda</li>
-              <li>FAQs</li>
-              <li>Terminos y condiciones</li>
-              <li>Tiempo y costos de envio</li>
-              <li>Politica de privacidad</li>
-              <li><a href="./documentos/mapa-sitio.html">Mapa de sitio</a></li>
-            </ul>
-          </aside>
-          <aside class="contacto">
-            <ul>
-              <li>Contactenos</li>
-              <li><img src="./assets/iconos/phone-icon.png" alt="Nro de telefono">(+54) 11 469830XX</li>
-              <li><img src="./assets/iconos/whatsapp-icon.png" alt="whatsapp">(+51) 993 119 000</li>
-              <li><img src="./assets/iconos/correo-icon.png" alt="Correo electronico"> info@Ilustraciones.com</li>
-            </ul>
-          </aside>
-        </div>
-        <aside class="copyright-redes">
-          <h4>Copyright 2020- Todos los derechos reservados</h4>
-          <ul>
-            <li><a href="https://www.facebook.com/"><img src="./assets/iconos/facebook-icon.png" alt="Facebook"></a>
-            </li>
-            <li><a href="https://twitter.com/"><img src="./assets/iconos/twitter-icon.png" alt="Twitter"></a></li>
-            <li><a href="https://www.pinterest.com/"><img src="./assets/iconos/pinterest-icon.png" alt="Pinterest"></a>
-            </li>
-            <li><a href="https://www.instagram.com/"><img src="./assets/iconos/instagram-icon.png" alt="Instagram"></a>
-            </li>
-          </ul>
-        </aside>
-      </div>
-    </footer>
-  </div>
-  <script src="/wow-js-css/wow.js"></script>
-  <script>
-    new WOW().init();
-  </script>
+        </main>
+        <footer>
+            <div class="container-footer">
+                <div class="info-footer">
+                    <aside class="informacion-sitio">
+                        <ul id="informacion">
+                            <li>Ilustraciones</li>
+                            <li>Sobre nosotros</li>
+                            <li>Proveeedores</li>
+                            <li>Ventas a empresa</li>
+                            <li>Trabaja con nosotros</li>
+                            <li>Ubicación</li>
+                        </ul>
+                    </aside>
+                    <aside class="ayuda-sitio">
+                        <ul id="ayuda">
+                            <li>Ayuda</li>
+                            <li>FAQs</li>
+                            <li>Terminos y condiciones</li>
+                            <li>Tiempo y costos de envio</li>
+                            <li>Politica de privacidad</li>
+                            <li><a href="./documentos/mapa-sitio.html">Mapa de sitio</a></li>
+                        </ul>
+                    </aside>
+                    <aside class="contacto">
+                        <ul>
+                            <li>Contactenos</li>
+                            <li><img src="./assets/iconos/phone-icon.png" alt="Nro de telefono">(+54) 11 469830XX</li>
+                            <li><img src="./assets/iconos/whatsapp-icon.png" alt="whatsapp">(+51) 993 119 000</li>
+                            <li><img src="./assets/iconos/correo-icon.png" alt="Correo electronico">
+                                info@Ilustraciones.com</li>
+                        </ul>
+                    </aside>
+                </div>
+                <aside class="copyright-redes">
+                    <h4>Copyright 2020- Todos los derechos reservados</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/"><img src="./assets/iconos/facebook-icon.png"
+                                    alt="Facebook"></a>
+                        </li>
+                        <li><a href="https://twitter.com/"><img src="./assets/iconos/twitter-icon.png"
+                                    alt="Twitter"></a></li>
+                        <li><a href="https://www.pinterest.com/"><img src="./assets/iconos/pinterest-icon.png"
+                                    alt="Pinterest"></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/"><img src="./assets/iconos/instagram-icon.png"
+                                    alt="Instagram"></a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </footer>
+    </div>
+    <script src="/wow-js-css/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!--Script para el slider-->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 4! seconds
+        }
+    </script>
+    <!--Script NavBar-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>

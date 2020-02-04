@@ -77,104 +77,76 @@ header
     margin: 0rem
     padding: 0rem
 
-nav
-    display: inline-block
-    width: 100%
-    z-index: 20
-
-.menu
-    text-decoration-line: none
-    color: rgb(58,50,50)
-    line-height: 1.2
-    list-style: none
-    font-family: "Josefin Slab", serif
-    font-weight: 600
-    z-index: 2
-    padding: 0
-    margin: 0
-    ul
-        padding: 1rem
-    li
-        display: inline-block
-        width: 15%
-        text-align: center
-        font-size: 16px
-        border-right: solid 1px
-        box-sizing: border-box
-        z-index: 20
-        position: relative
-        padding: 1rem
-        vertical-align: middle
-        -webkit-transform: perspective(1px) translateZ(0)
-        transform: perspective(1px) translateZ(0)
-        -webkit-transition-duration: 0.5s
-        transition-duration: 0.5s
-        -webkit-transition-property: color, background-color
-        transition-property: color, background-color
-        &:hover
-            -webkit-animation-name: hvr-back-pulse
-            animation-name: hvr-back-pulse
-            -webkit-animation-duration: 1s
-            animation-duration: 1s
-            -webkit-animation-delay: 0.5s
-            animation-delay: 0.5s
-            -webkit-animation-timing-function: linear
-            animation-timing-function: linear
-            -webkit-animation-iteration-count: infinite
-            animation-iteration-count: infinite
-            background-color: #2098D1
-            background-color: #2098d1
-        &:focus
-            -webkit-animation-name: hvr-back-pulse
-            animation-name: hvr-back-pulse
-            -webkit-animation-duration: 1s
-            animation-duration: 1s
-            -webkit-animation-delay: 0.5s
-            animation-delay: 0.5s
-            -webkit-animation-timing-function: linear
-            animation-timing-function: linear
-            -webkit-animation-iteration-count: infinite
-            animation-iteration-count: infinite
-            background-color: #2098D1
-            background-color: #2098d1
-        &:active
-            -webkit-animation-name: hvr-back-pulse
-            animation-name: hvr-back-pulse
-            -webkit-animation-duration: 1s
-            animation-duration: 1s
-            -webkit-animation-delay: 0.5s
-            animation-delay: 0.5s
-            -webkit-animation-timing-function: linear
-            animation-timing-function: linear
-            -webkit-animation-iteration-count: infinite
-            animation-iteration-count: infinite
-            background-color: #2098D1
-            background-color: #2098d1
-        li
-            display: block
-            padding: 1rem
-            width: 100%
-            background-color: azure
-    >li
-        &:last-child
-            border-right: none
-    ul
-        position: absolute
+.topnav
+    overflow: hidden
+    *
+        color: rgb(58,50,50)
+        font-family: "Josefin Slab", serif
+        font-weight: 600
+    .icon
         display: none
-    ul
-        li
-            display: block
-            padding: 1rem
-            width: 100%
-            background-color: azure
+    a
+        float: left
+        display: block
+        text-align: center
+        padding: 14px 16px
+        text-decoration: none
+        font-size: 17px
+        &.active
+            background-color: #2098d1
+            color: azure
 
+.dropdown
+    float: left
+    overflow: hidden
+    &.active
+            background-color: #2098d1
+            color: azure
+    .dropbtn
+        font-size: 17px  
+        border: none
+        outline: none
+        color: rgb(58,50,50)
+        padding: 14px 16px
+        background-color: inherit
+        font-family: inherit
+        margin: 0
 
+.dropdown-content
+    display: none
+    position: absolute
+    background-color: #f9f9f9
+    min-width: 160px
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+    z-index: 1
+    a
+        float: none
+        color: rgb(58,50,50)
+        padding: 12px 16px
+        text-decoration: none
+        display: block
+        text-align: left
 
-ul
-    li
+.topnav
+    a
         &:hover
-            ul
-                display: block
+            background-color: #2098d1
+            color: azure
+.dropdown
+    &:hover
+        .dropbtn
+            background-color: #2098d1
+            color: azure
+
+.dropdown-content
+    a
+        &:hover
+            background-color: azure
+            color: rgb(58,50,50)
+.dropdown:hover
+    .dropdown-content
+        display: block
+
 @-webkit-keyframes hvr-back-pulse
   50%
     background-color: rgba(32, 152, 209, 0.75)
@@ -184,54 +156,37 @@ ul
         background-color: rgba(32, 152, 209, 0.75)
 
 /**/
+@media screen and (max-width: 730px)
+    .topnav 
+        a
+            &:not(:first-child)
+                display: none
+            &.icon
+                float: right
+                display: block
+    .dropdown
+        .dropbtn
+            display: none
 
-$media_tablet: 767px
-
-button#menu-button
-    display: none
-    @media all and ( min-width: 319px ) and (max-width: $media_tablet) 
-        display: block
-    &:focus + nav#superior 
-        display: block
-
-
-#superior 
-    @media all and ( min-width: 319px ) and (max-width: $media_tablet) 
-        display: none
-        >ul
-            display: flex
-            margin: 0
-            padding: 1rem
-            @media all and ( min-width: 319px ) and (max-width: $media_tablet) 
-                flex-direction: column
-                >li
-                    position: relative
+@media screen and (max-width: 730px)
+    .topnav
+        &.responsive
+            position: relative
+            .icon
+                position: absolute
+                right: 0
+                top: 0
+    .topnav
+        &.responsive
+            a
+                float: none
+                display: block
+                text-align: left
+            .dropdown
+                float: none
+                .dropbtn
                     display: block
-                    width: 8em
-                    text-align: center
-                    transition: 1s all
-                    border: solid 1px
-                    padding: 1rem
-                    a
-                        display: inline-block
-                        box-sizing: border-box
-            li
-                &:hover
-                    ul
-                        display: block
-                ul
-                    display: none
-                    position: absolute
-                    top: 0
-                    left: 8em
-
-@media all and ( min-width: 319px ) and (max-width: $media_tablet)
-    .principalTitle
-        color: rgb(0, 153, 255)
-        font-size: 100&
-        line-height: 1.7
-        text-align: center
-        letter-spacing: 2px
-    .fondo-titulo
-        background-color: black
-        background-image: none
+                    width: 100%
+                    text-align: left
+            .dropdown-content
+                position: relative
