@@ -54,29 +54,14 @@ header
     animation-name: lightSpeedIn
     animation-timing-function: ease-out
 
-.fondo-titulo
-    background-color: black
-    background-image: url("../../assets/logo/fondo-titulo-full.png")
-    width: 100%
-    margin: 0rem
-    padding: 0rem
-    background-position: center
-    background-repeat: no-repeat
-    background-size: cover
-    position: relative
-    animation: slideInDown 1.2s ease-out
-.titulo-header
-    text-align: center
-.principalTitle
-    color: rgb(0, 153, 255)
-    font-size: 400%
-    line-height: 3
-    text-align: center
-    font-family: "Amatic SC", cursive
-    letter-spacing: 5px
-    margin: 0rem
-    padding: 0rem
-
+.logo
+    display: inline-block
+    vertical-align: middle
+    width: 12em
+    img
+        display: block
+        width: auto
+        
 .topnav
     overflow: hidden
     *
@@ -95,7 +80,10 @@ header
         &.active
             background-color: #2098d1
             color: azure
-
+.topnav
+    a
+        &.logo
+            padding: 2px
 .dropdown
     float: left
     overflow: hidden

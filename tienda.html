@@ -7,7 +7,7 @@
   <link type="text/css" rel="stylesheet" href="styles-sass/css/main.css" />
   <link rel="stylesheet" href="/wow-js-css/animate.css">
   <style>
-    @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans|Josefin+Slab&display=swap");
+    @import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab&display=swap");
   </style>
   <meta name="description" content="Diseños y productos de ilustradores argentinos - Tienda online">
   <meta name="keywords"
@@ -32,17 +32,9 @@
           <input type="submit" value="Ingresar" />
         </form>
       </aside>
-      <div class="fondo-titulo">
-        <div class="titulo-header">
-          <h1 class="principalTitle">
-            @Ilustraciones
-            <img src="./assets/logo/logo.png" alt="logo" />
-          </h1>
-        </div>
-      </div>
       <nav class="topnav" id="myTopnav">
         <!--barra de menu-->
-        <a href="index.html">Inicio</a>
+        <a href="index.html" class="logo"><img src="./assets/logo/logo.png" alt=""></a>
         <a class="active" href="tienda.html">Tienda</a>
         <a href="./ilustradores/ilustradores.html">Ilustradores</a>
         <div class="dropdown">
@@ -90,18 +82,34 @@
             <input type="radio" name="ilustrador" value="will" />Willabeta<br />
           </form>
         </aside>
-        <!--Slide de diseños-->
-        <div class="slidegallery">
-          <ul>
-            <li><img src="./assets/samples/ej1.jpg" alt=""></li>
-            <li><img src="./assets/samples/ej2.jpg" alt=""></li>
-            <li><img src="./assets/samples/ej3.jpg" alt=""></li>
-            <li><img src="./assets/samples/ej4.jpg" alt=""></li>
-          </ul>
-          <div>
-            <label>Seleccionar diseño</label><input type="checkbox" name="seleccion" id="codigo-producto">
+        <section class="slidegallery">
+          <!--Slide de diseños-->
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="./assets/sample-design/design-1.png" alt="producto disponible" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="./assets/sample-design/design-2.png" alt="producto disponible" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="./assets/sample-design/design-3.png" alt="producto disponible" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="./assets/sample-design/design-4.png" alt="producto disponible" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="./assets/sample-design/design-5.png" alt="producto disponible" style="width:100%">
+            </div>
           </div>
-        </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </section>
         <aside id="descripcion">
           <!--Las especificaciones van cambiando segun cambia el producto mostrado-->
           <p class="introduccion">
@@ -113,7 +121,8 @@
         </aside>
         <h2 class="seccion" id="titulo-autor">Sobre el autor</h2>
         <!--Segun el autor seleccionado, sino va pasando de a uno cada x tiempo-->
-        <iframe class="autor-video" src="https://www.youtube.com/embed/RHpDf-L7Ffw"></iframe>
+        <iframe class="autor-video" width="560" height="315" src="https://www.youtube.com/embed/RHpDf-L7Ffw" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <aside class="biografia">
           <p class="introduccion">
             <span>Nico Ilustraciones <br /> </span>
@@ -123,25 +132,6 @@
             personajes, y que a su vez, son compartidas por cientos de usuarios y
             seguidores.
           </p>
-        </aside>
-        <aside id="redesIlustrador">
-          <ul class="redes">
-            <li>
-              <a href="https://www.instagram.com/nicoilustraciones/?hl=es-la">Instagram
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/nicoilustracion?lang=es">Twitter</a>
-            </li>
-            <li>
-              <a href="https://www.pinterest.com/romisap/nico-ilustraciones/">Pinterest</a>
-            </li>
-            <li><a href="https://tlgrm.es/channels">Telegram</a></li>
-            <li><a href="">Correo</a></li>
-            <li>
-              <a href="https://www.bypublications.com/producto/universos-nico-ilustraciones-campana/">Pagina web</a>
-            </li>
-          </ul>
         </aside>
 
         <h2 class="seccion" id="titulo-diseno">Diseño Seleccionado</h2>
@@ -431,6 +421,30 @@
   <script src="/wow-js-css/wow.js"></script>
   <script>
     new WOW().init();
+  </script>
+  <!--Script para el slider-->
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 4! seconds
+    }
   </script>
   <!--Script NavBar-->
   <script>

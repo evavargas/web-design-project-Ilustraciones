@@ -1,4 +1,3 @@
-
 .boton-inicio
     position: sticky
     top: 490px
@@ -14,7 +13,7 @@
     font-size: large
     width: fit-content
     animation: fadeInLeft 2s 0.2s ease-in
-    background-color: rgba(197, 197, 197, 0.2)
+    background-color: #FEFCFD
     border-color: azure
     border-style: solid
     border-width: 1px
@@ -22,63 +21,13 @@
 
 
 .slidegallery
-    height: 100%
-    box-sizing: border-box
-    color: rgba(197,197,197,0.2)
-    text-align: center
-    background-color: rgb(207,242,246)
     display: block
-    ul
-        display: flex
-        justify-content: center
-        width: 100%
-        list-style: none
-        padding: 0
-        margin: 0
-        li
-            position: absolute
-            animation: fadeOut 20s infinite
-            z-index: 2
-            &:nth-child(2)
-                z-index: 3
-                animation-delay: 5s
-            &:nth-child(3)
-                z-index: 4
-                animation-delay: 10s
-            &:nth-child(4)
-                z-index: 5
-                animation-delay: 15s
-            img
-                width: 100%
-                object-fit: cover
-    >div
-        >label
-            font-family: "Josefin Sans", sans-serif
-            color: rgb(58, 50, 50)
-            width: 50%
-            z-index: 10
-        >input
-            padding: 10px 0
-            width: 16px
-            color: rgb(58, 50, 50)
-            z-index: 10
-
-@keyframes fadeOut
-    10%
-        opacity: 0
-    50%
-        opacity: 0
-    80%
-        opacity: 1
-    100%
-        opacity: 1
 
 .introduccion
     color: rgb(58,50,50)
     line-height: 1.8
     font-size: 120%
     font-family: "Josefin Slab", serif
-    font-style: oblique
     padding-right: 1.5rem
     padding-left: 1.5rem
     font-weight: 600
@@ -87,29 +36,11 @@
     width: 100%
     border: rgb(58, 50, 50) ridge 3px
     display: inline-block
+    box-sizing: border-box
     animation: fadeInLeft 2s 0.2s ease-in
 
 .biografia
     display: flex
-
-#redesIlustrador
-    display: inline-block
-    animation: fadeInRight 2s 0.2s ease-in
-
-.redes
-    width: fit-content
-    >li
-        color: purple
-        text-decoration: none
-        font-size: large
-        line-height: 1.6
-        font-family: "Josefin Slab", serif
-        >a
-            color: purple
-            text-decoration: none
-            font-size: large
-            line-height: 1.6
-            font-family: "Josefin Slab",serif
 
 #producto-compra
     display: flex
@@ -147,6 +78,7 @@
         background-color: rgb(241,221,228)
 
 #sugerencias
+    background-color: #FEFCFD
     width: 96%
     height: 380px
     padding: 0.2rem
