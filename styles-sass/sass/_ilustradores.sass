@@ -3,6 +3,7 @@
     flex-wrap: wrap
     justify-content: space-evenly
     margin: 0
+    width: 100%
     figure
         width: 25%
     img
@@ -32,13 +33,30 @@
 
 @media screen and ( min-width: 319px ) and ( max-width: 409px )
     .ilustradores
+        
         figure
-            width: 98%
+            width: 100%
+            margin: 2%
+            p
+                width: 100&
 @media screen and ( min-width: 410px ) and ( max-width: 766px )
     .ilustradores
         figure
-            width: 98%
+            width: 100%
+            margin: 2%
+            p
+                margin: 0
 @media screen and ( min-width: 767px ) and ( max-width: 1023px )
     .ilustradores
         figure
-            width: 38%
+            width: 50%
+            margin: 0
+            p
+                margin: 5%
+@media screen and ( min-width: 1024px )
+    .ilustradores
+        figure
+            width: 50%
+            margin: 0
+            p
+                margin: 5%

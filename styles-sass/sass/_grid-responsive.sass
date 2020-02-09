@@ -1,29 +1,24 @@
 @media screen and ( min-width: 319px ) and ( max-width: 409px )
-    #div-index-grid
+    #tienda-grid
         display: grid
         grid-template-areas: "titulo" "descripcion" "ilustradores" "gallery" "titulo-autor""autor-video" "autor-biografia" "titulo-diseno" "compra"  "sugerencias" "carrito" "suscribe"
-        grid-template-rows: 80px 340px 340px 300px 80px 200px 380px 80px 260px 400px 280px 760px
+        grid-template-rows: 80px 420px 400px 300px 80px 300px 450px 80px 280px 420px 280px 820px
         grid-template-columns: 98%
         align-content: center
         >div
             &.producto-descripcion
                 display: none
-    #main-noticias-grid
+    #main-contacto-grid
         display: grid
-        grid-template-areas: "seccion" "noticias" "suscribe"
-        grid-template-rows: 80px 2410px 780px
+        grid-template-areas: "seccion" "contacto" "suscribe"
+        grid-template-rows: 80px 1100px 820px
         grid-template-columns: 98%
-        figure
-            flex-flow: column
-            justify-content: center
-            img
-                width: 50%
-            p
-                width: 98%
+        textarea
+            width: 100%
     #vertodo-grid
         display: grid
         grid-template-areas: "titulo" "detalle" "disponible" "compra" "carrito"
-        grid-template-rows: 100px 420px 400px 450px 240px
+        grid-template-rows: 100px 600px 100px 450px 240px
         grid-template-columns: 98%
         >div
             &.producto-descripcion
@@ -33,6 +28,7 @@
                 img
                     width: 100%
         .listado-modelos
+            height: 100px
             width: 98%
             display: flex
             flex-flow: row
@@ -44,7 +40,6 @@
                     width: 100%
         .disponibles
             width: 99.9%
-            height: 360px
         .listado-productos
             display: flex
             flex-flow: row
@@ -58,27 +53,22 @@
         grid-template-columns: 98%
 
 @media screen and ( min-width: 410px ) and ( max-width: 766px )
-    #div-index-grid
+    #tienda-grid
         display: grid
         grid-template-areas: "titulo" "descripcion" "ilustradores" "gallery" "titulo-autor""autor-video" "autor-biografia" "titulo-diseno" "compra"  "sugerencias" "carrito" "suscribe"
-        grid-template-rows: 80px 340px 340px 300px 80px 200px 380px 80px 260px 400px 280px 740px
+        grid-template-rows: 80px 340px 380px 380px 80px 300px 400px 80px 300px 420px 300px 780px
         grid-template-columns: 98%
         align-content: center
         >div
             &.producto-descripcion
                 display: none
-    #main-noticias-grid
+    #main-contacto-grid
         display: grid
-        grid-template-areas: "seccion" "noticias" "suscribe"
-        grid-template-rows: 80px 2600px 780px
+        grid-template-areas: "seccion" "contacto" "suscribe"
+        grid-template-rows: 80px 1100px 780px
         grid-template-columns: 98%
-        figure
-            flex-flow: column
-            justify-content: center
-            img
-                width: 75%
-            p
-                width: 98%
+        textarea
+            width: 100%
     #vertodo-grid
         display: grid
         grid-template-areas: "titulo" "detalle" "disponible" "compra" "carrito"
@@ -92,6 +82,7 @@
                 img
                     width: 100%
         .listado-modelos
+            height: 200px
             width: 98%
             display: flex
             flex-flow: row
@@ -117,7 +108,7 @@
         grid-template-columns: 98%
 
 @media screen and ( min-width: 767px ) and ( max-width: 1023px )
-    #div-index-grid
+    #tienda-grid
         display: grid
         grid-template-areas: "titulo titulo" "descripcion descripcion" "ilustradores gallery" "titulo-autor titulo-autor" "autor-video autor-video" "autor-biografia autor-biografia" "titulo-diseno titulo-diseno" "compra sugerencias" "carrito carrito" "suscribe suscribe"
         grid-template-rows: 80px 200px 340px 80px 220px 200px 80px 360px 260px 680px
@@ -128,14 +119,12 @@
         >div
             &.producto-descripcion
                 display: none
-    #main-noticias-grid
+    #main-contacto-grid
         display: grid
-        grid-template-areas: "seccion" "noticias" "suscribe"
-        grid-template-rows: 80px 1420px 600px
+        grid-template-areas: "seccion" "contacto" "suscribe"
+        grid-template-rows: 80px 780px 600px
         grid-template-columns: 98%
-        figure
-            >img
-                width: 40%
+
     #vertodo-grid
         display: grid
         grid-template-areas: "titulo titulo" "detalle disponible" "compra carrito"
@@ -191,3 +180,8 @@
         a
             img
                 width: 100%
+    #main-contacto-grid
+        display: grid
+        grid-template-areas: "seccion" "contacto" "suscribe"
+        grid-template-rows: 80px 760px 600px
+        grid-template-columns: 98%

@@ -4,7 +4,8 @@
 .productos-gallery
     &*
         box-sizing: border-box
-
+    .active 
+        background-color: #717171
 
 .mySlides
     display: none
@@ -36,6 +37,8 @@ img
 @media only screen and (max-width: 300px)
     .text
         font-size: 11px
+    .productos-gallery
+        width: 100%
 .cartel-container
     display: flex
     flex-flow: column
@@ -73,13 +76,15 @@ img
     background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD)
 .azureLane
     background: #7F7FD5
-    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5)
-
-.tienda
+    background: linear-gradient(to right, #91EAE4, #a6b6d4, #9f9fe6)
+.relaxinRed
+    background: #fffbd5
+    background: linear-gradient(to right, #b20a2c, #fffbd5)
+.ir-tienda
     display: flex
     flex-flow: wrap
     justify-content: space-around
-    margin: 0
+    margin: 1rem
 .button-tienda
     display: inline-block
     text-align: center

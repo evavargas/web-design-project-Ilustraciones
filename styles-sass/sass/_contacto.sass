@@ -1,0 +1,18 @@
+.form-contacto
+    +color-fuente($color-lectura, $fuente-principal)
+    line-height: 1.7
+    font-size: large
+    form
+        label, input
+            display: inline-block
+            padding: 6px
+            &.etiqueta
+                width: 140px
+            &.check
+                display: inline
+        #submit
+            display: inherit
+@import color-fuente
+=color-fuente($color,$fuente)
+    color: $color
+    font-family: $fuente

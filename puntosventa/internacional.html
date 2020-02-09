@@ -51,42 +51,26 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="../puntosventa/puntosdeventa.html">Argentina</a>
-            <a href="../puntosventa/puntosdeventa.html">Otros Paises</a>
+            <a href="../puntosventa/argentina.html">Argentina</a>
+            <a href="../puntosventa/internacional.html">Otros Paises</a>
           </div>
         </div>
         <a href="../eventos/eventos.html">Eventos</a>
-        <a href="../noticias/noticias.html">Noticias</a>
+        <a href="../contacto/contacto.html">Contacto</a>
         <a href="javascrpt:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
       </nav>
     </header>
     <main>
       <h2 class="seccion">Encontranos, donde estés</h2>
       <div class="puntos-venta">
-        <section>
-          <h3>
-            En Argentina
-          </h3>
-          <ul id="puntos-argentina">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </section>
-        <section>
-          <h3>
-            Otros paises
-          </h3>
-          <ul id="puntos-otros">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </section>
+        <article class="ubicaciones">
+          <h3>Fuera de Argentina</h3>
+          <div id="map-otros"></div>
+          <script src="../js/internac.js"></script>
+          <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9fHEp9U2mo6SNjxb17d0FPmzcVbwpQas&callback=initMap"
+            async defer></script>
+        </article>
       </div>
       <h4>Recuerde que siempre puede contar con el servicio de Envio </h4>
       <p><a href="../documentos/envio.html">Mas Información</a></p>
@@ -149,6 +133,7 @@
       }
     }
   </script>
+
 </body>
 
 </html>

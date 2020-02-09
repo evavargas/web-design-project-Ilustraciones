@@ -8,11 +8,10 @@
   <style>
     @import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab&display=swap");
   </style>
-  <meta name="description" content="Ultimos eventos de ilustradores argentinos - Tienda Ilustraciones">
-  <meta name="keywords"
-    content="nicoilustraciones, lavacastyle, fedecalde, JuanSzelalustraciones, Willabeta, CaluByRox, CieloJoaquinCastro, BraianRuizIlustraciones">
+  <meta name="description" content="Puntos de venta - Tienda online Ilustraciones">
+  <meta name="keywords" content="Productos ilustradores, donde comprar a ilustradores, tienda Ilustraciones venta">
   <script src="https://kit.fontawesome.com/5273606c33.js" crossorigin="anonymous"></script>
-  <title>Ilustradores- Ultimos Eventos</title>
+  <title>Puntos de venta - Tienda Ilustraciones</title>
 </head>
 
 <body class=" colorsOfSky">
@@ -34,7 +33,7 @@
       <nav class="topnav" id="myTopnav">
         <!--barra de menu-->
         <a href="../index.html" class="logo"><img src="../assets/logo/logo.png" alt=""></a>
-        <a href="../tienda.html">Tienda</a>
+        <a href="tienda.html">Tienda</a>
         <a href="../ilustradores/ilustradores.html">Ilustradores</a>
         <div class="dropdown">
           <button class="dropbtn">Productos<i class="fa fa-caret-down"></i></button>
@@ -47,8 +46,8 @@
             <a href="../productos/planners/ver-todo.html">Planners</a>
           </div>
         </div>
-        <div class="dropdown">
-          <button class="dropbtn">Puntos de venta
+        <div class="dropdown active">
+          <button class="dropbtn ">Puntos de venta
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
@@ -62,33 +61,19 @@
       </nav>
     </header>
     <main>
-      <div class="container-legales">
-        <article>
-          <h2 class="seccion">Legales- Tienda Ilustraciones</h2>
-          <p>
-            Donec eleifend porta venenatis. Sed placerat non nisl a condimentum. In eget ornare augue, eu semper nulla.
-            Aliquam pharetra lobortis augue, ut consectetur eros ornare porttitor. Sed fermentum purus vitae mi semper,
-            id elementum lorem elementum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Nunc a sapien at augue scelerisque placerat vel ac urna. Mauris volutpat eu urna ut suscipit.
-            Vivamus vestibulum sagittis est nec luctus.
-
-            Morbi et erat finibus, tincidunt libero non, tincidunt mauris. In est arcu, rutrum in mauris sed, feugiat
-            maximus diam. Praesent fringilla orci a lectus mollis molestie. Praesent eget tortor nec nibh finibus
-            molestie. Donec et accumsan arcu. Phasellus dictum ante dolor, luctus consequat nisi ullamcorper sed. In
-            vestibulum congue dictum. Aliquam tempor sagittis ex, quis convallis sapien aliquam vitae. Morbi porttitor
-            lacus accumsan bibendum ornare. Fusce non varius elit, vitae tincidunt sapien. Fusce laoreet enim et sapien
-            ultrices, molestie sagittis nunc accumsan. Sed sit amet mauris malesuada, malesuada mi sit amet, malesuada
-            tortor. Aenean non orci congue, tincidunt nulla vitae, mollis lectus.
-
-            Cras id quam mattis, congue mauris eu, tempor lectus. Proin non diam fringilla, pulvinar dui non, faucibus
-            ipsum. Donec pharetra mi non lorem pulvinar pharetra. Mauris vulputate orci in dolor porttitor, eu lacinia
-            magna bibendum. Nam a ullamcorper enim. Ut imperdiet dictum ante a viverra. Mauris ac risus ac felis semper
-            placerat in at risus. Cras sed nibh eu leo gravida luctus. Cras ultrices justo turpis, in sollicitudin
-            ligula fermentum ac. Nunc pharetra imperdiet malesuada. Etiam lacinia ipsum a justo placerat, at iaculis
-            eros malesuada.
-          </p>
+      <h2 class="seccion">Encontranos, donde estés</h2>
+      <div class="puntos-venta">
+        <article class="ubicaciones">
+          <h3>Argentina</h3>
+          <div id="map-arg"></div>
+          <script src="../js/prov-arg.js"></script>
+          <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9fHEp9U2mo6SNjxb17d0FPmzcVbwpQas&callback=initMap"
+            async defer></script>
         </article>
       </div>
+      <h4>Recuerde que siempre puede contar con el servicio de Envio </h4>
+      <p><a href="../documentos/envio.html">Mas Información</a></p>
     </main>
     <footer>
       <div class="container-footer">
@@ -110,7 +95,7 @@
               <li>Terminos y condiciones</li>
               <li>Tiempo y costos de envio</li>
               <li>Politica de privacidad</li>
-              <li><a href="mapa-sitio.html">Mapa de sitio</a></li>
+              <li><a href="../documentos/mapa-sitio.html">Mapa de sitio</a></li>
             </ul>
           </aside>
           <aside class="contacto">
@@ -137,16 +122,18 @@
       </div>
     </footer>
   </div>
+  <!--Script NavBar-->
   <script>
     function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
     }
-</script>
+  </script>
+
 </body>
 
 </html>

@@ -1,0 +1,92 @@
+{
+    "lugares": [
+        {
+            "nombre": "Estados Unidos",
+            "centroide": {
+                "lat": 37.0902405,
+                "lon": -95.7128906
+            }
+        },
+        {
+            "nombre": "Chile",
+            "centroide": {
+                "lat": -35.675148,
+                "lon": -71.5429688
+            }
+        },
+        {
+            "nombre": "Brasil",
+            "centroide": {
+                "lat": -14.2350044,
+                "lon": -51.9252815
+            }
+        },
+        {
+            "nombre": "Mexico",
+            "centroide": {
+                "lat": 23.6345005,
+                "lon": -102.5527878
+            }
+        },
+        {
+            "nombre": "España",
+            "centroide": {
+                "lat": 40.4636688,
+                "lon": -3.7492199
+            }
+        },
+        {
+            "nombre": "China",
+            "centroide": {
+                "lat": 35.86166,
+                "lon": 104.1953964
+            }
+        },
+        {
+            "nombre": "Colombia",
+            "centroide": {
+                "lat": 4.570868,
+                "lon": -74.2973328
+            }
+        },
+        {
+            "nombre": "Alemania",
+            "centroide": {
+                "lat": 51.1656914,
+                "lon": 10.4515257
+            }
+        },
+        {
+            "nombre": "Perú",
+            "centroide": {
+                "lat": -9.1899672,
+                "lon": -75.015152
+            }
+        },
+        {
+            "nombre": "Uruguay",
+            "centroide": {
+                "lat": -32.5227776,
+                "lon": -55.7658348
+            }
+        },
+        {
+            "nombre": "Sudáfrica",
+            "centroide": {
+                "lat": -30.5594826,
+                "lon": 22.9375057
+            }
+        },
+        {
+            "nombre": "Bolivia",
+            "centroide": {
+                "lat": -16.2901535,
+                "lon": -63.5886536
+            }
+        }
+    ],
+    "total": 12,
+    "cantidad": 12,
+    "parametros": {},
+    "inicio": 0
+}

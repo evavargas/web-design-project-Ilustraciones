@@ -1,4 +1,4 @@
-#div-index-grid
+#tienda-grid
     vertical-align: baseline
     display: grid
     grid-template-areas: "titulo titulo titulo" "ilustradores gallery descripcion" "titulo-autor titulo-autor titulo-autor""autor-video autor-video autor-biografia" "titulo-diseno titulo-diseno titulo-diseno" "compra p-descripcion p-descripcion" "sugerencias sugerencias sugerencias" "carrito carrito carrito" "suscribe suscribe suscribe"
@@ -43,19 +43,19 @@
         &.suscribe.wow.fadeInUp
             grid-area: suscribe
 
-#main-noticias-grid
+#main-contacto-grid
     display: grid
-    grid-template-areas: "seccion" "noticias" "suscribe"
-    grid-template-rows: 80px 1370px 640px
+    grid-template-areas: "seccion" "contacto" "suscribe"
+    grid-template-rows: 80px 780px 640px
     grid-template-columns: 98%
     grid-column-gap: 5px
     grid-row-gap: 15px
     h2
         &.seccion
             grid-area: seccion
-    div
-        &.noticias
-            grid-area: noticias
+    section
+        &.form-contacto
+            grid-area: contacto
     aside
         &.suscribe
             grid-area: suscribe
