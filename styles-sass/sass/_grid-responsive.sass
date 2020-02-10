@@ -1,13 +1,13 @@
 @media screen and ( min-width: 319px ) and ( max-width: 409px )
     #tienda-grid
         display: grid
-        grid-template-areas: "titulo" "descripcion" "ilustradores" "gallery" "titulo-autor""autor-video" "autor-biografia" "titulo-diseno" "compra"  "sugerencias" "carrito" "suscribe"
-        grid-template-rows: 80px 420px 400px 300px 80px 300px 450px 80px 280px 420px 280px 820px
-        grid-template-columns: 98%
+        grid-template-areas: "titulo" "descripcion" "productos" "gallery" "suscribe"
+        grid-template-rows: 80px 160px 660px 280px 820px
+        grid-template-columns: 100%
         align-content: center
-        >div
-            &.producto-descripcion
-                display: none
+        p
+            &.introduccion
+                margin: 0
     #main-contacto-grid
         display: grid
         grid-template-areas: "seccion" "contacto" "suscribe"
@@ -16,36 +16,9 @@
         textarea
             width: 100%
     #vertodo-grid
-        display: grid
-        grid-template-areas: "titulo" "detalle" "disponible" "compra" "carrito"
-        grid-template-rows: 100px 600px 100px 450px 240px
+        grid-template-areas: "titulo" "detalle" "disponible" "sugerencia"
+        grid-template-rows: 80px 400px 660px 400px
         grid-template-columns: 98%
-        >div
-            &.producto-descripcion
-                display: none
-        .detalle-producto
-            figure
-                img
-                    width: 100%
-        .listado-modelos
-            height: 100px
-            width: 98%
-            display: flex
-            flex-flow: row
-            overflow: hidden
-            overflow-x: scroll
-            justify-content: space-between
-            a
-                img
-                    width: 100%
-        .disponibles
-            width: 99.9%
-        .listado-productos
-            display: flex
-            flex-flow: row
-            overflow: hidden
-            overflow-x: scroll
-            width: 98%
     #usuario-grid
         display: grid
         grid-template-areas: "titulo" "nombre-usuario" "card-usuario" "tab-usuario" "carrito" "proceso-compra"
@@ -55,13 +28,10 @@
 @media screen and ( min-width: 410px ) and ( max-width: 766px )
     #tienda-grid
         display: grid
-        grid-template-areas: "titulo" "descripcion" "ilustradores" "gallery" "titulo-autor""autor-video" "autor-biografia" "titulo-diseno" "compra"  "sugerencias" "carrito" "suscribe"
-        grid-template-rows: 80px 340px 380px 380px 80px 300px 400px 80px 300px 420px 300px 780px
-        grid-template-columns: 98%
+        grid-template-areas: "titulo" "descripcion" "productos" "gallery" "suscribe"
+        grid-template-rows: 80px 180px 690px 280px 820px
+        grid-template-columns: 100%
         align-content: center
-        >div
-            &.producto-descripcion
-                display: none
     #main-contacto-grid
         display: grid
         grid-template-areas: "seccion" "contacto" "suscribe"
@@ -69,95 +39,34 @@
         grid-template-columns: 98%
         textarea
             width: 100%
-    #vertodo-grid
-        display: grid
-        grid-template-areas: "titulo" "detalle" "disponible" "compra" "carrito"
-        grid-template-rows: 80px 460px 380px 430px 260px
-        grid-template-columns: 98%
-        >div
-            &.producto-descripcion
-                display: none
-        .detalle-producto
-            figure
-                img
-                    width: 100%
-        .listado-modelos
-            height: 200px
-            width: 98%
-            display: flex
-            flex-flow: row
-            overflow: hidden
-            overflow-x: scroll
-            justify-content: space-between
-            a
-                img
-                    width: 100%
-        .disponibles
-            width: 99.9%
-            height: 360px
-        .listado-productos
-            display: flex
-            flex-flow: row
-            overflow: hidden
-            overflow-x: scroll
-            width: 98%
     #usuario-grid
         display: grid
         grid-template-areas: "titulo" "nombre-usuario" "card-usuario" "tab-usuario" "carrito" "proceso-compra"
         grid-template-rows: 80px 80px 200px 400px 300px 320px
         grid-template-columns: 98%
-
+    #vertodo-grid
+        grid-template-areas: "titulo" "detalle" "disponible" "sugerencia"
+        grid-template-rows: 80px 460px 620px 400px
+        grid-template-columns: 98%
 @media screen and ( min-width: 767px ) and ( max-width: 1023px )
     #tienda-grid
         display: grid
-        grid-template-areas: "titulo titulo" "descripcion descripcion" "ilustradores gallery" "titulo-autor titulo-autor" "autor-video autor-video" "autor-biografia autor-biografia" "titulo-diseno titulo-diseno" "compra sugerencias" "carrito carrito" "suscribe suscribe"
-        grid-template-rows: 80px 200px 340px 80px 220px 200px 80px 360px 260px 680px
-        grid-template-columns: 42% 56%
+        grid-template-areas: "titulo" "descripcion" "productos" "gallery" "suscribe"
+        grid-template-rows: 60px 100px 220px 430px 620px
+        grid-template-columns: 100%
         grid-column-gap: 5px
         grid-row-gap: 10px
         align-content: center
-        >div
-            &.producto-descripcion
-                display: none
+        .productosSeleccion
+            .button-tienda
+                padding: 0.28em 0.42em 0.13em;
+
     #main-contacto-grid
         display: grid
         grid-template-areas: "seccion" "contacto" "suscribe"
         grid-template-rows: 80px 780px 600px
         grid-template-columns: 98%
 
-    #vertodo-grid
-        display: grid
-        grid-template-areas: "titulo titulo" "detalle disponible" "compra carrito"
-        grid-template-rows: 80px 450px 380px
-        >div
-            &.producto-descripcion
-                display: none
-        .detalle-producto
-            padding: 0.2rem
-            figure
-                img
-                    width: 75%
-        .listado-modelos
-            width: 90%
-            display: flex
-            flex-flow: row
-            overflow: hidden
-            overflow-x: scroll
-            justify-content: space-between
-            a
-                img
-                    width: 100%
-        .disponibles
-            width: 98%
-            height: 360px
-        .listado-productos
-            display: flex
-            flex-flow: row
-            overflow: hidden
-            overflow-x: scroll
-            width: 98%
-        #producto-compra
-            display: block
     #usuario-grid
         display: grid
         grid-template-areas: "titulo" "nombre-usuario" "card-usuario" "tab-usuario" "carrito" "proceso-compra"
@@ -165,6 +74,10 @@
         grid-template-columns: 98%
 
 @media screen and ( min-width: 1024px )
+    #tienda-grid
+        grid-template-areas: "titulo" "descripcion" "productos" "gallery" "suscribe"
+        grid-template-rows: 80px 80px 420px 680px  630px
+        grid-template-columns: 100%
     .detalle-producto
         padding: 0.2rem
         figure

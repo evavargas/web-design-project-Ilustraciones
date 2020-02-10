@@ -53,13 +53,13 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="./puntosventa/puntosdeventa.html">Argentina</a>
-            <a href="./puntosventa/puntosdeventa.html">Otros Paises</a>
+            <a href="./puntosventa/argentina.html.html">Argentina</a>
+            <a href="./puntosventa/internacional.html.html">Otros Paises</a>
           </div>
         </div>
         <a href="./eventos/eventos.html">Eventos</a>
-        <a href="./noticias/noticias.html">Noticias</a>
-        <a href="javascrpt:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="./contacto/contacto.html">Contacto</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
       </nav>
     </header>
     <div class="boton-inicio wow slideInUp">
@@ -68,40 +68,42 @@
     <main>
 
       <div id="tienda-grid">
-        <h2 class="seccion">Los mejores artistas</h2>
-        <aside id="ilustradores">
-          <!--En este campo, se seleccionan los diseños segun el autor y se muestran en el slide-->
-          <form class="artistasSeleccion">
-            <input type="radio" name="ilustrador" value="lavaca" />LaVacaStyle<br />
-            <input type="radio" name="ilustrador" value="nico" checked />NicoIlustraciones<br />
-            <input type="radio" name="ilustrador" value="braian" />BraianRuizIlustraciones<br />
-            <input type="radio" name="ilustrador" value="fede" />FedeCalde-Ilustraciones<br />
-            <input type="radio" name="ilustrador" value="juan" />JuanSzelalustraciones<br />
-            <input type="radio" name="ilustrador" value="calu" />CaluByRox<br />
-            <input type="radio" name="ilustrador" value="cielo" />CieloJoaquinCastro<br />
-            <input type="radio" name="ilustrador" value="will" />Willabeta<br />
-          </form>
+        <h2 class="seccion">Los mejores artistas, los mejores productos</h2>
+        <aside id="descripcion">
+          <p class="introduccion">
+            Tus ilustradores favoritos, reunidos en un solo lugar. Accede a todos
+            sus trabajos y diseños, en articulos de gran calidad. 
+          </p>
         </aside>
+        <article id="productos-button">
+          <section class="productosSeleccion">
+            <a class="button-tienda intro" href="./productos/ilustraciones/ver-todo.html">Ilustraciones</a>
+            <a class="button-tienda intro" href="./productos/cuadros/ver-todo.html">Cuadros</a>
+            <a class="button-tienda intro" href="./productos/remeras/ver-todo.html">Remeras</a>
+            <a class="button-tienda intro" href="./productos/tazas/ver-todo.html">Tazas</a>
+            <a class="button-tienda intro" href="./productos/agendas/ver-todo.html">Agendas</a>
+            <a class="button-tienda intro" href="./productos/planners/ver-todo.html">Planners</a>
+          </section>
+        </article>
         <section class="slidegallery">
-          <!--Slide de diseños-->
+          <h2 class="seccion">Los diseños mas solicitados</h2c>
           <div class="slideshow-container">
             <div class="mySlides fade">
-              <img src="./assets/sample-design/design-1.png" alt="producto disponible" style="width:100%">
+              <img src="./assets/sample-design/design-1.jpg" alt="producto disponible" style="width:100%">
             </div>
             <div class="mySlides fade">
-              <img src="./assets/sample-design/design-2.png" alt="producto disponible" style="width:100%">
+              <img src="./assets/sample-design/design-2.jpg" alt="producto disponible" style="width:100%">
             </div>
             <div class="mySlides fade">
-              <img src="./assets/sample-design/design-3.png" alt="producto disponible" style="width:100%">
+              <img src="./assets/sample-design/design-3.jpg" alt="producto disponible" style="width:100%">
             </div>
             <div class="mySlides fade">
-              <img src="./assets/sample-design/design-4.png" alt="producto disponible" style="width:100%">
+              <img src="./assets/sample-design/design-4.jpg" alt="producto disponible" style="width:100%">
             </div>
             <div class="mySlides fade">
-              <img src="./assets/sample-design/design-5.png" alt="producto disponible" style="width:100%">
+              <img src="./assets/sample-design/design-5.jpg" alt="producto disponible" style="width:100%">
             </div>
           </div>
-          <br>
           <div style="text-align:center">
             <span class="dot"></span>
             <span class="dot"></span>
@@ -110,234 +112,6 @@
             <span class="dot"></span>
           </div>
         </section>
-        <aside id="descripcion">
-          <!--Las especificaciones van cambiando segun cambia el producto mostrado-->
-          <p class="introduccion">
-            Tus Ilustradores favoritos, reunidos en un solo lugar. Accede a todos
-            sus trabajos y diseños, en articulos de gran calidad, personalizados
-            odio at consequat condimentum, lectus eros euismod nulla, id tempor
-            tellus elit congue elit. Donec erat metus, euismod efficitur nisl vel.
-          </p>
-        </aside>
-        <h2 class="seccion" id="titulo-autor">Sobre el autor</h2>
-        <!--Segun el autor seleccionado, sino va pasando de a uno cada x tiempo-->
-        <iframe class="autor-video" width="560" height="315" src="https://www.youtube.com/embed/RHpDf-L7Ffw" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <aside class="biografia">
-          <p class="introduccion">
-            <span>Nico Ilustraciones <br /> </span>
-            Nicolás Vilela es el joven artista detrás de 'Nico Ilustraciones',
-            nombre con el que identificó sus perfiles en redes sociales. Allí
-            plasma sus obras que se encuentran atravesadas por diversos temas y
-            personajes, y que a su vez, son compartidas por cientos de usuarios y
-            seguidores.
-          </p>
-        </aside>
-
-        <h2 class="seccion" id="titulo-diseno">Diseño Seleccionado</h2>
-        <section id="producto-compra">
-          <figure class="articulo">
-            <div>
-              <a href="">
-                <div>
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKHlKpiF3PvuTU6ReMJ2mux4kI5wI_aSZx5jYRrNXJsBWP3nhv&s"
-                    alt="">
-                </div>
-                <p class="nombre-producto">Diseño nº 10</p>
-              </a>
-            </div>
-          </figure>
-        </section>
-        <div class="producto-descripcion">
-          <table id="diseno-descripcion">
-            <caption>
-              <p>Detalles del diseño</p>
-            </caption>
-            <thead>
-              <tr>
-                <th>Seleccionar</th>
-                <th>Disponibilidad</th>
-                <th>Descripcion</th>
-                <th>Stock</th>
-                <th>Envio</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id="categoria-ilustracion"></td>
-                <td>Ilustracion</td>
-                <td>Tamaño A5</td>
-                <td>50 u.</td>
-                <td>Argentina</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id="categoria-taza"></td>
-                <td>Taza</td>
-                <td>Todos los modelos</td>
-                <td>20u. c/modelo</td>
-                <td>Argentina</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id="categoria-cuadro"></td>
-                <td>Cuadro</td>
-                <td>Tamaño A3</td>
-                <td>20u</td>
-                <td>Argentina</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id="categoria-remera"></td>
-                <td>Remera</td>
-                <td>Talles: S-M-L-XL-XXL</td>
-                <td>300 u.</td>
-                <td>Argentina y Otros</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id="categoria-agenda"></td>
-                <td>Agenda</td>
-                <td>Tamaño A5</td>
-                <td>300 u.</td>
-                <td>Argentina y Otros</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" name="ilustracion" id="categoria-planner"></td>
-                <td>Planner</td>
-                <td>Tamaño A5</td>
-                <td>300 u.</td>
-                <td>Argentina y Otros</td>
-              </tr>
-            </tbody>
-            <tfoot></tfoot>
-          </table>
-          <form action="-" id="compra">
-            <p class="detalle">Precio:</p>
-            <input type="text" name="precio" id="precio" placeholder="AR$" />
-            <input type="number" name="cantidad" id="cantidad" min="1" max="20" placeholder="0-20" />
-            <input type="submit" value="Añadir" />
-            <input type="reset" value="Restablecer" />
-          </form>
-        </div>
-        <article id="sugerencias">
-          <h2 class="seccion">Otros diseños que tambien pueden interesarte</h2>
-          <ol>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img src="https://i.pinimg.com/474x/68/7e/eb/687eebce6b2bed22c13f483086742c4f.jpg" alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 08</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img src="https://www.radiocantilo.com/wp-content/uploads/2018/10/5b9067ea13ead_1180_664.jpg"
-                      alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 20</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img src="https://i.pinimg.com/236x/82/f0/e6/82f0e6ed3a7ba6457c157873708adb28.jpg" alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 05</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-10GbdEQ4DNanD7xRn3iyZ5JIg4ggPmO9PYsE-ebFk_vooXjH&s"
-                      alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 16</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img
-                      src="https://2.bp.blogspot.com/-ltyA5_E-tQ0/Wx8ru8JkQCI/AAAAAAAAVIk/2ZMom5NxZXc-T9-oMpRM34AavstnZ8JcACLcBGAs/s1600/08.jpg"
-                      alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 04</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img src="https://i.pinimg.com/736x/48/fc/f0/48fcf092b3262604958798430dd84e6e.jpg" alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 12</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img
-                      src="https://scontent-frt3-1.cdninstagram.com/vp/4183656cf9583d31995c03cf6275147a/5E8C566D/t51.2885-15/e35/75426219_2773414142671622_2985316350062362408_n.jpg?_nc_ht=scontent-frt3-1.cdninstagram.com&_nc_cat=102&se=7&ig_cache_key=MjE2Nzk2MTM3MzAyODgxMTE3NQ%3D%3D.2"
-                      alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 25</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img
-                      src="https://scontent-yyz1-1.cdninstagram.com/vp/fb4206ca292dafad306d0dd98636821a/5E3416AE/t51.2885-15/sh0.08/e35/c19.0.1042.1042a/s640x640/61128203_167138254452088_3846076589967870953_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=104"
-                      alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 9</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="">
-                  <div>
-                    <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKHlKpiF3PvuTU6ReMJ2mux4kI5wI_aSZx5jYRrNXJsBWP3nhv&s"
-                      alt="">
-                  </div>
-                  <p class="nombre-producto">Diseño nº 10</p>
-                </a>
-              </div>
-            </li>
-          </ol>
-        </article>
-        <aside id="carrito">
-          <form class="compras" action="-">
-            <h3>Carrito</h3>
-            <label><input type="checkbox" name="compra 1" id="1" /> Compra 1
-            </label>
-            <label><input type="checkbox" name="compra 2" id="2" /> Compra 2</label>
-            <label><input type="checkbox" name="compra 3" id="3" /> Compra 3
-            </label>
-            <label><input type="checkbox" name="compra 4" id="4" /> Compra 4
-            </label>
-            <input type="number" name="precioTotal" id="precioFinal" placeholder="Total" />
-            <input type="submit" value="Finalizar compra" />
-            <input type="reset" value="Cancelar compra" />
-          </form>
-        </aside>
         <aside class="suscribe wow fadeInUp">
           <h3>
             Para mantenerte al dia sobre los nuevos productos y noticias,
@@ -377,20 +151,12 @@
           <aside class="informacion-sitio">
             <ul id="informacion">
               <li>Ilustraciones</li>
-              <li>Sobre nosotros</li>
-              <li>Proveeedores</li>
-              <li>Ventas a empresa</li>
-              <li>Trabaja con nosotros</li>
-              <li>Ubicación</li>
+              <li><a href="./puntosventa/argentina.html">Ubicación</a></li>
             </ul>
           </aside>
           <aside class="ayuda-sitio">
             <ul id="ayuda">
               <li>Ayuda</li>
-              <li>FAQs</li>
-              <li>Terminos y condiciones</li>
-              <li>Tiempo y costos de envio</li>
-              <li>Politica de privacidad</li>
               <li><a href="./documentos/mapa-sitio.html">Mapa de sitio</a></li>
             </ul>
           </aside>

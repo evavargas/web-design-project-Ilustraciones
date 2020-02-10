@@ -1,53 +1,33 @@
+
 .detalle-producto
-    >figure
+    h3
+        color: rgb(58,50,50)
+        line-height: 1.8
+        font-size: 120%
+        font-family: "Josefin Slab", serif
+    figure
         background-color: #ffffff8c
-        box-sizing: border-box
+        width: fit-content
         margin: 0
-        >h3
-            color: rgb(58,50,50)
-            line-height: 1.8
-            font-size: 120%
-            font-family: "Josefin Slab", serif
         >img
-            width: 80%
+            width: 90%
             &:hover
                 cursor: -webkit-zoom-in
-
-.disponibles
-    height: 640px
-    max-height: max-content
-    overflow: hidden
-
-.listado-modelos
-    overflow: hidden
-    overflow-x: scroll
-    display: flex
-    flex-flow: nowrap
-    flex-direction: row
-    border-style: solid
-    border-color: rgb(58,50,50)
-    margin: 0em
-    padding: 0.5rem
-    background-color: white
-    width: 
-    a
-        img
-            width: 80px
-            display: inline-block
-            transform: scale(1)
-            transition: all 500ms ease-in-out
-        &:hover
-            background-color: rgba(197, 197, 197, 0.2)
-            transform: scale(0.8)
-            border-radius: 10px
-
+.productos-disponibles
+    
+    display: inline-block
+    height: 560px
+    width: 280px
+    ul
+        padding: 2px
+        margin: 0
+        li
+            list-style: none
 .listado-productos
     display: flex
     flex-flow: wrap
-    width: 45vw
     list-style: none
-    height: 620px
-    max-height: max-content
+    height: 480px
     overflow: hidden
     overflow-y: scroll
     background-color: rgb(255, 255, 255)
@@ -59,3 +39,45 @@
         width: 240px
         height: 240px
         margin: 1rem
+
+#sugerencias
+    background-color: #FEFCFD
+    box-sizing: border-box
+    overflow: hidden
+    height: 380px
+    width: 100%
+    padding: 0.2rem
+    ul
+        overflow: hidden
+        overflow-x: scroll
+        display: flex
+        flex-flow: nowrap
+        flex-direction: row
+        margin: 0
+        padding: 0.5rem
+        >li
+            width: fit-content
+            list-style: none
+            margin: 0.2rem
+            padding: 0.3rem
+            background-color: rgba(197, 197, 197, 0.2)
+            >div
+                width: 145px
+                height: 260px
+                p
+                    &.nombre-producto
+                        font-family: "Josefin Sans", sans-serif
+                >div
+                    width: 145px
+                    background-color: rgba(243, 252, 253, 0.658) 
+                    img
+                        width: 140px
+.boton_personalizado
+    font-family: "Josefin Sans", sans-serif
+    text-decoration: none
+    position: relative
+    padding: 10px
+    color: #ffffff
+    background-color: #ff782a
+    border-radius: 4px
+    border: 2px solid #fa7b6a

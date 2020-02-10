@@ -1,3 +1,5 @@
+var contenedor = document.getElementById('contenedor');
+
 let lugaresInfo = [];
 const getLugares = () => {
     fetch('../internacional.json')
@@ -19,6 +21,7 @@ const getLugares = () => {
                     initMap(ubicacion)
                 })
             }
+            mostrarInfo(lugaresInfo)
         })
 }
 function initMap(obj){
@@ -39,4 +42,12 @@ function initMap(obj){
         })
     })
 }
+function mostrarInfo(lugares) {
+    lugares.map(lugar => {
+        let ubicacion = document.createElement('p');
+        ubicacion.innerHTML = (lugar.nombre);
+        contenedor.appendChild(ubicacion);
+    })
+}
+
 getLugares()

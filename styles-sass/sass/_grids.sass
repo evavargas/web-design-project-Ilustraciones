@@ -1,44 +1,22 @@
 #tienda-grid
     vertical-align: baseline
     display: grid
-    grid-template-areas: "titulo titulo titulo" "ilustradores gallery descripcion" "titulo-autor titulo-autor titulo-autor""autor-video autor-video autor-biografia" "titulo-diseno titulo-diseno titulo-diseno" "compra p-descripcion p-descripcion" "sugerencias sugerencias sugerencias" "carrito carrito carrito" "suscribe suscribe suscribe"
-    grid-template-rows: 80px 380px 80px 360px 80px 450px 380px 240px 630px
-    grid-template-columns: 28% 35% 36%
+    grid-template-areas: "titulo" "descripcion" "productos" "gallery" "suscribe"
+    grid-template-rows: 80px 80px 420px 680px  630px
+    grid-template-columns: 100%
     grid-column-gap: 10px
     grid-row-gap: 10px
     align-content: center
     >h2
         &.seccion
             grid-area: titulo
-    >#ilustradores
-        grid-area: ilustradores
-    >div
-        &.slideGallery
+    >#productos-button
+        grid-area: productos
+    >section
+        &.slidegallery
             grid-area: gallery
     >#descripcion
         grid-area: descripcion
-    >#titulo-autor
-        grid-area: titulo-autor
-    >iframe
-        &.autor-video
-            grid-area: autor-video
-    >aside
-        &.biografia
-            grid-area: autor-biografia
-    >aside
-        &#redesIlustrador
-            grid-area: autor-redes
-    >#sugerencias
-        grid-area: sugerencias
-    >#titulo-diseno
-        grid-area: titulo-diseno
-    >#producto-compra
-        grid-area: compra
-    >div
-        &.producto-descripcion
-            grid-area: p-descripcion
-    >#carrito
-        grid-area: carrito
     >aside
         &.suscribe.wow.fadeInUp
             grid-area: suscribe
@@ -62,9 +40,9 @@
 
 #vertodo-grid
     display: grid
-    grid-template-areas: "titulo titulo" "detalle disponible" "compra p-descripcion" "carrito carrito"
-    grid-template-rows: 80px 660px 450px 240px
-    grid-template-columns: 42% 56%
+    grid-template-areas: "titulo titulo" "detalle disponible" "sugerencia sugerencia"
+    grid-template-rows: 80px 660px 400px
+    grid-template-columns: 56% 42%
     grid-column-gap: 15px
     grid-row-gap: 10px
     h2
@@ -74,15 +52,10 @@
         &.detalle-producto
             grid-area: detalle
     section
-        &.disponibles
+        &.productos-disponibles
             grid-area: disponible
-    #producto-compra
-        grid-area: compra
-    div
-        &.producto-descripcion
-            grid-area: p-descripcion
-    #carrito
-        grid-area: carrito
+    #sugerencias
+        grid-area: sugerencia
 
 #usuario-grid
     display: grid

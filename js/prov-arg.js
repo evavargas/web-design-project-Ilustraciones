@@ -1,6 +1,5 @@
-//Datos extraidos de:
 //https://infra.datos.gob.ar/catalog/modernizacion/dataset/7/distribution/7.2/download/provincias.json
-
+var contenedor = document.getElementById('contenedor');
 let provinciasInfo = [];
 const getProvincias = () => {
     fetch('../provincias.json')
@@ -22,9 +21,10 @@ const getProvincias = () => {
                     initMap(ubicacion)
                 })
             }
+            mostrarInfo(provinciasInfo)
         })
 }
-function initMap(obj){
+function initMap(obj) {
     let mapa = new google.maps.Map(document.getElementById('map-arg'), {
         center: obj,
         zoom: 4
@@ -40,6 +40,13 @@ function initMap(obj){
             title: provincia.nombre,
             map: mapa
         })
+    })
+}
+function mostrarInfo(provinciasInfo) {
+    provinciasInfo.map(provincia => {
+        let ubicacion = document.createElement('p');
+        ubicacion.innerHTML = (provincia.nombre);
+        contenedor.appendChild(ubicacion);
     })
 }
 getProvincias()
