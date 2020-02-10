@@ -1554,7 +1554,7 @@ h4 {
   height: 500px;
 }
 
-.ubicaciones h3 {
+.ubicaciones h3, .ubicaciones p {
   color: #3a3232;
   line-height: 1.8;
   font-size: 120%;
